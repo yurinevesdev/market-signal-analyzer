@@ -1,0 +1,484 @@
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+Iniciando análise de 10 ativos...
+======================================================================
+
+[1/10] Processando PETR4.SA
+----------------------------------------------------------------------
+Analisando o ativo: PETR4.SA...
+
+Últimos 10 dias:
+Price           Close  Compra  Venda
+Date                                
+2025-10-27  30.000000   False  False
+2025-10-28  29.990000   False  False
+2025-10-29  30.020000   False  False
+2025-10-30  29.889999   False  False
+2025-10-31  29.750000   False  False
+2025-11-03  30.100000   False  False
+2025-11-04  30.250000   False  False
+2025-11-05  30.850000   False  False
+2025-11-06  31.010000   False  False
+2025-11-07  32.180000   False  False
+
+Nenhum novo sinal de compra ou venda para PETR4.SA no último pregão.
+======================================================================
+
+[2/10] Processando VALE3.SA
+----------------------------------------------------------------------
+Analisando o ativo: VALE3.SA...
+
+Últimos 10 dias:
+Price           Close  Compra  Venda
+Date                                
+2025-10-27  61.660000   False  False
+2025-10-28  62.200001   False  False
+2025-10-29  63.330002   False  False
+2025-10-30  63.810001   False  False
+2025-10-31  65.260002   False  False
+2025-11-03  65.349998   False  False
+2025-11-04  64.620003   False  False
+2025-11-05  65.730003   False  False
+2025-11-06  65.500000   False  False
+2025-11-07  64.779999   False  False
+
+Nenhum novo sinal de compra ou venda para VALE3.SA no último pregão.
+======================================================================
+
+[3/10] Processando ITUB4.SA
+----------------------------------------------------------------------
+Analisando o ativo: ITUB4.SA...
+
+Últimos 10 dias:
+Price           Close  Compra  Venda
+Date                                
+2025-10-27  38.349998   False  False
+2025-10-28  38.480000   False  False
+2025-10-29  39.340000   False  False
+2025-10-30  39.290001   False  False
+2025-10-31  39.439999   False  False
+2025-11-03  40.080002   False  False
+2025-11-04  39.959999   False  False
+2025-11-05  40.130001   False  False
+2025-11-06  40.130001   False  False
+2025-11-07  40.169998   False  False
+
+Nenhum novo sinal de compra ou venda para ITUB4.SA no último pregão.
+======================================================================
+
+[4/10] Processando BBDC4.SA
+----------------------------------------------------------------------
+Analisando o ativo: BBDC4.SA...
+
+Últimos 10 dias:
+Price           Close  Compra  Venda
+Date                                
+2025-10-27  18.230000   False  False
+2025-10-28  18.240000   False  False
+2025-10-29  18.830000   False  False
+2025-10-30  18.100000   False  False
+2025-10-31  18.160000   False  False
+2025-11-03  18.360001   False  False
+2025-11-04  18.400000   False  False
+2025-11-05  18.790001   False  False
+2025-11-06  18.709999   False  False
+2025-11-07  18.730000   False  False
+
+Nenhum novo sinal de compra ou venda para BBDC4.SA no último pregão.
+======================================================================
+
+[5/10] Processando ABEV3.SA
+----------------------------------------------------------------------
+Analisando o ativo: ABEV3.SA...
+
+Últimos 10 dias:
+Price       Close  Compra  Venda
+Date                            
+2025-10-27  12.15   False  False
+2025-10-28  12.03   False  False
+2025-10-29  12.03   False  False
+2025-10-30  12.59   False  False
+2025-10-31  12.71   False  False
+2025-11-03  12.91   False  False
+2025-11-04  13.16   False  False
+2025-11-05  13.18   False  False
+2025-11-06  13.08   False  False
+2025-11-07  13.12   False  False
+
+Nenhum novo sinal de compra ou venda para ABEV3.SA no último pregão.
+======================================================================
+
+[6/10] Processando BBAS3.SA
+----------------------------------------------------------------------
+Analisando o ativo: BBAS3.SA...
+
+Últimos 10 dias:
+Price           Close  Compra  Venda
+Date                                
+2025-10-27  20.850000   False  False
+2025-10-28  20.959999   False  False
+2025-10-29  21.219999   False  False
+2025-10-30  21.629999   False  False
+2025-10-31  21.900000   False  False
+2025-11-03  22.080000   False  False
+2025-11-04  22.270000   False  False
+2025-11-05  22.610001   False  False
+2025-11-06  22.860001   False  False
+2025-11-07  22.889999   False  False
+
+Nenhum novo sinal de compra ou venda para BBAS3.SA no último pregão.
+======================================================================
+
+[7/10] Processando WEGE3.SA
+----------------------------------------------------------------------
+Analisando o ativo: WEGE3.SA...
+
+Últimos 10 dias:
+Price           Close  Compra  Venda
+Date                                
+2025-10-27  41.669998   False  False
+2025-10-28  42.320000   False  False
+2025-10-29  42.049999   False  False
+2025-10-30  41.450001   False  False
+2025-10-31  42.099998   False  False
+2025-11-03  42.799999   False  False
+2025-11-04  42.750000   False  False
+2025-11-05  43.509998   False  False
+2025-11-06  43.910000   False  False
+2025-11-07  45.000000   False  False
+
+Nenhum novo sinal de compra ou venda para WEGE3.SA no último pregão.
+======================================================================
+
+[8/10] Processando RENT3.SA
+----------------------------------------------------------------------
+Analisando o ativo: RENT3.SA...
+
+Últimos 10 dias:
+Price           Close  Compra  Venda
+Date                                
+2025-10-27  39.320000   False  False
+2025-10-28  39.169998   False  False
+2025-10-29  39.770000   False  False
+2025-10-30  39.240002   False  False
+2025-10-31  39.439999   False  False
+2025-11-03  39.650002   False  False
+2025-11-04  40.900002   False  False
+2025-11-05  41.570000   False  False
+2025-11-06  41.150002   False  False
+2025-11-07  40.889999   False  False
+
+Nenhum novo sinal de compra ou venda para RENT3.SA no último pregão.
+======================================================================
+
+[9/10] Processando MGLU3.SA
+----------------------------------------------------------------------
+Analisando o ativo: MGLU3.SA...
+
+Últimos 10 dias:
+Price       Close  Compra  Venda
+Date                            
+2025-10-27   8.52   False  False
+2025-10-28   8.66   False  False
+2025-10-29   8.53   False  False
+2025-10-30   8.50   False  False
+2025-10-31   8.47   False  False
+2025-11-03   8.34   False  False
+2025-11-04   8.38   False  False
+2025-11-05   8.74   False  False
+2025-11-06   7.99   False  False
+2025-11-07   8.14   False  False
+
+Nenhum novo sinal de compra ou venda para MGLU3.SA no último pregão.
+======================================================================
+
+[10/10] Processando B3SA3.SA
+----------------------------------------------------------------------
+Analisando o ativo: B3SA3.SA...
+
+Últimos 10 dias:
+Price       Close  Compra  Venda
+Date                            
+2025-10-27  12.53   False  False
+2025-10-28  12.63   False  False
+2025-10-29  12.64   False  False
+2025-10-30  12.60   False  False
+2025-10-31  12.66   False  False
+2025-11-03  12.84   False  False
+2025-11-04  12.84   False  False
+2025-11-05  13.20   False  False
+2025-11-06  13.10   False  False
+2025-11-07  12.98   False  False
+
+Nenhum novo sinal de compra ou venda para B3SA3.SA no último pregão.
+======================================================================
+
+======================================================================
+RESUMO DA ANÁLISE
+======================================================================
+PETR4.SA: Sucesso
+VALE3.SA: Sucesso
+ITUB4.SA: Sucesso
+BBDC4.SA: Sucesso
+ABEV3.SA: Sucesso
+BBAS3.SA: Sucesso
+WEGE3.SA: Sucesso
+RENT3.SA: Sucesso
+MGLU3.SA: Sucesso
+B3SA3.SA: Sucesso
+======================================================================
+
+Enviando relatório final por e-mail...
+
+📧 Enviando relatório final...
+✅ Relatório final enviado com sucesso para yurineves1934@gmail.com!
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+Iniciando análise de 10 ativos...
+======================================================================
+
+[1/10] Processando PETR4.SA
+----------------------------------------------------------------------
+Analisando o ativo: PETR4.SA...
+
+Últimos 10 dias:
+Price           Close  Compra  Venda
+Date                                
+2025-10-27  30.000000   False  False
+2025-10-28  29.990000   False  False
+2025-10-29  30.020000   False  False
+2025-10-30  29.889999   False  False
+2025-10-31  29.750000   False  False
+2025-11-03  30.100000   False  False
+2025-11-04  30.250000   False  False
+2025-11-05  30.850000   False  False
+2025-11-06  31.010000   False  False
+2025-11-07  32.180000   False  False
+
+Nenhum novo sinal de compra ou venda para PETR4.SA no último pregão.
+======================================================================
+
+[2/10] Processando VALE3.SA
+----------------------------------------------------------------------
+Analisando o ativo: VALE3.SA...
+
+Últimos 10 dias:
+Price           Close  Compra  Venda
+Date                                
+2025-10-27  61.660000   False  False
+2025-10-28  62.200001   False  False
+2025-10-29  63.330002   False  False
+2025-10-30  63.810001   False  False
+2025-10-31  65.260002   False  False
+2025-11-03  65.349998   False  False
+2025-11-04  64.620003   False  False
+2025-11-05  65.730003   False  False
+2025-11-06  65.500000   False  False
+2025-11-07  64.779999   False  False
+
+Nenhum novo sinal de compra ou venda para VALE3.SA no último pregão.
+======================================================================
+
+[3/10] Processando ITUB4.SA
+----------------------------------------------------------------------
+Analisando o ativo: ITUB4.SA...
+
+Últimos 10 dias:
+Price           Close  Compra  Venda
+Date                                
+2025-10-27  38.349998   False  False
+2025-10-28  38.480000   False  False
+2025-10-29  39.340000   False  False
+2025-10-30  39.290001   False  False
+2025-10-31  39.439999   False  False
+2025-11-03  40.080002   False  False
+2025-11-04  39.959999   False  False
+2025-11-05  40.130001   False  False
+2025-11-06  40.130001   False  False
+2025-11-07  40.169998   False  False
+
+Nenhum novo sinal de compra ou venda para ITUB4.SA no último pregão.
+======================================================================
+
+[4/10] Processando BBDC4.SA
+----------------------------------------------------------------------
+Analisando o ativo: BBDC4.SA...
+
+Últimos 10 dias:
+Price           Close  Compra  Venda
+Date                                
+2025-10-27  18.230000   False  False
+2025-10-28  18.240000   False  False
+2025-10-29  18.830000   False  False
+2025-10-30  18.100000   False  False
+2025-10-31  18.160000   False  False
+2025-11-03  18.360001   False  False
+2025-11-04  18.400000   False  False
+2025-11-05  18.790001   False  False
+2025-11-06  18.709999   False  False
+2025-11-07  18.730000   False  False
+
+Nenhum novo sinal de compra ou venda para BBDC4.SA no último pregão.
+======================================================================
+
+[5/10] Processando ABEV3.SA
+----------------------------------------------------------------------
+Analisando o ativo: ABEV3.SA...
+
+Últimos 10 dias:
+Price       Close  Compra  Venda
+Date                            
+2025-10-27  12.15   False  False
+2025-10-28  12.03   False  False
+2025-10-29  12.03   False  False
+2025-10-30  12.59   False  False
+2025-10-31  12.71   False  False
+2025-11-03  12.91   False  False
+2025-11-04  13.16   False  False
+2025-11-05  13.18   False  False
+2025-11-06  13.08   False  False
+2025-11-07  13.12   False  False
+
+Nenhum novo sinal de compra ou venda para ABEV3.SA no último pregão.
+======================================================================
+
+[6/10] Processando BBAS3.SA
+----------------------------------------------------------------------
+Analisando o ativo: BBAS3.SA...
+
+Últimos 10 dias:
+Price           Close  Compra  Venda
+Date                                
+2025-10-27  20.850000   False  False
+2025-10-28  20.959999   False  False
+2025-10-29  21.219999   False  False
+2025-10-30  21.629999   False  False
+2025-10-31  21.900000   False  False
+2025-11-03  22.080000   False  False
+2025-11-04  22.270000   False  False
+2025-11-05  22.610001   False  False
+2025-11-06  22.860001   False  False
+2025-11-07  22.889999   False  False
+
+Nenhum novo sinal de compra ou venda para BBAS3.SA no último pregão.
+======================================================================
+
+[7/10] Processando WEGE3.SA
+----------------------------------------------------------------------
+Analisando o ativo: WEGE3.SA...
+
+Últimos 10 dias:
+Price           Close  Compra  Venda
+Date                                
+2025-10-27  41.669998   False  False
+2025-10-28  42.320000   False  False
+2025-10-29  42.049999   False  False
+2025-10-30  41.450001   False  False
+2025-10-31  42.099998   False  False
+2025-11-03  42.799999   False  False
+2025-11-04  42.750000   False  False
+2025-11-05  43.509998   False  False
+2025-11-06  43.910000   False  False
+2025-11-07  45.000000   False  False
+
+Nenhum novo sinal de compra ou venda para WEGE3.SA no último pregão.
+======================================================================
+
+[8/10] Processando RENT3.SA
+----------------------------------------------------------------------
+Analisando o ativo: RENT3.SA...
+
+Últimos 10 dias:
+Price           Close  Compra  Venda
+Date                                
+2025-10-27  39.320000   False  False
+2025-10-28  39.169998   False  False
+2025-10-29  39.770000   False  False
+2025-10-30  39.240002   False  False
+2025-10-31  39.439999   False  False
+2025-11-03  39.650002   False  False
+2025-11-04  40.900002   False  False
+2025-11-05  41.570000   False  False
+2025-11-06  41.150002   False  False
+2025-11-07  40.889999   False  False
+
+Nenhum novo sinal de compra ou venda para RENT3.SA no último pregão.
+======================================================================
+
+[9/10] Processando MGLU3.SA
+----------------------------------------------------------------------
+Analisando o ativo: MGLU3.SA...
+
+Últimos 10 dias:
+Price       Close  Compra  Venda
+Date                            
+2025-10-27   8.52   False  False
+2025-10-28   8.66   False  False
+2025-10-29   8.53   False  False
+2025-10-30   8.50   False  False
+2025-10-31   8.47   False  False
+2025-11-03   8.34   False  False
+2025-11-04   8.38   False  False
+2025-11-05   8.74   False  False
+2025-11-06   7.99   False  False
+2025-11-07   8.14   False  False
+
+Nenhum novo sinal de compra ou venda para MGLU3.SA no último pregão.
+======================================================================
+
+[10/10] Processando B3SA3.SA
+----------------------------------------------------------------------
+Analisando o ativo: B3SA3.SA...
+
+Últimos 10 dias:
+Price       Close  Compra  Venda
+Date                            
+2025-10-27  12.53   False  False
+2025-10-28  12.63   False  False
+2025-10-29  12.64   False  False
+2025-10-30  12.60   False  False
+2025-10-31  12.66   False  False
+2025-11-03  12.84   False  False
+2025-11-04  12.84   False  False
+2025-11-05  13.20   False  False
+2025-11-06  13.10   False  False
+2025-11-07  12.98   False  False
+
+Nenhum novo sinal de compra ou venda para B3SA3.SA no último pregão.
+======================================================================
+
+======================================================================
+RESUMO DA ANÁLISE
+======================================================================
+PETR4.SA: Sucesso
+VALE3.SA: Sucesso
+ITUB4.SA: Sucesso
+BBDC4.SA: Sucesso
+ABEV3.SA: Sucesso
+BBAS3.SA: Sucesso
+WEGE3.SA: Sucesso
+RENT3.SA: Sucesso
+MGLU3.SA: Sucesso
+B3SA3.SA: Sucesso
+======================================================================
+
+Enviando relatório final por e-mail...
+
+📧 Enviando relatório final...
+✅ Relatório final enviado com sucesso para yurineves1934@gmail.com!
