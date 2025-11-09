@@ -5,18 +5,6 @@ from datetime import datetime
 
 
 def enviar_alerta_consolidado(alertas_por_tipo):
-    """
-    Envia um único e-mail para cada tipo de alerta, consolidando múltiplos ativos.
-    
-    Args:
-        alertas_por_tipo (dict): Dicionário com estrutura:
-        {
-            'Compra': [(ticker, preco, dados_adicionais), ...],
-            'Venda': [(ticker, preco, dados_adicionais), ...],
-            'Lateral/Consolidação': [(ticker, preco, dados_adicionais), ...],
-            'Sinal Fraco/Aguardar': [(ticker, preco, dados_adicionais), ...]
-        }
-    """
     config = configparser.ConfigParser()
     config.read('config.ini')
     
@@ -85,17 +73,6 @@ def enviar_alerta_consolidado(alertas_por_tipo):
             
             corpo += "\n"
         
-        corpo += """━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-⚠️ AVISO IMPORTANTE
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-Este é um alerta automático baseado em análise técnica.
-Não é uma recomendação de investimento.
-Faça sua própria análise antes de tomar qualquer decisão.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-"""
-        
         msg = EmailMessage()
         msg['Subject'] = f"{emoji} {tipo.upper()}: {len(alertas)} Ativo(s) Detectado(s)"
         msg['From'] = email_remetente
@@ -124,15 +101,6 @@ Faça sua própria análise antes de tomar qualquer decisão.
 
 
 def enviar_relatorio_final(total_ativos, sinais_compra, sinais_venda, erros):
-    """
-    Envia um e-mail com o resumo completo da análise de todos os ativos.
-    
-    Args:
-        total_ativos (int): Total de ativos analisados
-        sinais_compra (list): Lista de tuplas (ticker, preco) com sinais de compra
-        sinais_venda (list): Lista de tuplas (ticker, preco) com sinais de venda
-        erros (list): Lista de tuplas (ticker, erro) com erros encontrados
-    """
     config = configparser.ConfigParser()
     config.read('config.ini')
     
@@ -185,15 +153,6 @@ def enviar_relatorio_final(total_ativos, sinais_compra, sinais_venda, erros):
         for ticker, erro in erros:
             corpo += f"❌ {ticker}: {erro}\n"
         corpo += "\n"
-    
-    corpo += """━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-✅ Análise concluída com sucesso!
-
-⚠️ Este é um relatório automático baseado em análise técnica.
-Não é uma recomendação de investimento.
-Faça sua própria análise antes de tomar qualquer decisão.
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-"""
     
     msg = EmailMessage()
     if sinais_compra or sinais_venda:

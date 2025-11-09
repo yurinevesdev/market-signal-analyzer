@@ -5,18 +5,7 @@ from alertas import enviar_alerta_consolidado, enviar_relatorio_final
 import time
 
 
-def recomendar_estrutura(score_compra, score_venda, pontos_forca_compra, pontos_forca_venda, volatilidade_perc, rsi, adx):
-    """
-    Recomenda uma estratégia de opções baseada no score, força do sinal, RSI e volatilidade percentual (ATR/Preço).
-    
-    volatilidade_perc: ATR como porcentagem do preço.
-    Limites sugeridos (ajuste conforme o mercado):
-    - Baixa volatilidade: < 1.5%
-    - Alta volatilidade: > 3.0%
-    
-    NOVA LÓGICA: Exige Score >= 5 E Força >= 3 para Compra/Venda de Opção a Seco (alto risco).
-    """
-    
+def recomendar_estrutura(score_compra, score_venda, pontos_forca_compra, pontos_forca_venda, volatilidade_perc, rsi, adx):    
     if (score_compra >= 5 and pontos_forca_compra >= 3 and score_compra > score_venda and
         volatilidade_perc > 3.0 and rsi > 65):
         return "Compra de CALL a seco (sinal MUITO forte)"
@@ -45,14 +34,6 @@ def recomendar_estrutura(score_compra, score_venda, pontos_forca_compra, pontos_
 
 
 def analisar_ativo(ticker, score_minimo=4, alertas_por_tipo=None):
-    """
-    Analisa um ativo e coleta os alertas no dicionário alertas_por_tipo.
-    
-    Args:
-        ticker: Código do ativo
-        score_minimo: Score mínimo para sinal
-        alertas_por_tipo: Dicionário para coletar alertas (passado por referência)
-    """
     print(f"Analisando o ativo: {ticker}...")
     dados = yf.download(ticker, period="1y", interval="1d", auto_adjust=False, progress=False) 
     
