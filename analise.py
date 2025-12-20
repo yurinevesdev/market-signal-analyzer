@@ -31,7 +31,6 @@ def carregar_dados_volatilidade():
                 if ticker not in volatilidade_por_ticker:
                     volatilidade_por_ticker[ticker] = {}
 
-                # Consolida todos os campos do JSON para o ticker
                 volatilidade_por_ticker[ticker].update(ativo)
 
         except FileNotFoundError:
@@ -45,14 +44,12 @@ def carregar_dados_volatilidade():
                 f"\n❌ ERRO: Ocorreu um erro inesperado ao carregar '{nome_arquivo}': {e}"
             )
 
-    # Carrega dados detalhados de opções, se houver
     try:
         with open("dados_opcoes.json", "r", encoding="utf-8") as f:
             dados_opcoes = json.load(f)
         for chave, dados_opcao in dados_opcoes.items():
             ticker_base = dados_opcao.get("ticker_base")
             if ticker_base and ticker_base in volatilidade_por_ticker:
-                # Adiciona um campo específico para detalhes da opção
                 if "opcoes_detalhadas" not in volatilidade_por_ticker[ticker_base]:
                     volatilidade_por_ticker[ticker_base]["opcoes_detalhadas"] = []
                 volatilidade_por_ticker[ticker_base]["opcoes_detalhadas"].append(
@@ -401,7 +398,6 @@ def analisar_ativo(ticker, volatilidade_data, score_minimo=4, alertas_por_tipo=N
         "estrutura": tipo_estrutura,
     }
 
-    # Adiciona dados de volatilidade do JSON
     ticker_limpo = ticker.replace(".SA", "")
     vol_info = volatilidade_data.get(ticker_limpo)
     if vol_info:
@@ -499,7 +495,6 @@ def analisar_multiplos_ativos(lista_tickers, score_minimo=4):
         "Sinal Fraco/Aguardar": [],
     }
 
-    # Carrega os dados de volatilidade uma vez
     volatilidade_data = carregar_dados_volatilidade()
 
     for i, ticker in enumerate(lista_tickers, 1):
@@ -507,7 +502,6 @@ def analisar_multiplos_ativos(lista_tickers, score_minimo=4):
         print("-" * 70)
 
         try:
-            # Passa os dados de volatilidade para a função de análise
             resultado = analisar_ativo(
                 ticker, volatilidade_data, score_minimo, alertas_por_tipo
             )
