@@ -2,74 +2,24 @@ import smtplib
 from email.message import EmailMessage
 import configparser
 from datetime import datetime
-import json
-
-
-def carregar_dados_volatilidade():
-    """
-    Carrega os dados de volatilidade dos arquivos JSON.
-    Cria um dicionário unificado com ticker como chave.
-    """
-    volatilidade_por_ticker = {}
-    arquivos_json = ["ativos_por_iv_rank.json", "ativos_por_iv_percentil.json"]
-
-    for nome_arquivo in arquivos_json:
-        try:
-            with open(nome_arquivo, "r", encoding="utf-8") as f:
-                dados = json.load(f)
-
-            for ativo in dados.get("ativos", []):
-                ticker = ativo.get("ticker")
-                if not ticker:
-                    continue
-
-                # Se o ticker ainda não está no dicionário, adicione-o
-                if ticker not in volatilidade_por_ticker:
-                    volatilidade_por_ticker[ticker] = {
-                        "iv_rank": "N/A",
-                        "iv_percentil": "N/A",
-                    }
-
-                # Atualize com os dados encontrados neste arquivo
-                if "iv_rank" in ativo and ativo["iv_rank"] is not None:
-                    volatilidade_por_ticker[ticker]["iv_rank"] = ativo["iv_rank"]
-                if "iv_percentil" in ativo and ativo["iv_percentil"] is not None:
-                    volatilidade_por_ticker[ticker]["iv_percentil"] = ativo[
-                        "iv_percentil"
-                    ]
-
-        except FileNotFoundError:
-            print(
-                f"\n⚠️ AVISO: Arquivo de volatilidade '{nome_arquivo}' não encontrado. Alguns dados podem estar ausentes."
-            )
-            continue  # Continua para o próximo arquivo
-        except json.JSONDecodeError:
-            print(
-                f"\n❌ ERRO: Falha ao decodificar o arquivo JSON '{nome_arquivo}'. Verifique seu formato."
-            )
-            continue
-        except Exception as e:
-            print(
-                f"\n❌ ERRO: Ocorreu um erro inesperado ao carregar '{nome_arquivo}': {e}"
-            )
-            continue
-
-    return volatilidade_por_ticker
 
 
 def enviar_alerta_consolidado(alertas_por_tipo):
     """
     Envia e-mails consolidados por tipo de sinal (Compra, Venda, Lateral/Consolidação).
-    Busca credenciais no config.ini, carrega dados de volatilidade e utiliza smtplib para envio.
+    Busca credenciais no config.ini e utiliza smtplib para envio real.
     """
     config = configparser.ConfigParser()
     try:
+        # Lendo as credenciais de e-mail do arquivo de configuração
         config.read("config.ini")
         email_remetente = config.get("email", "remetente", fallback="")
         senha_app = config.get("email", "senha", fallback="")
         email_destinatario = config.get("email", "destinatario", fallback="")
     except Exception as e:
-        print(f"\n❌ ERRO: Falha ao ler 'config.ini'. Erro: {e}")
+        print(
+            f"\n❌ ERRO: Falha ao ler 'config.ini'. Certifique-se de que o arquivo existe e está formatado corretamente. Erro: {e}"
+        )
         return False
 
     if (
@@ -78,8 +28,9 @@ def enviar_alerta_consolidado(alertas_por_tipo):
         or not email_destinatario
         or email_remetente == "seuemail@gmail.com"
     ):
+        print("\n⚠️ AVISO: A função de envio de e-mail não está configurada.")
         print(
-            "\n⚠️ AVISO: A função de envio de e-mail não está configurada em 'config.ini'."
+            "Verifique e preencha o arquivo 'config.ini' com seu e-mail, senha de app do Gmail e destinatário."
         )
         return False
 
@@ -92,17 +43,19 @@ def enviar_alerta_consolidado(alertas_por_tipo):
         "Sinal Fraco/Aguardar": "⚪",
     }
 
-    # Carrega os dados de volatilidade dos arquivos JSON
-    volatilidade_data = carregar_dados_volatilidade()
-
     total_enviados = 0
 
     for tipo, alertas in alertas_por_tipo.items():
-        if tipo not in ["Compra", "Venda", "Lateral/Consolidação"] or not alertas:
+        # Ignora tipos que não são destinados a alertas consolidados finais
+        if tipo not in ["Compra", "Venda", "Lateral/Consolidação"]:
+            continue
+
+        if not alertas:
             continue
 
         emoji = emojis.get(tipo, "⚪")
 
+        # Início do corpo do e-mail
         corpo = f"""{emoji} ALERTAS DE {tipo.upper()} - {len(alertas)} ATIVO(S)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 📋 RESUMO
@@ -118,17 +71,19 @@ def enviar_alerta_consolidado(alertas_por_tipo):
 
 """
 
+        # Detalhamento de cada ativo no corpo do e-mail
         for i, (ticker, preco, dados_adicionais) in enumerate(alertas, 1):
             ticker_limpo = ticker.replace(".SA", "")
             corpo += f"\n{i}. {ticker_limpo} - R$ {preco:,.2f}\n"
             corpo += "   " + "─" * 50 + "\n"
 
             if dados_adicionais:
-                # Adiciona dados técnicos
                 if "RSI" in dados_adicionais:
                     corpo += f"   RSI (14): {dados_adicionais['RSI']:.2f}\n"
+
                 if "ADX" in dados_adicionais:
                     corpo += f"   ADX (Força): {dados_adicionais['ADX']:.2f}\n"
+
                 if "MME21" in dados_adicionais:
                     corpo += f"   MME 21: R$ {dados_adicionais['MME21']:,.2f}\n"
                 if "MME50" in dados_adicionais:
@@ -140,16 +95,17 @@ def enviar_alerta_consolidado(alertas_por_tipo):
                 if "Volatilidade_%" in dados_adicionais:
                     corpo += f"   Volatilidade: {dados_adicionais['Volatilidade_%']}\n"
 
-                # Adiciona dados de volatilidade do JSON
-                vol_info = volatilidade_data.get(ticker_limpo)
-                if vol_info:
+                # Adiciona dados de volatilidade se existirem
+                if "iv_rank" in dados_adicionais or "iv_percentil" in dados_adicionais:
                     corpo += "\n   --- Volatilidade Implícita ---\n"
-                    if vol_info.get("iv_rank") != "N/A":
-                        corpo += f"   IV Rank: {vol_info['iv_rank']}\n"
-                    if vol_info.get("iv_percentil") != "N/A":
-                        corpo += f"   IV Percentil: {vol_info['iv_percentil']}\n"
+                    if "iv_rank" in dados_adicionais:
+                        corpo += f"   IV Rank: {dados_adicionais['iv_rank']}\n"
+                    if "iv_percentil" in dados_adicionais:
+                        corpo += (
+                            f"   IV Percentil: {dados_adicionais['iv_percentil']}\n"
+                        )
 
-                # Adiciona estrutura e strikes
+                # Estrutura e Strikes/Range
                 corpo += "\n"
                 if "estrutura" in dados_adicionais:
                     corpo += f"   💡 Estrutura: {dados_adicionais['estrutura']}\n"
@@ -160,6 +116,7 @@ def enviar_alerta_consolidado(alertas_por_tipo):
 
             corpo += "\n"
 
+        # Configuração e envio do e-mail
         msg = EmailMessage()
         msg["Subject"] = f"{emoji} {tipo.upper()}: {len(alertas)} Ativo(s) Detectado(s)"
         msg["From"] = email_remetente
