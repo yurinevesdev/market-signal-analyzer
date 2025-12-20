@@ -1,6 +1,1437 @@
 {
-  "data_extracao": "2025-12-20 00:15:49",
-  "total_ativos": 0,
+  "data_extracao": "2025-12-20 00:37:36",
+  "total_ativos": 143,
   "campo_ordenacao": "iv_rank",
-  "ativos": []
+  "ativos": [
+    {
+      "ticker": "RDOR3",
+      "descricao": "REDE D OR ON",
+      "preco": "R$41,41",
+      "variacao": "-1,089%",
+      "volatilidade_implicita": "60,02",
+      "iv_rank": "100,00",
+      "iv_percentil": "1,19",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/RDOR3"
+    },
+    {
+      "ticker": "ABEV3",
+      "descricao": "AMBEV S/A ON",
+      "preco": "R$13,25",
+      "variacao": "+0,15%",
+      "volatilidade_implicita": "56,53",
+      "iv_rank": "100,00",
+      "iv_percentil": "15,08",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/ABEV3"
+    },
+    {
+      "ticker": "CSNA3",
+      "descricao": "SID NACIONALON",
+      "preco": "R$9,28",
+      "variacao": "-3,233%",
+      "volatilidade_implicita": "79,57",
+      "iv_rank": "100,00",
+      "iv_percentil": "3,17",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/CSNA3"
+    },
+    {
+      "ticker": "MSFT34",
+      "descricao": "MICROSOFT DRN",
+      "preco": "R$111,61",
+      "variacao": "+0,099%",
+      "volatilidade_implicita": "16,97",
+      "iv_rank": "100,00",
+      "iv_percentil": "99,60",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/MSFT34"
+    },
+    {
+      "ticker": "ORVR3",
+      "descricao": "ORIZON ON",
+      "preco": "R$68,00",
+      "variacao": "-3,023%",
+      "volatilidade_implicita": "38,70",
+      "iv_rank": "85,66",
+      "iv_percentil": "N/A",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/ORVR3"
+    },
+    {
+      "ticker": "AXIA6",
+      "descricao": "AXIA ENERGIAPNB",
+      "preco": "R$66,34",
+      "variacao": "-0,015%",
+      "volatilidade_implicita": "24,43",
+      "iv_rank": "67,45",
+      "iv_percentil": "8,33",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/AXIA6"
+    },
+    {
+      "ticker": "CPLE5",
+      "descricao": "COPEL PNA",
+      "preco": "R$13,53",
+      "variacao": "-1,457%",
+      "volatilidade_implicita": "25,87",
+      "iv_rank": "66,04",
+      "iv_percentil": "9,52",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/CPLE5"
+    },
+    {
+      "ticker": "AZUL4",
+      "descricao": "AZUL PN",
+      "preco": "R$0,83",
+      "variacao": "+0%",
+      "volatilidade_implicita": "124,82",
+      "iv_rank": "59,47",
+      "iv_percentil": "85,32",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/AZUL4"
+    },
+    {
+      "ticker": "AGRO3",
+      "descricao": "BRASILAGRO ON",
+      "preco": "R$19,64",
+      "variacao": "-1,455%",
+      "volatilidade_implicita": "27,27",
+      "iv_rank": "59,45",
+      "iv_percentil": "N/A",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/AGRO3"
+    },
+    {
+      "ticker": "BPAC11",
+      "descricao": "BTGP BANCO UNT",
+      "preco": "R$51,76",
+      "variacao": "-1,107%",
+      "volatilidade_implicita": "30,92",
+      "iv_rank": "58,08",
+      "iv_percentil": "75,40",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/BPAC11"
+    },
+    {
+      "ticker": "SMFT3",
+      "descricao": "SMART FIT ON",
+      "preco": "R$23,36",
+      "variacao": "+2,098%",
+      "volatilidade_implicita": "34,39",
+      "iv_rank": "55,01",
+      "iv_percentil": "36,11",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/SMFT3"
+    },
+    {
+      "ticker": "ISAE4",
+      "descricao": "ISA ENERGIA PN",
+      "preco": "R$26,85",
+      "variacao": "-0,666%",
+      "volatilidade_implicita": "17,26",
+      "iv_rank": "54,26",
+      "iv_percentil": "75,79",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/ISAE4"
+    },
+    {
+      "ticker": "ALUP11",
+      "descricao": "ALUPAR UNT",
+      "preco": "R$31,45",
+      "variacao": "-0,538%",
+      "volatilidade_implicita": "19,20",
+      "iv_rank": "47,97",
+      "iv_percentil": "90,08",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/ALUP11"
+    },
+    {
+      "ticker": "CPLE3",
+      "descricao": "COPEL ON",
+      "preco": "R$12,86",
+      "variacao": "-1,077%",
+      "volatilidade_implicita": "27,01",
+      "iv_rank": "47,54",
+      "iv_percentil": "95,24",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/CPLE3"
+    },
+    {
+      "ticker": "XPBR31",
+      "descricao": "XP INC DR1",
+      "preco": "R$88,95",
+      "variacao": "+2,112%",
+      "volatilidade_implicita": "34,27",
+      "iv_rank": "47,21",
+      "iv_percentil": "62,30",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/XPBR31"
+    },
+    {
+      "ticker": "TOTS3",
+      "descricao": "TOTVS ON",
+      "preco": "R$43,50",
+      "variacao": "-2,049%",
+      "volatilidade_implicita": "29,12",
+      "iv_rank": "46,22",
+      "iv_percentil": "39,68",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/TOTS3"
+    },
+    {
+      "ticker": "VAMO3",
+      "descricao": "VAMOS ON",
+      "preco": "R$3,25",
+      "variacao": "+2,188%",
+      "volatilidade_implicita": "51,66",
+      "iv_rank": "45,89",
+      "iv_percentil": "55,95",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/VAMO3"
+    },
+    {
+      "ticker": "KLBN11",
+      "descricao": "KLABIN S/A UNT",
+      "preco": "R$18,40",
+      "variacao": "-1,022%",
+      "volatilidade_implicita": "23,29",
+      "iv_rank": "45,62",
+      "iv_percentil": "47,62",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/KLBN11"
+    },
+    {
+      "ticker": "KEPL3",
+      "descricao": "KEPLER WEBERON",
+      "preco": "R$9,57",
+      "variacao": "+0,314%",
+      "volatilidade_implicita": "40,68",
+      "iv_rank": "45,19",
+      "iv_percentil": "92,86",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/KEPL3"
+    },
+    {
+      "ticker": "PSSA3",
+      "descricao": "PORTO SEGUROON",
+      "preco": "R$46,45",
+      "variacao": "-2,252%",
+      "volatilidade_implicita": "20,91",
+      "iv_rank": "44,52",
+      "iv_percentil": "8,33",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/PSSA3"
+    },
+    {
+      "ticker": "BOVV11",
+      "descricao": "IT NOW IBOV CI",
+      "preco": "R$162,70",
+      "variacao": "+0,259%",
+      "volatilidade_implicita": "18,53",
+      "iv_rank": "44,25",
+      "iv_percentil": "86,51",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/BOVV11"
+    },
+    {
+      "ticker": "SAPR11",
+      "descricao": "SANEPAR UNT",
+      "preco": "R$38,81",
+      "variacao": "+2,862%",
+      "volatilidade_implicita": "21,17",
+      "iv_rank": "44,19",
+      "iv_percentil": "30,56",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/SAPR11"
+    },
+    {
+      "ticker": "EVEN3",
+      "descricao": "EVEN ON",
+      "preco": "R$7,67",
+      "variacao": "-0,26%",
+      "volatilidade_implicita": "36,88",
+      "iv_rank": "43,17",
+      "iv_percentil": "38,49",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/EVEN3"
+    },
+    {
+      "ticker": "INTB3",
+      "descricao": "INTELBRAS ON",
+      "preco": "R$11,76",
+      "variacao": "-1,259%",
+      "volatilidade_implicita": "29,47",
+      "iv_rank": "41,28",
+      "iv_percentil": "23,02",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/INTB3"
+    },
+    {
+      "ticker": "RAIL3",
+      "descricao": "RUMO S.A. ON",
+      "preco": "R$14,45",
+      "variacao": "-1,365%",
+      "volatilidade_implicita": "32,28",
+      "iv_rank": "41,04",
+      "iv_percentil": "40,08",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/RAIL3"
+    },
+    {
+      "ticker": "TUPY3",
+      "descricao": "TUPY ON",
+      "preco": "R$12,10",
+      "variacao": "-1,945%",
+      "volatilidade_implicita": "30,49",
+      "iv_rank": "40,76",
+      "iv_percentil": "40,87",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/TUPY3"
+    },
+    {
+      "ticker": "BBDC3",
+      "descricao": "BRADESCO ON",
+      "preco": "R$15,86",
+      "variacao": "+0,891%",
+      "volatilidade_implicita": "24,15",
+      "iv_rank": "40,70",
+      "iv_percentil": "30,56",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/BBDC3"
+    },
+    {
+      "ticker": "LEVE3",
+      "descricao": "METAL LEVE ON",
+      "preco": "R$33,33",
+      "variacao": "-1,42%",
+      "volatilidade_implicita": "18,72",
+      "iv_rank": "40,10",
+      "iv_percentil": "68,25",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/LEVE3"
+    },
+    {
+      "ticker": "TAEE11",
+      "descricao": "TAESA UNT",
+      "preco": "R$41,16",
+      "variacao": "+2,033%",
+      "volatilidade_implicita": "20,01",
+      "iv_rank": "39,39",
+      "iv_percentil": "3,57",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/TAEE11"
+    },
+    {
+      "ticker": "UNIP6",
+      "descricao": "UNIPAR PNB",
+      "preco": "R$57,09",
+      "variacao": "+2,056%",
+      "volatilidade_implicita": "25,02",
+      "iv_rank": "38,39",
+      "iv_percentil": "65,48",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/UNIP6"
+    },
+    {
+      "ticker": "RECV3",
+      "descricao": "PETRORECSA ON",
+      "preco": "R$10,72",
+      "variacao": "-0,649%",
+      "volatilidade_implicita": "28,68",
+      "iv_rank": "38,21",
+      "iv_percentil": "65,48",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/RECV3"
+    },
+    {
+      "ticker": "DXCO3",
+      "descricao": "DEXCO ON",
+      "preco": "R$5,60",
+      "variacao": "+6,667%",
+      "volatilidade_implicita": "35,34",
+      "iv_rank": "37,98",
+      "iv_percentil": "8,33",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/DXCO3"
+    },
+    {
+      "ticker": "JHSF3",
+      "descricao": "JHSF PART ON",
+      "preco": "R$7,82",
+      "variacao": "+1,691%",
+      "volatilidade_implicita": "28,46",
+      "iv_rank": "37,23",
+      "iv_percentil": "89,29",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/JHSF3"
+    },
+    {
+      "ticker": "VIVT3",
+      "descricao": "TELEF BRASILON",
+      "preco": "R$32,90",
+      "variacao": "-0,03%",
+      "volatilidade_implicita": "20,80",
+      "iv_rank": "35,53",
+      "iv_percentil": "34,13",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/VIVT3"
+    },
+    {
+      "ticker": "MILS3",
+      "descricao": "MILLS ON",
+      "preco": "R$13,26",
+      "variacao": "-0,749%",
+      "volatilidade_implicita": "23,52",
+      "iv_rank": "33,96",
+      "iv_percentil": "26,98",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/MILS3"
+    },
+    {
+      "ticker": "BHIA3",
+      "descricao": "CASAS BAHIA ON",
+      "preco": "R$3,24",
+      "variacao": "+0,31%",
+      "volatilidade_implicita": "72,73",
+      "iv_rank": "33,67",
+      "iv_percentil": "23,02",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/BHIA3"
+    },
+    {
+      "ticker": "FLRY3",
+      "descricao": "FLEURY ON",
+      "preco": "R$14,52",
+      "variacao": "-1,224%",
+      "volatilidade_implicita": "28,11",
+      "iv_rank": "33,63",
+      "iv_percentil": "78,57",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/FLRY3"
+    },
+    {
+      "ticker": "EQTL3",
+      "descricao": "EQUATORIAL ON",
+      "preco": "R$38,69",
+      "variacao": "+0,363%",
+      "volatilidade_implicita": "25,47",
+      "iv_rank": "33,47",
+      "iv_percentil": "56,75",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/EQTL3"
+    },
+    {
+      "ticker": "RANI3",
+      "descricao": "IRANI ON",
+      "preco": "R$8,51",
+      "variacao": "-1,618%",
+      "volatilidade_implicita": "22,91",
+      "iv_rank": "32,73",
+      "iv_percentil": "11,90",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/RANI3"
+    },
+    {
+      "ticker": "SMAL11",
+      "descricao": "ISHARES SMALCI",
+      "preco": "R$110,39",
+      "variacao": "+0,209%",
+      "volatilidade_implicita": "20,99",
+      "iv_rank": "32,58",
+      "iv_percentil": "70,24",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/SMAL11"
+    },
+    {
+      "ticker": "RAPT4",
+      "descricao": "RANDON PART PN",
+      "preco": "R$5,54",
+      "variacao": "-1,248%",
+      "volatilidade_implicita": "34,88",
+      "iv_rank": "32,57",
+      "iv_percentil": "64,29",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/RAPT4"
+    },
+    {
+      "ticker": "ROMI3",
+      "descricao": "ROMI ON",
+      "preco": "R$8,04",
+      "variacao": "-0,741%",
+      "volatilidade_implicita": "21,46",
+      "iv_rank": "32,37",
+      "iv_percentil": "1,59",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/ROMI3"
+    },
+    {
+      "ticker": "GMAT3",
+      "descricao": "GRUPO MATEUSON",
+      "preco": "R$4,43",
+      "variacao": "-4,32%",
+      "volatilidade_implicita": "42,29",
+      "iv_rank": "32,30",
+      "iv_percentil": "83,73",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/GMAT3"
+    },
+    {
+      "ticker": "HBOR3",
+      "descricao": "HELBOR ON",
+      "preco": "R$2,42",
+      "variacao": "-1,224%",
+      "volatilidade_implicita": "56,76",
+      "iv_rank": "32,19",
+      "iv_percentil": "25,79",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/HBOR3"
+    },
+    {
+      "ticker": "SBSP3",
+      "descricao": "SABESP ON",
+      "preco": "R$136,05",
+      "variacao": "+0,547%",
+      "volatilidade_implicita": "23,24",
+      "iv_rank": "31,68",
+      "iv_percentil": "63,89",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/SBSP3"
+    },
+    {
+      "ticker": "UGPA3",
+      "descricao": "ULTRAPAR ON",
+      "preco": "R$20,59",
+      "variacao": "+1,229%",
+      "volatilidade_implicita": "34,85",
+      "iv_rank": "30,72",
+      "iv_percentil": "55,16",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/UGPA3"
+    },
+    {
+      "ticker": "JBSS32",
+      "descricao": "JBS N.V. DR2",
+      "preco": "R$78,87",
+      "variacao": "+0,305%",
+      "volatilidade_implicita": "26,53",
+      "iv_rank": "30,67",
+      "iv_percentil": "14,29",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/JBSS32"
+    },
+    {
+      "ticker": "CXSE3",
+      "descricao": "CAIXA SEGURION",
+      "preco": "R$15,84",
+      "variacao": "+0,444%",
+      "volatilidade_implicita": "15,55",
+      "iv_rank": "30,49",
+      "iv_percentil": "68,25",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/CXSE3"
+    },
+    {
+      "ticker": "ALOS3",
+      "descricao": "ALLOS ON",
+      "preco": "R$28,00",
+      "variacao": "+0,358%",
+      "volatilidade_implicita": "23,62",
+      "iv_rank": "30,06",
+      "iv_percentil": "28,97",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/ALOS3"
+    },
+    {
+      "ticker": "NVDC34",
+      "descricao": "NVIDIA CORP DRN",
+      "preco": "R$20,83",
+      "variacao": "+4,516%",
+      "volatilidade_implicita": "41,90",
+      "iv_rank": "29,96",
+      "iv_percentil": "77,78",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/NVDC34"
+    },
+    {
+      "ticker": "POMO4",
+      "descricao": "MARCOPOLO PN",
+      "preco": "R$6,08",
+      "variacao": "+0,33%",
+      "volatilidade_implicita": "31,87",
+      "iv_rank": "29,83",
+      "iv_percentil": "30,56",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/POMO4"
+    },
+    {
+      "ticker": "AURE3",
+      "descricao": "AUREN ON",
+      "preco": "R$11,91",
+      "variacao": "-1,407%",
+      "volatilidade_implicita": "22,54",
+      "iv_rank": "29,69",
+      "iv_percentil": "75,40",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/AURE3"
+    },
+    {
+      "ticker": "BRAV3",
+      "descricao": "BRAVA ON",
+      "preco": "R$15,39",
+      "variacao": "-0,71%",
+      "volatilidade_implicita": "38,67",
+      "iv_rank": "29,40",
+      "iv_percentil": "32,54",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/BRAV3"
+    },
+    {
+      "ticker": "CURY3",
+      "descricao": "CURY S/A ON",
+      "preco": "R$32,17",
+      "variacao": "+0,91%",
+      "volatilidade_implicita": "32,41",
+      "iv_rank": "29,28",
+      "iv_percentil": "35,32",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/CURY3"
+    },
+    {
+      "ticker": "HYPE3",
+      "descricao": "HYPERA ON",
+      "preco": "R$23,24",
+      "variacao": "+3,843%",
+      "volatilidade_implicita": "36,02",
+      "iv_rank": "29,24",
+      "iv_percentil": "25,00",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/HYPE3"
+    },
+    {
+      "ticker": "MYPK3",
+      "descricao": "IOCHP-MAXIONON",
+      "preco": "R$10,11",
+      "variacao": "+1,813%",
+      "volatilidade_implicita": "25,23",
+      "iv_rank": "29,19",
+      "iv_percentil": "11,11",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/MYPK3"
+    },
+    {
+      "ticker": "TTEN3",
+      "descricao": "3TENTOS ON",
+      "preco": "R$16,40",
+      "variacao": "+0,675%",
+      "volatilidade_implicita": "20,85",
+      "iv_rank": "28,71",
+      "iv_percentil": "34,13",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/TTEN3"
+    },
+    {
+      "ticker": "QUAL3",
+      "descricao": "QUALICORP ON",
+      "preco": "R$2,18",
+      "variacao": "+1,395%",
+      "volatilidade_implicita": "49,07",
+      "iv_rank": "28,46",
+      "iv_percentil": "10,32",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/QUAL3"
+    },
+    {
+      "ticker": "MOTV3",
+      "descricao": "MOTIVA SA ON",
+      "preco": "R$15,13",
+      "variacao": "+0,867%",
+      "volatilidade_implicita": "24,52",
+      "iv_rank": "27,98",
+      "iv_percentil": "34,52",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/MOTV3"
+    },
+    {
+      "ticker": "AXIA3",
+      "descricao": "AXIA ENERGIAON",
+      "preco": "R$62,75",
+      "variacao": "+0,658%",
+      "volatilidade_implicita": "26,66",
+      "iv_rank": "27,90",
+      "iv_percentil": "6,75",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/AXIA3"
+    },
+    {
+      "ticker": "ALPA4",
+      "descricao": "ALPARGATAS PN",
+      "preco": "R$11,90",
+      "variacao": "+1,019%",
+      "volatilidade_implicita": "36,38",
+      "iv_rank": "27,28",
+      "iv_percentil": "14,68",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/ALPA4"
+    },
+    {
+      "ticker": "HAPV3",
+      "descricao": "HAPVIDA ON",
+      "preco": "R$14,17",
+      "variacao": "-0,422%",
+      "volatilidade_implicita": "50,37",
+      "iv_rank": "26,81",
+      "iv_percentil": "57,54",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/HAPV3"
+    },
+    {
+      "ticker": "VIVA3",
+      "descricao": "VIVARA S.A. ON",
+      "preco": "R$33,71",
+      "variacao": "+1,353%",
+      "volatilidade_implicita": "33,69",
+      "iv_rank": "26,48",
+      "iv_percentil": "28,17",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/VIVA3"
+    },
+    {
+      "ticker": "DIRR3",
+      "descricao": "DIRECIONAL ON",
+      "preco": "R$13,80",
+      "variacao": "-0,505%",
+      "volatilidade_implicita": "29,38",
+      "iv_rank": "26,35",
+      "iv_percentil": "55,16",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/DIRR3"
+    },
+    {
+      "ticker": "VULC3",
+      "descricao": "VULCABRAS ON",
+      "preco": "R$20,35",
+      "variacao": "+1,193%",
+      "volatilidade_implicita": "20,66",
+      "iv_rank": "25,31",
+      "iv_percentil": "10,71",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/VULC3"
+    },
+    {
+      "ticker": "TEND3",
+      "descricao": "TENDA ON",
+      "preco": "R$23,80",
+      "variacao": "+0,464%",
+      "volatilidade_implicita": "40,01",
+      "iv_rank": "24,99",
+      "iv_percentil": "50,00",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/TEND3"
+    },
+    {
+      "ticker": "LJQQ3",
+      "descricao": "QUERO-QUERO ON",
+      "preco": "R$2,13",
+      "variacao": "+2,899%",
+      "volatilidade_implicita": "51,00",
+      "iv_rank": "24,78",
+      "iv_percentil": "16,67",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/LJQQ3"
+    },
+    {
+      "ticker": "TIMS3",
+      "descricao": "TIM ON",
+      "preco": "R$22,79",
+      "variacao": "+0,352%",
+      "volatilidade_implicita": "23,49",
+      "iv_rank": "24,75",
+      "iv_percentil": "40,48",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/TIMS3"
+    },
+    {
+      "ticker": "PNVL3",
+      "descricao": "DIMED ON",
+      "preco": "R$11,47",
+      "variacao": "+0,88%",
+      "volatilidade_implicita": "27,16",
+      "iv_rank": "24,31",
+      "iv_percentil": "67,86",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/PNVL3"
+    },
+    {
+      "ticker": "MDIA3",
+      "descricao": "M.DIASBRANCOON",
+      "preco": "R$23,82",
+      "variacao": "-1,57%",
+      "volatilidade_implicita": "27,59",
+      "iv_rank": "24,25",
+      "iv_percentil": "21,43",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/MDIA3"
+    },
+    {
+      "ticker": "SEER3",
+      "descricao": "SER EDUCA ON",
+      "preco": "R$9,38",
+      "variacao": "-1,574%",
+      "volatilidade_implicita": "45,70",
+      "iv_rank": "24,08",
+      "iv_percentil": "30,95",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/SEER3"
+    },
+    {
+      "ticker": "IVVB11",
+      "descricao": "ISHARE SP500CI",
+      "preco": "R$424,09",
+      "variacao": "+0,854%",
+      "volatilidade_implicita": "12,36",
+      "iv_rank": "24,02",
+      "iv_percentil": "84,13",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/IVVB11"
+    },
+    {
+      "ticker": "PRIO3",
+      "descricao": "PETRORIO ON",
+      "preco": "R$38,00",
+      "variacao": "-1,427%",
+      "volatilidade_implicita": "25,68",
+      "iv_rank": "23,77",
+      "iv_percentil": "21,03",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/PRIO3"
+    },
+    {
+      "ticker": "RADL3",
+      "descricao": "RAIADROGASILON",
+      "preco": "R$23,25",
+      "variacao": "+0,78%",
+      "volatilidade_implicita": "32,96",
+      "iv_rank": "23,69",
+      "iv_percentil": "26,98",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/RADL3"
+    },
+    {
+      "ticker": "USIM5",
+      "descricao": "USIMINAS PNA",
+      "preco": "R$5,83",
+      "variacao": "-1,52%",
+      "volatilidade_implicita": "35,94",
+      "iv_rank": "23,30",
+      "iv_percentil": "40,48",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/USIM5"
+    },
+    {
+      "ticker": "CEAB3",
+      "descricao": "CEA MODAS ON",
+      "preco": "R$12,70",
+      "variacao": "-1,703%",
+      "volatilidade_implicita": "42,21",
+      "iv_rank": "22,95",
+      "iv_percentil": "8,33",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/CEAB3"
+    },
+    {
+      "ticker": "SMTO3",
+      "descricao": "SAO MARTINHOON",
+      "preco": "R$15,29",
+      "variacao": "-0,065%",
+      "volatilidade_implicita": "30,34",
+      "iv_rank": "22,87",
+      "iv_percentil": "N/A",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/SMTO3"
+    },
+    {
+      "ticker": "BMGB4",
+      "descricao": "BANCO BMG PN",
+      "preco": "R$4,74",
+      "variacao": "+3,493%",
+      "volatilidade_implicita": "18,30",
+      "iv_rank": "22,64",
+      "iv_percentil": "N/A",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/BMGB4"
+    },
+    {
+      "ticker": "CPFE3",
+      "descricao": "CPFL ENERGIAON",
+      "preco": "R$51,17",
+      "variacao": "+1,107%",
+      "volatilidade_implicita": "14,14",
+      "iv_rank": "22,58",
+      "iv_percentil": "40,87",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/CPFE3"
+    },
+    {
+      "ticker": "SIMH3",
+      "descricao": "SIMPAR ON",
+      "preco": "R$5,12",
+      "variacao": "-0,195%",
+      "volatilidade_implicita": "52,29",
+      "iv_rank": "22,31",
+      "iv_percentil": "42,06",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/SIMH3"
+    },
+    {
+      "ticker": "BRKM5",
+      "descricao": "BRASKEM PNA",
+      "preco": "R$7,80",
+      "variacao": "+6,557%",
+      "volatilidade_implicita": "51,36",
+      "iv_rank": "22,19",
+      "iv_percentil": "58,73",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/BRKM5"
+    },
+    {
+      "ticker": "B3SA3",
+      "descricao": "B3 ON",
+      "preco": "R$13,37",
+      "variacao": "+0,526%",
+      "volatilidade_implicita": "29,13",
+      "iv_rank": "21,41",
+      "iv_percentil": "36,11",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/B3SA3"
+    },
+    {
+      "ticker": "CAML3",
+      "descricao": "CAMIL ON",
+      "preco": "R$5,34",
+      "variacao": "-0,743%",
+      "volatilidade_implicita": "25,49",
+      "iv_rank": "21,00",
+      "iv_percentil": "53,57",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/CAML3"
+    },
+    {
+      "ticker": "SANB11",
+      "descricao": "SANTANDER BRUNT",
+      "preco": "R$32,08",
+      "variacao": "+0,094%",
+      "volatilidade_implicita": "22,97",
+      "iv_rank": "20,91",
+      "iv_percentil": "21,03",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/SANB11"
+    },
+    {
+      "ticker": "CMIN3",
+      "descricao": "CSNMINERACAOON",
+      "preco": "R$5,27",
+      "variacao": "-3,832%",
+      "volatilidade_implicita": "26,96",
+      "iv_rank": "20,86",
+      "iv_percentil": "25,40",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/CMIN3"
+    },
+    {
+      "ticker": "IGTI11",
+      "descricao": "IGUATEMI S.AUNT",
+      "preco": "R$24,84",
+      "variacao": "-0,68%",
+      "volatilidade_implicita": "26,59",
+      "iv_rank": "19,88",
+      "iv_percentil": "31,35",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/IGTI11"
+    },
+    {
+      "ticker": "WIZC3",
+      "descricao": "WIZ CO ON",
+      "preco": "R$9,04",
+      "variacao": "+2,611%",
+      "volatilidade_implicita": "23,20",
+      "iv_rank": "19,85",
+      "iv_percentil": "11,51",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/WIZC3"
+    },
+    {
+      "ticker": "MRVE3",
+      "descricao": "MRV ON",
+      "preco": "R$7,73",
+      "variacao": "-2,152%",
+      "volatilidade_implicita": "44,46",
+      "iv_rank": "19,42",
+      "iv_percentil": "42,46",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/MRVE3"
+    },
+    {
+      "ticker": "BRAP4",
+      "descricao": "BRADESPAR PN",
+      "preco": "R$20,23",
+      "variacao": "-0,197%",
+      "volatilidade_implicita": "23,13",
+      "iv_rank": "19,15",
+      "iv_percentil": "28,17",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/BRAP4"
+    },
+    {
+      "ticker": "CSMG3",
+      "descricao": "COPASA ON",
+      "preco": "R$43,40",
+      "variacao": "+1,142%",
+      "volatilidade_implicita": "22,67",
+      "iv_rank": "18,97",
+      "iv_percentil": "46,03",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/CSMG3"
+    },
+    {
+      "ticker": "LWSA3",
+      "descricao": "LWSA ON",
+      "preco": "R$4,24",
+      "variacao": "-0,469%",
+      "volatilidade_implicita": "42,92",
+      "iv_rank": "18,86",
+      "iv_percentil": "2,38",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/LWSA3"
+    },
+    {
+      "ticker": "VBBR3",
+      "descricao": "VIBRA ON",
+      "preco": "R$25,06",
+      "variacao": "+1,787%",
+      "volatilidade_implicita": "28,19",
+      "iv_rank": "18,66",
+      "iv_percentil": "7,14",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/VBBR3"
+    },
+    {
+      "ticker": "MULT3",
+      "descricao": "MULTIPLAN ON",
+      "preco": "R$27,44",
+      "variacao": "+0,55%",
+      "volatilidade_implicita": "23,14",
+      "iv_rank": "18,57",
+      "iv_percentil": "30,56",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/MULT3"
+    },
+    {
+      "ticker": "LREN3",
+      "descricao": "LOJAS RENNERON",
+      "preco": "R$13,50",
+      "variacao": "+0,897%",
+      "volatilidade_implicita": "35,61",
+      "iv_rank": "18,40",
+      "iv_percentil": "15,87",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/LREN3"
+    },
+    {
+      "ticker": "ENGI11",
+      "descricao": "ENERGISA UNT",
+      "preco": "R$47,27",
+      "variacao": "+0,064%",
+      "volatilidade_implicita": "27,87",
+      "iv_rank": "18,29",
+      "iv_percentil": "63,89",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/ENGI11"
+    },
+    {
+      "ticker": "RENT3",
+      "descricao": "LOCALIZA ON",
+      "preco": "R$43,99",
+      "variacao": "+1,547%",
+      "volatilidade_implicita": "34,09",
+      "iv_rank": "18,14",
+      "iv_percentil": "30,56",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/RENT3"
+    },
+    {
+      "ticker": "ROXO34",
+      "descricao": "NU HOLDINGS DRN",
+      "preco": "R$15,11",
+      "variacao": "+0,133%",
+      "volatilidade_implicita": "27,99",
+      "iv_rank": "18,03",
+      "iv_percentil": "50,40",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/ROXO34"
+    },
+    {
+      "ticker": "NATU3",
+      "descricao": "NATURA ON",
+      "preco": "R$7,33",
+      "variacao": "-2,656%",
+      "volatilidade_implicita": "38,15",
+      "iv_rank": "17,95",
+      "iv_percentil": "9,92",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/NATU3"
+    },
+    {
+      "ticker": "ENEV3",
+      "descricao": "ENEVA ON",
+      "preco": "R$19,93",
+      "variacao": "-0,20%",
+      "volatilidade_implicita": "29,35",
+      "iv_rank": "17,88",
+      "iv_percentil": "49,21",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/ENEV3"
+    },
+    {
+      "ticker": "SBFG3",
+      "descricao": "GRUPO SBF ON",
+      "preco": "R$12,82",
+      "variacao": "+1,989%",
+      "volatilidade_implicita": "43,07",
+      "iv_rank": "17,83",
+      "iv_percentil": "57,14",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/SBFG3"
+    },
+    {
+      "ticker": "ASAI3",
+      "descricao": "ASSAI ON",
+      "preco": "R$7,20",
+      "variacao": "+0%",
+      "volatilidade_implicita": "41,99",
+      "iv_rank": "17,48",
+      "iv_percentil": "34,92",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/ASAI3"
+    },
+    {
+      "ticker": "GRND3",
+      "descricao": "GRENDENE ON",
+      "preco": "R$5,28",
+      "variacao": "-0,752%",
+      "volatilidade_implicita": "22,07",
+      "iv_rank": "17,27",
+      "iv_percentil": "10,71",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/GRND3"
+    },
+    {
+      "ticker": "BRSR6",
+      "descricao": "BANRISUL PNB",
+      "preco": "R$14,87",
+      "variacao": "+0,541%",
+      "volatilidade_implicita": "19,02",
+      "iv_rank": "17,23",
+      "iv_percentil": "16,27",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/BRSR6"
+    },
+    {
+      "ticker": "IRBR3",
+      "descricao": "IRBBRASIL REON",
+      "preco": "R$53,29",
+      "variacao": "+2,54%",
+      "volatilidade_implicita": "28,75",
+      "iv_rank": "17,15",
+      "iv_percentil": "0,40",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/IRBR3"
+    },
+    {
+      "ticker": "PETZ3",
+      "descricao": "PETZ ON",
+      "preco": "R$4,20",
+      "variacao": "-3,67%",
+      "volatilidade_implicita": "41,93",
+      "iv_rank": "17,11",
+      "iv_percentil": "53,17",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/PETZ3"
+    },
+    {
+      "ticker": "BPAN4",
+      "descricao": "BANCO PAN PN",
+      "preco": "R$11,22",
+      "variacao": "+0,809%",
+      "volatilidade_implicita": "26,32",
+      "iv_rank": "15,98",
+      "iv_percentil": "13,10",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/BPAN4"
+    },
+    {
+      "ticker": "INBR32",
+      "descricao": "INTER CO DR2",
+      "preco": "R$44,65",
+      "variacao": "-0,557%",
+      "volatilidade_implicita": "23,44",
+      "iv_rank": "15,91",
+      "iv_percentil": "N/A",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/INBR32"
+    },
+    {
+      "ticker": "ITSA4",
+      "descricao": "ITAUSA PN",
+      "preco": "R$11,50",
+      "variacao": "+1,121%",
+      "volatilidade_implicita": "26,72",
+      "iv_rank": "15,67",
+      "iv_percentil": "97,22",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/ITSA4"
+    },
+    {
+      "ticker": "MGLU3",
+      "descricao": "MAGAZ LUIZA ON",
+      "preco": "R$9,25",
+      "variacao": "-1,07%",
+      "volatilidade_implicita": "55,13",
+      "iv_rank": "15,49",
+      "iv_percentil": "11,51",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/MGLU3"
+    },
+    {
+      "ticker": "BOVA11",
+      "descricao": "ISHARES BOVACI",
+      "preco": "R$155,80",
+      "variacao": "+0,607%",
+      "volatilidade_implicita": "14,46",
+      "iv_rank": "15,46",
+      "iv_percentil": "29,37",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/BOVA11"
+    },
+    {
+      "ticker": "PCAR3",
+      "descricao": "P.ACUCAR-CBDON",
+      "preco": "R$3,77",
+      "variacao": "-0,528%",
+      "volatilidade_implicita": "51,41",
+      "iv_rank": "15,35",
+      "iv_percentil": "34,13",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/PCAR3"
+    },
+    {
+      "ticker": "EGIE3",
+      "descricao": "ENGIE BRASILON",
+      "preco": "R$31,00",
+      "variacao": "+1,355%",
+      "volatilidade_implicita": "18,88",
+      "iv_rank": "15,32",
+      "iv_percentil": "34,13",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/EGIE3"
+    },
+    {
+      "ticker": "BBAS3",
+      "descricao": "BRASIL ON",
+      "preco": "R$21,42",
+      "variacao": "-0,787%",
+      "volatilidade_implicita": "23,40",
+      "iv_rank": "15,20",
+      "iv_percentil": "32,54",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/BBAS3"
+    },
+    {
+      "ticker": "ECOR3",
+      "descricao": "ECORODOVIAS ON",
+      "preco": "R$10,23",
+      "variacao": "+1,488%",
+      "volatilidade_implicita": "33,58",
+      "iv_rank": "15,10",
+      "iv_percentil": "11,11",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/ECOR3"
+    },
+    {
+      "ticker": "MOVI3",
+      "descricao": "MOVIDA ON",
+      "preco": "R$10,02",
+      "variacao": "-2,624%",
+      "volatilidade_implicita": "46,56",
+      "iv_rank": "14,16",
+      "iv_percentil": "16,67",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/MOVI3"
+    },
+    {
+      "ticker": "VLID3",
+      "descricao": "VALID ON",
+      "preco": "R$21,07",
+      "variacao": "-0,284%",
+      "volatilidade_implicita": "24,38",
+      "iv_rank": "14,14",
+      "iv_percentil": "13,10",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/VLID3"
+    },
+    {
+      "ticker": "WEGE3",
+      "descricao": "WEG ON",
+      "preco": "R$49,55",
+      "variacao": "-0,90%",
+      "volatilidade_implicita": "24,18",
+      "iv_rank": "13,84",
+      "iv_percentil": "28,17",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/WEGE3"
+    },
+    {
+      "ticker": "ABCB4",
+      "descricao": "ABC BRASIL PN",
+      "preco": "R$23,96",
+      "variacao": "-3,27%",
+      "volatilidade_implicita": "15,49",
+      "iv_rank": "13,51",
+      "iv_percentil": "1,19",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/ABCB4"
+    },
+    {
+      "ticker": "BBSE3",
+      "descricao": "BBSEGURIDADEON",
+      "preco": "R$35,29",
+      "variacao": "+0%",
+      "volatilidade_implicita": "16,61",
+      "iv_rank": "13,32",
+      "iv_percentil": "8,33",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/BBSE3"
+    },
+    {
+      "ticker": "CVCB3",
+      "descricao": "CVC BRASIL ON",
+      "preco": "R$2,01",
+      "variacao": "+3,608%",
+      "volatilidade_implicita": "42,54",
+      "iv_rank": "13,08",
+      "iv_percentil": "16,67",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/CVCB3"
+    },
+    {
+      "ticker": "PETR3",
+      "descricao": "PETROBRAS ON",
+      "preco": "R$32,60",
+      "variacao": "+0,462%",
+      "volatilidade_implicita": "23,47",
+      "iv_rank": "12,97",
+      "iv_percentil": "27,38",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/PETR3"
+    },
+    {
+      "ticker": "SOJA3",
+      "descricao": "BOA SAFRA ON",
+      "preco": "R$8,57",
+      "variacao": "+3,329%",
+      "volatilidade_implicita": "9,55",
+      "iv_rank": "12,91",
+      "iv_percentil": "56,35",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/SOJA3"
+    },
+    {
+      "ticker": "PETR4",
+      "descricao": "PETROBRAS PN",
+      "preco": "R$31,05",
+      "variacao": "+0,485%",
+      "volatilidade_implicita": "18,88",
+      "iv_rank": "12,62",
+      "iv_percentil": "11,51",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/PETR4"
+    },
+    {
+      "ticker": "SLCE3",
+      "descricao": "SLC AGRICOLAON",
+      "preco": "R$16,02",
+      "variacao": "-0,311%",
+      "volatilidade_implicita": "18,35",
+      "iv_rank": "12,45",
+      "iv_percentil": "25,79",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/SLCE3"
+    },
+    {
+      "ticker": "ITUB4",
+      "descricao": "ITAUUNIBANCOPN",
+      "preco": "R$39,38",
+      "variacao": "+0,536%",
+      "volatilidade_implicita": "21,82",
+      "iv_rank": "12,06",
+      "iv_percentil": "55,16",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/ITUB4"
+    },
+    {
+      "ticker": "YDUQ3",
+      "descricao": "YDUQS PART ON",
+      "preco": "R$12,33",
+      "variacao": "-0,805%",
+      "volatilidade_implicita": "41,64",
+      "iv_rank": "11,70",
+      "iv_percentil": "3,17",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/YDUQ3"
+    },
+    {
+      "ticker": "EZTC3",
+      "descricao": "EZTEC ON",
+      "preco": "R$13,59",
+      "variacao": "-2,581%",
+      "volatilidade_implicita": "37,04",
+      "iv_rank": "10,66",
+      "iv_percentil": "72,62",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/EZTC3"
+    },
+    {
+      "ticker": "CYRE3",
+      "descricao": "CYRELA REALTON",
+      "preco": "R$29,59",
+      "variacao": "-2,984%",
+      "volatilidade_implicita": "37,19",
+      "iv_rank": "10,35",
+      "iv_percentil": "59,52",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/CYRE3"
+    },
+    {
+      "ticker": "TSLA34",
+      "descricao": "TESLA INC DRN",
+      "preco": "R$83,11",
+      "variacao": "-0,18%",
+      "volatilidade_implicita": "23,82",
+      "iv_rank": "9,75",
+      "iv_percentil": "90,08",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/TSLA34"
+    },
+    {
+      "ticker": "CBAV3",
+      "descricao": "CBA ON",
+      "preco": "R$6,46",
+      "variacao": "-3,003%",
+      "volatilidade_implicita": "31,29",
+      "iv_rank": "9,70",
+      "iv_percentil": "86,90",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/CBAV3"
+    },
+    {
+      "ticker": "CSAN3",
+      "descricao": "COSAN ON",
+      "preco": "R$5,25",
+      "variacao": "-0,568%",
+      "volatilidade_implicita": "40,34",
+      "iv_rank": "9,46",
+      "iv_percentil": "66,27",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/CSAN3"
+    },
+    {
+      "ticker": "BEEF3",
+      "descricao": "MINERVA ON",
+      "preco": "R$5,64",
+      "variacao": "+0%",
+      "volatilidade_implicita": "34,47",
+      "iv_rank": "9,46",
+      "iv_percentil": "13,49",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/BEEF3"
+    },
+    {
+      "ticker": "GUAR3",
+      "descricao": "GUARARAPES ON",
+      "preco": "R$11,69",
+      "variacao": "+3,819%",
+      "volatilidade_implicita": "37,12",
+      "iv_rank": "9,42",
+      "iv_percentil": "23,81",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/GUAR3"
+    },
+    {
+      "ticker": "VALE3",
+      "descricao": "VALE ON",
+      "preco": "R$70,99",
+      "variacao": "+0,91%",
+      "volatilidade_implicita": "19,05",
+      "iv_rank": "8,80",
+      "iv_percentil": "28,17",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/VALE3"
+    },
+    {
+      "ticker": "BMOB3",
+      "descricao": "BEMOBI TECH ON",
+      "preco": "R$22,99",
+      "variacao": "-2,003%",
+      "volatilidade_implicita": "26,48",
+      "iv_rank": "8,61",
+      "iv_percentil": "17,46",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/BMOB3"
+    },
+    {
+      "ticker": "POSI3",
+      "descricao": "POSITIVO TECON",
+      "preco": "R$4,28",
+      "variacao": "-0,465%",
+      "volatilidade_implicita": "29,63",
+      "iv_rank": "5,59",
+      "iv_percentil": "1,98",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/POSI3"
+    },
+    {
+      "ticker": "ANIM3",
+      "descricao": "ANIMA ON",
+      "preco": "R$3,41",
+      "variacao": "-1,729%",
+      "volatilidade_implicita": "49,34",
+      "iv_rank": "5,28",
+      "iv_percentil": "73,02",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/ANIM3"
+    },
+    {
+      "ticker": "GGBR4",
+      "descricao": "GERDAU PN",
+      "preco": "R$20,25",
+      "variacao": "-0,881%",
+      "volatilidade_implicita": "24,02",
+      "iv_rank": "4,10",
+      "iv_percentil": "0,79",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/GGBR4"
+    },
+    {
+      "ticker": "CMIG4",
+      "descricao": "CEMIG PN",
+      "preco": "R$11,09",
+      "variacao": "+1,094%",
+      "volatilidade_implicita": "19,63",
+      "iv_rank": "3,63",
+      "iv_percentil": "10,32",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/CMIG4"
+    },
+    {
+      "ticker": "AZZA3",
+      "descricao": "AZZAS 2154 ON",
+      "preco": "R$24,83",
+      "variacao": "+1,762%",
+      "volatilidade_implicita": "30,91",
+      "iv_rank": "3,45",
+      "iv_percentil": "8,33",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/AZZA3"
+    },
+    {
+      "ticker": "EMBJ3",
+      "descricao": "EMBRAER ON",
+      "preco": "R$88,36",
+      "variacao": "+1,797%",
+      "volatilidade_implicita": "27,55",
+      "iv_rank": "2,21",
+      "iv_percentil": "1,19",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/EMBJ3"
+    },
+    {
+      "ticker": "COGN3",
+      "descricao": "COGNA ON ON",
+      "preco": "R$3,58",
+      "variacao": "+1,13%",
+      "volatilidade_implicita": "36,84",
+      "iv_rank": "1,88",
+      "iv_percentil": "11,11",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/COGN3"
+    },
+    {
+      "ticker": "TASA4",
+      "descricao": "TAURUS ARMASPN",
+      "preco": "R$4,66",
+      "variacao": "+0,866%",
+      "volatilidade_implicita": "7,53",
+      "iv_rank": "1,81",
+      "iv_percentil": "63,89",
+      "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/TASA4"
+    }
+  ]
 }
