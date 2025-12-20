@@ -143,8 +143,6 @@ def enviar_relatorio_final(total_ativos, sinais_compra, sinais_venda, erros):
     
     data_hora = datetime.now().strftime("%d/%m/%Y às %H:%M:%S")
     
-    # O cálculo deve incluir 'Lateral/Consolidação' na contagem de "sem sinal" se a lista não for passada para esta função.
-    # Assumindo que apenas sinais_compra, sinais_venda e erros são passados, e a lista de Lateral/Consolidação não.
     sem_sinal_e_sem_erro = total_ativos - len(sinais_compra) - len(sinais_venda) - len(erros)
 
     corpo = f"""📊 RELATÓRIO DE ANÁLISE TÉCNICA
