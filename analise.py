@@ -1,554 +1,555 @@
 import yfinance as yf
 import pandas as pd
 import ta
+import numpy as np
+from scipy import stats
 from alertas import enviar_alerta_consolidado, enviar_relatorio_final
 import time
 import json
 
+SCORE_MINIMO_OPERACAO = 70  
+CONFIANCA_MINIMA = 0.75     
+ADX_THRESHOLD_TENDENCIA = 25  
+IV_HV_RATIO_CARO = 1.2       
+IV_HV_RATIO_BARATO = 0.8     
 
 def carregar_dados_volatilidade():
-    """
-    Carrega e consolida dados de volatilidade de múltiplos arquivos JSON.
-    Retorna um dicionário com tickers como chaves.
-    """
-    volatilidade_por_ticker = {}
-    arquivos_json = [
-        "ativos_por_vi.json",
-        "ativos_por_iv_rank.json",
-        "ativos_por_iv_percentil.json",
-    ]
+    """Carrega dados consolidados do scraper."""
+    with open('dados_mercado_consolidado.json', 'r', encoding='utf-8') as f:
+        dados = json.load(f)
+        print(f"✅ Dados OpLab carregados: {len(dados)} tickers")
+        return dados
 
-    for nome_arquivo in arquivos_json:
-        try:
-            with open(nome_arquivo, "r", encoding="utf-8") as f:
-                dados = json.load(f)
-
-            for ativo in dados.get("ativos", []):
-                ticker = ativo.get("ticker")
-                if not ticker:
-                    continue
-
-                if ticker not in volatilidade_por_ticker:
-                    volatilidade_por_ticker[ticker] = {}
-
-                volatilidade_por_ticker[ticker].update(ativo)
-
-        except FileNotFoundError:
-            print(
-                f"\n⚠️ AVISO: Arquivo de volatilidade '{nome_arquivo}' não encontrado."
-            )
-        except json.JSONDecodeError:
-            print(f"\n❌ ERRO: Falha ao decodificar o arquivo JSON '{nome_arquivo}'.")
-        except Exception as e:
-            print(
-                f"\n❌ ERRO: Ocorreu um erro inesperado ao carregar '{nome_arquivo}': {e}"
-            )
-
+def converter_para_float(valor):
+    """Converte strings para float com tratamento robusto."""
+    if valor in ['N/A', '-', None, '']:
+        return None
     try:
-        with open("dados_opcoes.json", "r", encoding="utf-8") as f:
-            dados_opcoes = json.load(f)
-        for chave, dados_opcao in dados_opcoes.items():
-            ticker_base = dados_opcao.get("ticker_base")
-            if ticker_base and ticker_base in volatilidade_por_ticker:
-                if "opcoes_detalhadas" not in volatilidade_por_ticker[ticker_base]:
-                    volatilidade_por_ticker[ticker_base]["opcoes_detalhadas"] = []
-                volatilidade_por_ticker[ticker_base]["opcoes_detalhadas"].append(
-                    dados_opcao
-                )
-    except FileNotFoundError:
-        print(f"\n⚠️ AVISO: Arquivo 'dados_opcoes.json' não encontrado.")
-    except Exception as e:
-        print(f"\n❌ ERRO: Ocorreu um erro ao processar 'dados_opcoes.json': {e}")
-
-    return volatilidade_por_ticker
-
-
-MAX_DISTANCIA_OPCOES = 0.10
-
-
-def recomendar_estrutura(
-    score_compra,
-    score_venda,
-    pontos_forca_compra,
-    pontos_forca_venda,
-    volatilidade_perc,
-    rsi,
-    adx,
-    is_squeeze,
-):
-    """
-    Determina a estrutura de opções com base na força dos sinais e no ambiente de Volatilidade.
-
-    Melhoria: Correlaciona a estrutura com a volatilidade:
-    - VI Baixa (Proxies: ADX < 25, Squeeze, RSI 40-60) -> Compra a seco, THL (Comprar barato)
-    - VI Alta (Proxies: ATR alta, RSI > 70 ou < 30) -> Venda Coberta, Jade Lizard (Vender caro)
-    """
-
-    vol_alta_sinal = (volatilidade_perc > 2.5) or (rsi > 70 or rsi < 30)
-    vol_baixa_sinal = (adx < 25 and 40 < rsi < 60) or is_squeeze
-
-    if (
-        score_compra >= 5
-        and pontos_forca_compra >= 3
-        and score_compra > score_venda
-        and (not vol_alta_sinal and volatilidade_perc < 3.5)
-    ):
-        return "Compra de CALL a seco (VI baixa/normal, sinal MUITO forte)"
-
-    elif (
-        score_venda >= 5
-        and pontos_forca_venda >= 3
-        and score_venda > score_compra
-        and (not vol_alta_sinal and volatilidade_perc < 3.5)
-    ):
-        return "Compra de PUT a seco (VI baixa/normal, sinal MUITO forte)"
-
-    elif score_compra >= 4 and pontos_forca_compra >= 2 and score_compra > score_venda:
-        if vol_alta_sinal:
-            return "Venda Coberta de PUT (VI alta, prêmio gordo) ou Trava de Alta"
-        else:
-            return "Venda Coberta de PUT (ativo descontado)"
-
-    elif score_venda >= 4 and pontos_forca_venda >= 2 and score_venda > score_compra:
-        if vol_alta_sinal:
-            return "Venda Coberta de CALL (VI alta, prêmio gordo) ou Trava de Baixa"
-        else:
-            return "Venda Coberta de CALL (topo identificado)"
-
-    elif vol_alta_sinal and 40 < rsi < 60 and adx < 30:
-        return "JADE LIZARD / IRON CONDOR (VI alta, mercado neutro para vender prêmio)"
-
-    elif vol_baixa_sinal and adx < 25 and 40 < rsi < 60:
-        return "THL (Trava Horizontal de Linha) / COLLAR (Mercado Lateral ou Squeeze)"
-
-    else:
-        return "Sem recomendação para estrutura (baixo índice de confiança)"
-
-
-def analisar_ativo(ticker, volatilidade_data, score_minimo=4, alertas_por_tipo=None):
-    print(f"Analisando o ativo: {ticker}...")
-    dados = yf.download(
-        ticker, period="1y", interval="1d", auto_adjust=False, progress=False
-    )
-
-    if dados.empty:
-        print(f"❌ Não foi possível obter dados para {ticker}.")
+        return float(str(valor).replace(',', '.').replace('%', '').replace('R$', '').strip())
+    except:
         return None
 
-    if isinstance(dados.columns, pd.MultiIndex):
-        dados.columns = dados.columns.droplevel(1)
-
-    if len(dados) < 200:
-        mme200_period = len(dados) if len(dados) > 50 else 50
+def identificar_regime_mercado(df):
+    cp = df['Close'].squeeze()
+    hp = df['High'].squeeze()
+    lp = df['Low'].squeeze()
+    
+    adx_obj = ta.trend.ADXIndicator(hp, lp, cp, 14)
+    adx = adx_obj.adx().iloc[-1]
+    adx_plus = adx_obj.adx_pos().iloc[-1]
+    adx_minus = adx_obj.adx_neg().iloc[-1]
+    
+    m9 = ta.trend.EMAIndicator(cp, 9).ema_indicator().iloc[-1]
+    m21 = ta.trend.EMAIndicator(cp, 21).ema_indicator().iloc[-1]
+    m50 = ta.trend.EMAIndicator(cp, 50).ema_indicator().iloc[-1]
+    m200 = ta.trend.EMAIndicator(cp, 200).ema_indicator().iloc[-1]
+    
+    preco = cp.iloc[-1]
+    
+    rsi = ta.momentum.RSIIndicator(cp, 14).rsi().iloc[-1]
+    sma20 = cp.rolling(20).mean().iloc[-1]
+    std20 = cp.rolling(20).std().iloc[-1]
+    z_score = (preco - sma20) / std20 if std20 > 0 else 0
+    
+    if adx >= ADX_THRESHOLD_TENDENCIA:
+        regime = 'TENDENCIA'
+        
+        if preco > m21 > m50 and adx_plus > adx_minus:
+            direcao = 'ALTA'
+            alinhamento = preco > m9 > m21 > m50 > m200
+        elif preco < m21 < m50 and adx_minus > adx_plus:
+            direcao = 'BAIXA'
+            alinhamento = preco < m9 < m21 < m50 < m200
+        else:
+            direcao = 'INDEFINIDA'
+            alinhamento = False
     else:
-        mme200_period = 200
+        regime = 'LATERAL'
+        direcao = 'NEUTRO'
+        alinhamento = False
+    
+    dados_regime = {
+        'regime': regime,
+        'adx': adx,
+        'adx_plus': adx_plus,
+        'adx_minus': adx_minus,
+        'direcao': direcao,
+        'alinhamento_perfeito': alinhamento,
+        'rsi': rsi,
+        'z_score': z_score,
+        'preco': preco,
+        'm9': m9,
+        'm21': m21,
+        'm50': m50,
+        'm200': m200
+    }
+    
+    return regime, adx, dados_regime
 
-    high_prices = dados["High"].squeeze()
-    low_prices = dados["Low"].squeeze()
-    close_prices = dados["Close"].squeeze()
+def calcular_volatilidade_relativa(df, vol_info):
+    cp = df['Close'].squeeze()
+    
+    vi = converter_para_float(vol_info.get('volatilidade_implicita'))
+    ivr = converter_para_float(vol_info.get('iv_rank'))
+    ivp = converter_para_float(vol_info.get('iv_percentil'))
+    
+    if vi is None:
+        return 'NEUTRO', None, {'erro': 'VI indisponível'}
+    
+    returns = cp.pct_change().dropna()
+    hv_30d = returns.rolling(30).std().iloc[-1] * np.sqrt(252) * 100 
+    
+    iv_hv_ratio = vi / hv_30d if hv_30d > 0 else None
+    
+    if iv_hv_ratio is None:
+        edge_type = 'NEUTRO'
+        score_vol = 50
+    elif iv_hv_ratio >= IV_HV_RATIO_CARO:
+        edge_type = 'VENDA_PREMIUM'
+        score_vol = min(100, 60 + (iv_hv_ratio - IV_HV_RATIO_CARO) * 100)
+    elif iv_hv_ratio <= IV_HV_RATIO_BARATO:
+        edge_type = 'COMPRA_PREMIUM'
+        score_vol = min(100, 60 + (IV_HV_RATIO_BARATO - iv_hv_ratio) * 100)
+    else:
+        edge_type = 'NEUTRO'
+        score_vol = 50
+    
+    if ivr is not None and ivp is not None:
+        divergencia = abs(ivr - ivp)
+        convergencia_score = max(0, 100 - divergencia * 2) 
+    else:
+        convergencia_score = 50
+    
+    dados_vol = {
+        'vi': vi,
+        'hv_30d': hv_30d,
+        'iv_hv_ratio': iv_hv_ratio,
+        'ivr': ivr,
+        'ivp': ivp,
+        'divergencia_ivr_ivp': abs(ivr - ivp) if ivr and ivp else None,
+        'edge_type': edge_type,
+        'score_vol': score_vol,
+        'convergencia_score': convergencia_score
+    }
+    
+    return edge_type, iv_hv_ratio, dados_vol
 
-    dados["MME9"] = ta.trend.EMAIndicator(close_prices, 9).ema_indicator()
-    dados["MME21"] = ta.trend.EMAIndicator(close_prices, 21).ema_indicator()
-    dados["MME50"] = ta.trend.EMAIndicator(close_prices, 50).ema_indicator()
-    dados["MME200"] = ta.trend.EMAIndicator(close_prices, mme200_period).ema_indicator()
+def calcular_probabilidade_lucro(df, vol_info, dados_regime, dados_vol, dias_ate_vencimento=30):
+    preco = dados_regime['preco']
+    vi = dados_vol.get('vi')
+    
+    if vi is None or vi == 0:
+        return {}
+    
+    vi_decimal = vi / 100
+    desvio_esperado = preco * vi_decimal * np.sqrt(dias_ate_vencimento / 365)
+    
+    estruturas = {}
+    
+    strike_put = preco - desvio_esperado
 
-    macd = ta.trend.MACD(close_prices)
-    dados["MACD"] = macd.macd()
-    dados["MACD_SIGNAL"] = macd.macd_signal()
-    dados["MACD_HIST"] = macd.macd_diff()
+    pop_put = stats.norm.cdf(0) + (1 - stats.norm.cdf(1)) * 100  
+    
+    estruturas['VENDA_PUT_COBERTA'] = {
+        'strike_sugerido': round(strike_put, 2),
+        'delta_aproximado': -0.30,
+        'pop': round(pop_put, 1),
+        'max_loss': 'Limitado ao strike',
+        'max_gain': 'Prêmio recebido'
+    }
+    
+    strike_call = preco + desvio_esperado
+    pop_call = stats.norm.cdf(0) + (1 - stats.norm.cdf(1)) * 100 
+    
+    estruturas['VENDA_CALL_COBERTA'] = {
+        'strike_sugerido': round(strike_call, 2),
+        'delta_aproximado': 0.30,
+        'pop': round(pop_call, 1),
+        'max_loss': 'Potencialmente ilimitado (se não tiver ação)',
+        'max_gain': 'Prêmio recebido'
+    }
+    
+    strike_compra_bull = preco
+    strike_venda_bull = preco + (1.5 * desvio_esperado)
+    pop_bull = stats.norm.cdf(0.5) * 100 
+    
+    estruturas['BULL_CALL_SPREAD'] = {
+        'strike_compra': round(strike_compra_bull, 2),
+        'strike_venda': round(strike_venda_bull, 2),
+        'pop': round(pop_bull, 1),
+        'max_loss': 'Débito pago',
+        'max_gain': 'Diferença entre strikes - débito'
+    }
+    
+    strike_compra_bear = preco
+    strike_venda_bear = preco - (1.5 * desvio_esperado)
+    pop_bear = stats.norm.cdf(0.5) * 100 
+    
+    estruturas['BEAR_PUT_SPREAD'] = {
+        'strike_compra': round(strike_compra_bear, 2),
+        'strike_venda': round(strike_venda_bear, 2),
+        'pop': round(pop_bear, 1),
+        'max_loss': 'Débito pago',
+        'max_gain': 'Diferença entre strikes - débito'
+    }
+    
+    pop_ic = (stats.norm.cdf(1) - stats.norm.cdf(-1)) * 100  # ~68%
+    
+    estruturas['IRON_CONDOR'] = {
+        'put_venda': round(preco - desvio_esperado, 2),
+        'put_compra': round(preco - 1.5 * desvio_esperado, 2),
+        'call_venda': round(preco + desvio_esperado, 2),
+        'call_compra': round(preco + 1.5 * desvio_esperado, 2),
+        'pop': round(pop_ic, 1),
+        'max_loss': 'Largura da perna - crédito',
+        'max_gain': 'Crédito recebido'
+    }
+    
+    return estruturas
 
-    dados["RSI"] = ta.momentum.RSIIndicator(close_prices, 14).rsi()
-    dados["ATR"] = ta.volatility.AverageTrueRange(
-        high_prices, low_prices, close_prices, 14
-    ).average_true_range()
+def determinar_estrategia_otima(dados_regime, dados_vol, probabilidades):
+    """
+    Lógica de decisão baseada em REGIME + VOLATILIDADE + POP.
+    """
+    regime = dados_regime['regime']
+    direcao = dados_regime['direcao']
+    adx = dados_regime['adx']
+    rsi = dados_regime['rsi']
+    z_score = dados_regime['z_score']
+    alinhamento = dados_regime['alinhamento_perfeito']
+    
+    edge_type = dados_vol['edge_type']
+    iv_hv_ratio = dados_vol.get('iv_hv_ratio')
+    score_vol = dados_vol['score_vol']
+    
+    estrategia = None
+    score_final = 0
+    confianca = 0.5
+    justificativas = []
+    
+    if regime == 'TENDENCIA':
+        justificativas.append(f"📈 REGIME: Tendência ({adx:.1f}) - Ignorando RSI/Z-Score")
+        
+        if direcao == 'ALTA':
+            justificativas.append(f"🚀 Tendência de ALTA confirmada (ADX+ > ADX-)")
+            
+            if edge_type == 'COMPRA_PREMIUM':
+                estrategia = 'BULL_CALL_SPREAD'
+                score_final = 85
+                confianca = 0.85
+                justificativas.append(f"💎 IV/HV={iv_hv_ratio:.2f} - Prêmios BARATOS (ideal para compra)")
+                
+                if alinhamento:
+                    score_final += 10
+                    confianca += 0.08
+                    justificativas.append("🔥 ALINHAMENTO PERFEITO de médias móveis")
+            
+            elif edge_type == 'VENDA_PREMIUM':
+                estrategia = 'VENDA_PUT_COBERTA'
+                score_final = 80
+                confianca = 0.82
+                justificativas.append(f"💰 IV/HV={iv_hv_ratio:.2f} - Prêmios CAROS (venda com proteção da alta)")
+            
+            else:  
+                estrategia = 'BULL_CALL_SPREAD'
+                score_final = 70
+                confianca = 0.72
+                justificativas.append("⚖️ IV neutra - Spread para limitar custo")
+        
+        elif direcao == 'BAIXA':
+            justificativas.append(f"📉 Tendência de BAIXA confirmada (ADX- > ADX+)")
+            
+            if edge_type == 'COMPRA_PREMIUM':
+                estrategia = 'BEAR_PUT_SPREAD'
+                score_final = 85
+                confianca = 0.85
+                justificativas.append(f"💎 IV/HV={iv_hv_ratio:.2f} - Prêmios BARATOS (ideal para compra)")
+                
+                if alinhamento:
+                    score_final += 10
+                    confianca += 0.08
+                    justificativas.append("🔥 ALINHAMENTO PERFEITO de médias móveis")
+            
+            elif edge_type == 'VENDA_PREMIUM':
+                estrategia = 'VENDA_CALL_COBERTA'
+                score_final = 80
+                confianca = 0.82
+                justificativas.append(f"💰 IV/HV={iv_hv_ratio:.2f} - Prêmios CAROS (venda com proteção da baixa)")
+            
+            else:  
+                estrategia = 'BEAR_PUT_SPREAD'
+                score_final = 70
+                confianca = 0.72
+                justificativas.append("⚖️ IV neutra - Spread para limitar custo")
+        
+        else:  
+            justificativas.append("⚠️ Tendência sem direção clara - AGUARDAR")
+            estrategia = 'AGUARDAR'
+            score_final = 40
+            confianca = 0.40
 
-    bollinger = ta.volatility.BollingerBands(close_prices)
-    dados["BB_HIGH"] = bollinger.bollinger_hband()
-    dados["BB_LOW"] = bollinger.bollinger_lband()
-    dados["BB_MID"] = bollinger.bollinger_mavg()
+    else:  
+        justificativas.append(f"⏸️ REGIME: Lateral (ADX={adx:.1f}) - Usando RSI/Z-Score")
+        
+        sobrevenda = rsi < 30 or z_score < -2.0
+        sobrecompra = rsi > 70 or z_score > 2.0
+        
+        if sobrevenda and edge_type == 'VENDA_PREMIUM':
+            estrategia = 'VENDA_PUT_COBERTA'
+            score_final = 90
+            confianca = 0.88
+            justificativas.append(f"🎯 SETUP CLÁSSICO: Sobrevenda (RSI={rsi:.1f}, Z={z_score:.2f}) + IV alta")
+            justificativas.append("💰 Venda de PUT para capturar reversão à média")
+        
+        elif sobrecompra and edge_type == 'VENDA_PREMIUM':
+            estrategia = 'VENDA_CALL_COBERTA'
+            score_final = 90
+            confianca = 0.88
+            justificativas.append(f"🎯 SETUP CLÁSSICO: Sobrecompra (RSI={rsi:.1f}, Z={z_score:.2f}) + IV alta")
+            justificativas.append("💰 Venda de CALL para capturar reversão à média")
+        
+        elif edge_type == 'VENDA_PREMIUM':
+            estrategia = 'IRON_CONDOR'
+            score_final = 75
+            confianca = 0.78
+            justificativas.append(f"⏳ Mercado lateral + IV alta (IV/HV={iv_hv_ratio:.2f})")
+            justificativas.append("💰 Iron Condor para lucrar com decaimento (Theta)")
+        
+        else:
+            estrategia = 'AGUARDAR'
+            score_final = 50
+            confianca = 0.50
+            justificativas.append("⚠️ Mercado lateral sem vantagem de volatilidade clara")
+    
+    score_final = (score_final * 0.6) + (score_vol * 0.4)
+    
+    return estrategia, score_final, confianca, justificativas
 
-    dados["Volume_Media20"] = dados["Volume"].rolling(20).mean()
-    dados["Volume_Media50"] = dados["Volume"].rolling(50).mean()
-    dados["ATR_Media50"] = dados["ATR"].rolling(50).mean()
-
-    dados["BB_WIDTH"] = dados["BB_HIGH"] - dados["BB_LOW"]
-    dados["BB_WIDTH_Media"] = dados["BB_WIDTH"].rolling(20).mean()
-
-    if dados.isnull().any(axis=1).iloc[-1]:
-        print(
-            f"⚠️ Indicadores incompletos no último dia para {ticker}. Pulando análise."
-        )
+def analisar_ativo_completo(ticker_sa, vol_data):
+    print(f"\n{'='*80}")
+    print(f"📊 Análise Profissional: {ticker_sa}")
+    print('-'*80)
+    
+    df = yf.download(ticker_sa, period="1y", interval="1d", auto_adjust=False, progress=False)
+    if df.empty or len(df) < 200:
+        print(f"❌ Dados insuficientes para {ticker_sa}")
+        print('='*80)
+        return None
+    
+    if isinstance(df.columns, pd.MultiIndex):
+        df.columns = df.columns.droplevel(1)
+    
+    ticker_limpo = ticker_sa.replace('.SA', '')
+    vol_info = vol_data.get(ticker_limpo, {})
+    
+    regime, adx, dados_regime = identificar_regime_mercado(df)
+    
+    print(f"\n🎯 REGIME DE MERCADO: {regime}")
+    print(f"   ADX: {adx:.1f}")
+    print(f"   Direção: {dados_regime['direcao']}")
+    print(f"   Preço: R$ {dados_regime['preco']:.2f}")
+    if regime == 'TENDENCIA':
+        print(f"   Alinhamento de MMs: {'✅ PERFEITO' if dados_regime['alinhamento_perfeito'] else '⚠️ PARCIAL'}")
+    else:
+        print(f"   RSI: {dados_regime['rsi']:.1f}")
+        print(f"   Z-Score: {dados_regime['z_score']:.2f}")
+    
+    edge_type, iv_hv_ratio, dados_vol = calcular_volatilidade_relativa(df, vol_info)
+    
+    print(f"\n💹 VOLATILIDADE RELATIVA:")
+    print(f"   VI: {dados_vol.get('vi', 'N/A'):.1f}%")
+    print(f"   HV (30d): {dados_vol.get('hv_30d', 'N/A'):.1f}%")
+    if iv_hv_ratio:
+        print(f"   IV/HV Ratio: {iv_hv_ratio:.2f} → {edge_type}")
+    print(f"   IV Rank: {dados_vol.get('ivr', 'N/A'):.1f}%")
+    print(f"   IV Percentil: {dados_vol.get('ivp', 'N/A'):.1f}%")
+    if dados_vol.get('divergencia_ivr_ivp'):
+        print(f"   Divergência IVR/IVP: {dados_vol['divergencia_ivr_ivp']:.1f}%")
+    print(f"   Score Volatilidade: {dados_vol['score_vol']:.1f}/100")
+    
+    probabilidades = calcular_probabilidade_lucro(df, vol_info, dados_regime, dados_vol)
+    
+    estrategia, score_final, confianca, justificativas = determinar_estrategia_otima(
+        dados_regime, dados_vol, probabilidades
+    )
+    
+    print(f"\n🎯 DECISÃO:")
+    print(f"   Estratégia: {estrategia}")
+    print(f"   Score Final: {score_final:.1f}/100")
+    print(f"   Confiança: {confianca:.1%}")
+    
+    print(f"\n💡 JUSTIFICATIVAS:")
+    for j in justificativas:
+        print(f"   {j}")
+    
+    if estrategia in probabilidades:
+        print(f"\n📊 SETUP DE OPÇÕES ({estrategia}):")
+        setup = probabilidades[estrategia]
+        for key, value in setup.items():
+            if key != 'max_loss' and key != 'max_gain':
+                print(f"   {key.replace('_', ' ').title()}: {value}")
+        print(f"   Risco Máximo: {setup.get('max_loss', 'N/A')}")
+        print(f"   Ganho Máximo: {setup.get('max_gain', 'N/A')}")
+    
+    if score_final >= SCORE_MINIMO_OPERACAO and confianca >= CONFIANCA_MINIMA and estrategia != 'AGUARDAR':
+        print(f"\n✅ OPERAÇÃO RECOMENDADA")
+        print('='*80)
+        
+        resultado = {
+            'ticker': ticker_sa,
+            'preco': round(dados_regime['preco'], 2),
+            'regime': regime,
+            'estrategia': estrategia,
+            'score_final': round(score_final, 1),
+            'confianca': round(confianca, 3),
+            'edge_type': edge_type,
+            'iv_hv_ratio': round(iv_hv_ratio, 2) if iv_hv_ratio else None,
+            'adx': round(adx, 1),
+            'rsi': round(dados_regime['rsi'], 1),
+            'justificativas': justificativas,
+            'setup_opcoes': probabilidades.get(estrategia, {}),
+            'iv_rank': dados_vol.get('ivr'),
+            'iv_percentil': dados_vol.get('ivp'),
+            'direcao_iv': edge_type,
+            'direcao_tecnica': dados_regime['direcao']
+        }
+        
+        return resultado
+    else:
+        motivos_rejeicao = []
+        
+        if estrategia == 'AGUARDAR':
+            motivos_rejeicao.append("Estratégia: AGUARDAR (sem setup claro)")
+        
+        if score_final < SCORE_MINIMO_OPERACAO:
+            motivos_rejeicao.append(f"Score baixo ({score_final:.1f}/{SCORE_MINIMO_OPERACAO})")
+        
+        if confianca < CONFIANCA_MINIMA:
+            motivos_rejeicao.append(f"Confiança baixa ({confianca:.1%}/{CONFIANCA_MINIMA:.1%})")
+        
+        if dados_regime['direcao'] == 'INDEFINIDA':
+            motivos_rejeicao.append("Tendência sem direção clara")
+        
+        if edge_type == 'NEUTRO' and regime == 'LATERAL':
+            motivos_rejeicao.append("Mercado lateral sem vantagem de volatilidade")
+        
+        motivo_principal = " | ".join(motivos_rejeicao) if motivos_rejeicao else "Critérios não atingidos"
+        
+        print(f"\n⏸️ AGUARDAR - {motivo_principal}")
+        print('='*80)
+        
         return None
 
-    adx = (
-        ta.trend.ADXIndicator(
-            high=high_prices, low=low_prices, close=close_prices, window=14
-        )
-        .adx()
-        .iloc[-1]
-    )
-
-    ultimo = dados.iloc[-1]
-    penultimo = dados.iloc[-2]
-    ante_penultimo = dados.iloc[-3]
-
-    score_compra = 0
-    score_venda = 0
-    detalhes_compra = []
-    detalhes_venda = []
-    pontos_forca_compra = 0
-    pontos_forca_venda = 0
-
-    is_squeeze = ultimo["BB_WIDTH"] < ultimo["BB_WIDTH_Media"] * 0.7
-    if is_squeeze:
-        pontos_forca_compra += 1
-        pontos_forca_venda += 1
-        detalhes_compra.append("✓ Squeeze de Bollinger (VI baixa, provável explosão)")
-        detalhes_venda.append("✓ Squeeze de Bollinger (VI baixa, provável explosão)")
-
-    if mme200_period >= 200:
-        tendencia_alta = (
-            ultimo["MME9"] > ultimo["MME21"] > ultimo["MME50"]
-            and ultimo["Close"] > ultimo["MME200"]
-        )
-        if tendencia_alta:
-            score_compra += 1
-            detalhes_compra.append("✓ Tendência de alta clara (MMs alinhadas)")
-            pontos_forca_compra += 2
-
-        tendencia_baixa = (
-            ultimo["MME9"] < ultimo["MME21"] < ultimo["MME50"]
-            and ultimo["Close"] < ultimo["MME200"]
-        )
-        if tendencia_baixa:
-            score_venda += 1
-            detalhes_venda.append("✓ Tendência de baixa clara (MMs alinhadas)")
-            pontos_forca_venda += 2
-
-    cruzamento_alta = (
-        penultimo["MME9"] <= penultimo["MME21"] and ultimo["MME9"] > ultimo["MME21"]
-    )
-    if cruzamento_alta:
-        score_compra += 1
-        detalhes_compra.append("✓ Cruzamento de médias (9/21) detectado")
-        pontos_forca_compra += 2
-    elif ultimo["MME9"] > ultimo["MME21"]:
-        score_compra += 1
-        detalhes_compra.append("✓ MME9 > MME21")
-
-    cruzamento_baixa = (
-        penultimo["MME9"] >= penultimo["MME21"] and ultimo["MME9"] < ultimo["MME21"]
-    )
-    if cruzamento_baixa:
-        score_venda += 1
-        detalhes_venda.append("✓ Cruzamento de baixa (9/21) detectado")
-        pontos_forca_venda += 2
-    elif ultimo["MME9"] < ultimo["MME21"]:
-        score_venda += 1
-        detalhes_venda.append("✓ MME9 < MME21")
-
-    macd_positivo = (
-        ultimo["MACD"] > ultimo["MACD_SIGNAL"]
-        and ultimo["MACD_HIST"] > penultimo["MACD_HIST"]
-    )
-    if macd_positivo:
-        score_compra += 1
-        detalhes_compra.append("✓ MACD forte e crescente (acelerando)")
-        pontos_forca_compra += 1
-
-    macd_negativo = (
-        ultimo["MACD"] < ultimo["MACD_SIGNAL"]
-        and ultimo["MACD_HIST"] < penultimo["MACD_HIST"]
-    )
-    if macd_negativo:
-        score_venda += 1
-        detalhes_venda.append("✓ MACD fraco e decrescente (acelerando)")
-        pontos_forca_venda += 1
-
-    rsi_ideal = 50 <= ultimo["RSI"] <= 70
-    if rsi_ideal:
-        score_compra += 1
-        detalhes_compra.append(f"✓ RSI ideal ({ultimo['RSI']:.1f})")
-        if 55 <= ultimo["RSI"] <= 65:
-            pontos_forca_compra += 1
-
-    rsi_fraco = ultimo["RSI"] < 45
-    if rsi_fraco:
-        score_venda += 1
-        detalhes_venda.append(f"✓ RSI fraco ({ultimo['RSI']:.1f})")
-        if ultimo["RSI"] < 35:
-            pontos_forca_venda += 1
-
-    if adx < 20:
-        detalhes_compra.append(f"✓ ADX baixo ({adx:.1f}) - Mercado lateral")
-        detalhes_venda.append(f"✓ ADX baixo ({adx:.1f}) - Mercado lateral")
-        pontos_forca_compra += 1
-        pontos_forca_venda += 1
-
-    volume_forte = ultimo["Volume"] > ultimo["Volume_Media20"] * 1.2
-    if volume_forte:
-        pontos_forca_compra += 1
-        pontos_forca_venda += 1
-        detalhes_compra.append("✓ Volume muito acima da média")
-        detalhes_venda.append("✓ Volume muito acima da média")
-
-    preco_bb = ultimo["Close"]
-    dist_bb_baixa = (preco_bb - ultimo["BB_LOW"]) / (
-        ultimo["BB_HIGH"] - ultimo["BB_LOW"]
-    )
-
-    if 0.1 <= dist_bb_baixa <= 0.4:
-        score_compra += 1
-        detalhes_compra.append("✓ Preço em boa posição (Bollinger)")
-        pontos_forca_compra += 1
-
-    if 0.6 <= dist_bb_baixa <= 0.9:
-        score_venda += 1
-        detalhes_venda.append("✓ Preço no topo (Bollinger)")
-        pontos_forca_venda += 1
-
-    volatilidade_alta = ultimo["ATR"] > ultimo["ATR_Media50"] * 1.5
-    if volatilidade_alta:
-        detalhes_venda.append("✓ Volatilidade elevada (ATR alta - bom para VENDAS)")
-        pontos_forca_venda += 1
-
-    print(
-        f"📊 Score Compra: {score_compra}/7 (+{pontos_forca_compra} força) | Score Venda: {score_venda}/7 (+{pontos_forca_venda} força)"
-    )
-
-    resultado = {
-        "sinal": None,
-        "preco": ultimo["Close"],
-        "score_compra": score_compra,
-        "score_venda": score_venda,
-    }
-
-    score_total_compra = score_compra + (pontos_forca_compra * 0.3)
-    score_total_venda = score_venda + (pontos_forca_venda * 0.3)
-
-    volatilidade_perc = (ultimo["ATR"] / ultimo["Close"]) * 100
-
-    tipo_estrutura_original = recomendar_estrutura(
-        score_compra,
-        score_venda,
-        pontos_forca_compra,
-        pontos_forca_venda,
-        volatilidade_perc,
-        ultimo["RSI"],
-        adx,
-        is_squeeze,
-    )
-
-    strike_call_sugerido = f"R$ {ultimo['BB_HIGH']:.2f} (BB Topo)"
-    strike_put_sugerido = f"R$ {ultimo['BB_LOW']:.2f} (BB Suporte)"
-    range_thl_sugerido = (
-        f"CALL: {ultimo['BB_HIGH']:.2f} / PUT: {ultimo['BB_LOW']:.2f} (BB Range)"
-    )
-
-    tipo_estrutura = tipo_estrutura_original
-    strike_recomendado = None
-    operacao_viavel = True
-
-    preco_atual = ultimo["Close"]
-    bb_high = ultimo["BB_HIGH"]
-    bb_low = ultimo["BB_LOW"]
-
-    if "PUT" in tipo_estrutura_original and (
-        "Venda Coberta" in tipo_estrutura_original
-        or "Trava de Alta" in tipo_estrutura_original
-        or "JADE LIZARD" in tipo_estrutura_original
-    ):
-        distancia_put = abs(preco_atual - bb_low) / preco_atual
-
-        if distancia_put <= MAX_DISTANCIA_OPCOES:
-            strike_recomendado = strike_put_sugerido
-        else:
-            tipo_estrutura = (
-                f"Aguardar liquidez/preço (Suporte BB: {distancia_put*100:.1f}%)"
-            )
-            operacao_viavel = False
-            print(
-                f"⚠️ Atenção: Suporte BB ({bb_low:.2f}) muito distante. Estrutura suspensa."
-            )
-
-    elif "CALL" in tipo_estrutura_original and (
-        "Venda Coberta" in tipo_estrutura_original
-        or "Trava de Baixa" in tipo_estrutura_original
-        or "JADE LIZARD" in tipo_estrutura_original
-    ):
-        distancia_call = abs(bb_high - preco_atual) / preco_atual
-
-        if distancia_call <= MAX_DISTANCIA_OPCOES:
-            strike_recomendado = strike_call_sugerido
-        else:
-            tipo_estrutura = (
-                f"Aguardar liquidez/preço (Topo BB: {distancia_call*100:.1f}%)"
-            )
-            operacao_viavel = False
-            print(
-                f"⚠️ Atenção: Topo BB ({bb_high:.2f}) muito distante. Estrutura suspensa."
-            )
-
-    dados_adicionais = {
-        "RSI": ultimo["RSI"],
-        "ADX": adx,
-        "MME21": ultimo["MME21"],
-        "MME50": ultimo["MME50"],
-        "Volatilidade_%": f"{volatilidade_perc:.2f}%",
-        "estrutura": tipo_estrutura,
-    }
-
-    ticker_limpo = ticker.replace(".SA", "")
-    vol_info = volatilidade_data.get(ticker_limpo)
-    if vol_info:
-        dados_adicionais["iv_rank"] = vol_info.get("iv_rank", "N/A")
-        dados_adicionais["iv_percentil"] = vol_info.get("iv_percentil", "N/A")
-
-    if strike_recomendado:
-        dados_adicionais["Strike_Recomendado"] = strike_recomendado
-
-    if (
-        score_compra >= score_minimo
-        and pontos_forca_compra >= 2
-        and score_total_compra > score_total_venda + 1
-    ):
-        print(
-            f"🟢 SINAL DE COMPRA FORTE ({score_compra}/7, força: {pontos_forca_compra}) para {ticker}"
-        )
-        if detalhes_compra:
-            print("   " + "\n   ".join(detalhes_compra))
-        print(f"   Estrutura recomendada: {tipo_estrutura}")
-
-        if strike_recomendado:
-            print(f"   🎯 Strike Sugerido: {strike_recomendado}")
-
-        if operacao_viavel and alertas_por_tipo is not None:
-            alertas_por_tipo["Compra"].append(
-                (ticker, ultimo["Close"], dados_adicionais)
-            )
-
-        resultado["sinal"] = "compra"
-
-    elif (
-        score_venda >= score_minimo
-        and pontos_forca_venda >= 2
-        and score_total_venda > score_total_compra + 1
-    ):
-        print(
-            f"🔴 SINAL DE VENDA FORTE ({score_venda}/7, força: {pontos_forca_venda}) para {ticker}"
-        )
-        if detalhes_venda:
-            print("   " + "\n   ".join(detalhes_venda))
-        print(f"   Estrutura recomendada: {tipo_estrutura}")
-
-        if strike_recomendado:
-            print(f"   🎯 Strike Sugerido: {strike_recomendado}")
-
-        if operacao_viavel and alertas_por_tipo is not None:
-            alertas_por_tipo["Venda"].append(
-                (ticker, ultimo["Close"], dados_adicionais)
-            )
-
-        resultado["sinal"] = "venda"
-
-    else:
-        print(f"⚪ Sem sinal suficientemente forte para {ticker}")
-        print(
-            f"   (Compra: {score_compra}/7 +{pontos_forca_compra}, Venda: {score_venda}/7 +{pontos_forca_venda})"
-        )
-        print(f"   Estrutura recomendada: {tipo_estrutura}")
-
-        if tipo_estrutura in [
-            "THL (Trava Horizontal de Linha) / COLLAR (Mercado Lateral ou Squeeze)",
-            "JADE LIZARD / IRON CONDOR (VI alta, mercado neutro para vender prêmio)",
-        ]:
-            print(f"   🎯 Range Sugerido (COLLAR/THL/JL): {range_thl_sugerido}")
-            dados_adicionais["Range_Recomendado"] = range_thl_sugerido
-
-            if alertas_por_tipo is not None:
-                alertas_por_tipo["Lateral/Consolidação"].append(
-                    (ticker, ultimo["Close"], dados_adicionais)
-                )
-
-    return resultado
-
-
-def analisar_multiplos_ativos(lista_tickers, score_minimo=4):
+def analisar_multiplos_ativos(lista_ativos):
     """
-    Processa a lista de ativos e envia o relatório consolidado.
+    Processa lista completa de ativos com o novo sistema.
+    
+    Retorna:
+        aprovados: list - Ativos que passaram nos critérios
+        rejeitados: list - Ativos que não passaram (com motivos)
     """
-    print(f"\n{'='*70}")
-    print(f"🚀 Iniciando análise RIGOROSA de {len(lista_tickers)} ativos")
-    print(f"📊 Score mínimo: {score_minimo}/7 + 2 pontos de força")
-    print(
-        f"🎯 Apenas sinais de ALTA PROBABILIDADE e VIÁVEIS (Liquidez 10%) serão incluídos no relatório."
-    )
-    print(f"{'='*70}\n")
-
-    resultados = []
-    erros = []
-
-    alertas_por_tipo = {
-        "Compra": [],
-        "Venda": [],
-        "Lateral/Consolidação": [],
-        "Sinal Fraco/Aguardar": [],
-    }
-
-    volatilidade_data = carregar_dados_volatilidade()
-
-    for i, ticker in enumerate(lista_tickers, 1):
-        print(f"\n[{i}/{len(lista_tickers)}] 🔍 {ticker}")
-        print("-" * 70)
-
+    print(f"\n{'='*80}")
+    print(f"🚀 SISTEMA PROFISSIONAL DE ANÁLISE DE OPÇÕES")
+    print(f"{'='*80}")
+    print(f"Ativos: {len(lista_ativos)}")
+    print(f"Score mínimo: {SCORE_MINIMO_OPERACAO}/100")
+    print(f"Confiança mínima: {CONFIANCA_MINIMA:.1%}")
+    print(f"{'='*80}\n")
+    
+    vol_data = carregar_dados_volatilidade()
+    
+    aprovados = []
+    rejeitados = []
+    
+    for idx, ticker in enumerate(lista_ativos, 1):
+        print(f"\n[{idx}/{len(lista_ativos)}]")
         try:
-            resultado = analisar_ativo(
-                ticker, volatilidade_data, score_minimo, alertas_por_tipo
-            )
-
-            if resultado is None:
-                erros.append((ticker, "Sem dados disponíveis ou incompletos"))
-                resultados.append((ticker, "❌ Erro: Sem dados"))
-                continue
-
-            resultados.append((ticker, "✅ Sucesso"))
-
+            res = analisar_ativo_completo(ticker, vol_data)
+            
+            if res:
+                aprovados.append(res)
+            else:
+                rejeitados.append({
+                    'ticker': ticker,
+                    'motivo': 'Não atingiu critérios mínimos de score/confiança'
+                })
+            
+            time.sleep(1)
+            
         except Exception as e:
-            erro_msg = str(e)
-            print(f"❌ Erro ao analisar {ticker}: {erro_msg}")
-            resultados.append((ticker, f"❌ Erro: {erro_msg}"))
-            erros.append((ticker, erro_msg))
+            print(f"❌ Erro em {ticker}: {e}")
+            rejeitados.append({
+                'ticker': ticker,
+                'motivo': f'Erro na análise: {str(e)}'
+            })
+    
+    print(f"\n{'='*80}")
+    print("📊 RESUMO FINAL")
+    print(f"{'='*80}")
+    print(f"Ativos analisados: {len(lista_ativos)}")
+    print(f"✅ Aprovados: {len(aprovados)}")
+    print(f"❌ Rejeitados: {len(rejeitados)}")
+    
+    if aprovados:
+        estrategias = {}
+        for r in aprovados:
+            est = r['estrategia']
+            if est not in estrategias:
+                estrategias[est] = []
+            estrategias[est].append(r)
+        
+        print(f"\n📈 Aprovados por Estratégia:")
+        for est, ops in estrategias.items():
+            print(f"   {est}: {len(ops)} operações")
+        
+        resultados_ordenados = sorted(aprovados, key=lambda x: (x['confianca'], x['score_final']), reverse=True)
+        
+        print(f"\n🏆 TOP 5 OPORTUNIDADES:")
+        print(f"{'='*80}")
+        for i, r in enumerate(resultados_ordenados[:5], 1):
+            print(f"\n{i}. {r['ticker']} - R$ {r['preco']:.2f}")
+            print(f"   Regime: {r['regime']} (ADX={r['adx']:.1f})")
+            print(f"   Estratégia: {r['estrategia']}")
+            print(f"   Score: {r['score_final']:.1f}/100 | Confiança: {r['confianca']:.1%}")
+            print(f"   Edge: {r['edge_type']}")
+            if r['iv_hv_ratio']:
+                print(f"   IV/HV: {r['iv_hv_ratio']:.2f}")
+            
+            if r.get('setup_opcoes'):
+                setup = r['setup_opcoes']
+                if 'pop' in setup:
+                    print(f"   POP: {setup['pop']:.1f}%")
+        
+        print(f"\n{'='*80}\n")
+    
+    if rejeitados:
+        print(f"\n⚠️ PRINCIPAIS MOTIVOS DE REJEIÇÃO:")
+        motivos_count = {}
+        for r in rejeitados:
+            motivo = r.get('motivo', 'Não especificado')
+            motivos_count[motivo] = motivos_count.get(motivo, 0) + 1
+        
+        for motivo, count in sorted(motivos_count.items(), key=lambda x: x[1], reverse=True):
+            print(f"   [{count}x] {motivo}")
+        print()
+    
+    return aprovados, rejeitados
 
-        if i < len(lista_tickers):
-            time.sleep(2)
+def analise_rapida(ticker, vol_data=None):
+    """Análise rápida de um único ativo."""
+    if vol_data is None:
+        vol_data = carregar_dados_volatilidade()
+    
+    ticker_sa = ticker if '.SA' in ticker else f"{ticker}.SA"
+    return analisar_ativo_completo(ticker_sa, vol_data)
 
-        print("=" * 70)
-
-    sinais_compra_finais = alertas_por_tipo["Compra"]
-    sinais_venda_finais = alertas_por_tipo["Venda"]
-    sinais_laterais_finais = alertas_por_tipo["Lateral/Consolidação"]
-
-    print(f"\n{'='*70}")
-    print("📋 RESUMO DA ANÁLISE")
-    print(f"{'='*70}")
-    for ticker, status in resultados:
-        print(f"{ticker}: {status}")
-    print(f"{'='*70}\n")
-
-    print("📊 ESTATÍSTICAS DO RELATÓRIO ENVIADO:")
-    print(f"   Total analisado: {len(lista_tickers)}")
-    print(f"   🟢 Sinais FORTES de compra (Viáveis): {len(sinais_compra_finais)}")
-    print(f"   🔴 Sinais FORTES de venda (Viáveis): {len(sinais_venda_finais)}")
-    print(f"   ⚪ Sinais Laterais/Consolidação (Viáveis): {len(sinais_laterais_finais)}")
-    print(f"   ❌ Erros: {len(erros)}\n")
-
-    print("📧 Enviando alertas consolidados por tipo...")
-    enviar_alerta_consolidado(alertas_por_tipo)
-
-    print("\n📧 Enviando relatório final por e-mail...")
-    enviar_relatorio_final(
-        total_ativos=len(lista_tickers),
-        sinais_compra=sinais_compra_finais,
-        sinais_venda=sinais_venda_finais,
-        erros=erros,
-    )
+if __name__ == '__main__':
+    print("="*80)
+    print("🎯 SISTEMA PROFISSIONAL DE ANÁLISE DE OPÇÕES")
+    print("="*80)
+    print("\nMelhorias implementadas:")
+    print("1. ✅ Regimes de Mercado (ADX como filtro mestre)")
+    print("2. ✅ Volatilidade Relativa (IV/HV ratio)")
+    print("3. ✅ Probabilidade de Lucro (POP com strikes sugeridos)")
+    print("\nEste script deve ser importado e usado via main.py")
+    print("="*80)

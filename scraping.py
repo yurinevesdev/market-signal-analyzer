@@ -30,10 +30,18 @@ def find_by_h3_text(element, h3_text, tag='span'):
         pass
     return 'N/A'
 
+def converter_para_float(valor_str):
+    """Converte string para float, tratando vírgulas e valores inválidos."""
+    if valor_str == 'N/A' or valor_str == '-' or valor_str is None:
+        return None
+    try:
+        valor_limpo = str(valor_str).replace(',', '.').replace('%', '').strip()
+        return float(valor_limpo)
+    except (ValueError, AttributeError):
+        return None
+
 def extrair_dados_opcao(ticker_base, ticker_opcao):
-    """
-    Extrai todas as informações de uma opção do site opcoes.oplab.com.br.
-    """
+    """Extrai todas as informações de uma opção do site opcoes.oplab.com.br."""
     url = f"https://opcoes.oplab.com.br/mercado/opcoes/{ticker_base}/{ticker_opcao}"
     
     try:
@@ -48,8 +56,6 @@ def extrair_dados_opcao(ticker_base, ticker_opcao):
 
     soup = BeautifulSoup(response.content, 'html.parser')
     dados = {
-        'url': url,
-        'data_extracao': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
         'ticker_base': ticker_base,
         'ticker_opcao': ticker_opcao
     }
@@ -110,7 +116,6 @@ def extrair_dados_opcao(ticker_base, ticker_opcao):
             dados['opcao_dias_vencimento'] = dias_match.group(1) if dias_match else 'N/A'
             
             dados['opcao_strike'] = find_by_h3_text(info_ul, 'Strike', 'h2')
-            
             dados['opcao_moneyness'] = find_by_h3_text(info_ul, 'Moneyness', 'h2')
 
         price_ul = option_section.find('ul', class_='Option_price__sXqxm')
@@ -153,65 +158,13 @@ def extrair_dados_opcao(ticker_base, ticker_opcao):
 
     return dados
 
-def salvar_em_json(dados, nome_arquivo='dados_opcoes.json'):
-    dados_existentes = {}
-    try:
-        with open(nome_arquivo, 'r', encoding='utf-8') as f:
-            dados_existentes = json.load(f)
-    except (FileNotFoundError, json.JSONDecodeError):
-        dados_existentes = {}
-    
-    chave_opcao = f"{dados['ticker_base']}_{dados['ticker_opcao']}"
-    
-    dados_existentes[chave_opcao] = dados
-    
-    with open(nome_arquivo, 'w', encoding='utf-8') as f:
-        json.dump(dados_existentes, f, indent=2, ensure_ascii=False)
-    
-    print(f"Dados salvos/atualizados em {nome_arquivo}")
-
-def processar_multiplos_tickers(lista_opcoes, nome_arquivo='dados_opcoes.json'):
-    """
-    Processa múltiplos tickers de opções.
-    
-    lista_opcoes: Lista de tuplas (ticker_base, ticker_opcao)
-    Exemplo: [('UNIP6', 'UNIPA730'), ('PETR4', 'PETRA100')]
-    """
-    total = len(lista_opcoes)
-    sucesso = 0
-    falhas = 0
-    
-    for i, (ticker_base, ticker_opcao) in enumerate(lista_opcoes, 1):
-        print(f"\nProcessando {i}/{total}: {ticker_base}/{ticker_opcao}")
-        
-        dados = extrair_dados_opcao(ticker_base, ticker_opcao)
-        
-        if dados:
-            salvar_em_json(dados, nome_arquivo)
-            print(f"✓ Sucesso!")
-            sucesso += 1
-        else:
-            print(f"✗ Falha ao extrair dados")
-            falhas += 1
-    
-    print(f"\n{'='*50}")
-    print(f"Processamento concluído!")
-    print(f"Sucessos: {sucesso} | Falhas: {falhas}")
-    print(f"Arquivo salvo: {nome_arquivo}")
-
 def extrair_lista_ativos_mercado(html_content=None):
-    """
-    Extrai a lista completa de ativos da página de mercado com IV Rank e IV Percentil.
-    Se html_content for fornecido, usa-o. Caso contrário, busca da URL.
-    Retorna uma lista de dicionários de ativos.
-    """
+    """Extrai a lista completa de ativos da página de mercado."""
     soup = None
     if html_content:
         soup = BeautifulSoup(html_content, 'html.parser')
-        print("Analisando conteúdo HTML fornecido.")
     else:
         url = "https://opcoes.oplab.com.br/mercado"
-        print(f"Buscando dados de {url}...")
         try:
             headers = {
                 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
@@ -224,13 +177,10 @@ def extrair_lista_ativos_mercado(html_content=None):
             return None
 
     if not soup:
-        print("Falha ao carregar o conteúdo HTML.")
         return None
 
     ativos = []
     asset_cards = soup.find_all('a', class_='AssetCard_assetCard__iGiPy')
-    
-    print(f"Total de cards de ativos encontrados: {len(asset_cards)}")
     
     for card in asset_cards:
         try:
@@ -274,97 +224,205 @@ def extrair_lista_ativos_mercado(html_content=None):
             print(f"Erro ao processar um card de ativo: {e}")
             continue
             
-    print(f"\nTotal de ativos extraídos com sucesso: {len(ativos)}")
-    
-    com_vi = len([a for a in ativos if a.get('volatilidade_implicita', 'N/A') != 'N/A'])
-    com_rank = len([a for a in ativos if a.get('iv_rank', 'N/A') != 'N/A'])
-    com_percentil = len([a for a in ativos if a.get('iv_percentil', 'N/A') != 'N/A'])
-    
-    print(f"Ativos com Volatilidade Implícita válida: {com_vi}")
-    print(f"Ativos com IV Rank válido: {com_rank}")
-    print(f"Ativos com IV Percentil válido: {com_percentil}")
-    
     return ativos
 
-def converter_para_float(valor_str):
-    """Converte string para float, tratando vírgulas e valores inválidos."""
-    if valor_str == 'N/A' or valor_str == '-':
-        return -1.0 
-    try:
-        valor_limpo = valor_str.replace(',', '.').strip()
-        return float(valor_limpo)
-    except (ValueError, AttributeError):
-        return -1.0
+def analisar_ativo_tecnico(ativo):
+    """Análise técnica de um ativo sob a perspectiva de um analista."""
+    analise = {
+        'score_volatilidade': 0,
+        'classificacao_volatilidade': 'Baixa',
+        'oportunidade_venda': False,
+        'oportunidade_compra': False,
+        'nivel_interesse': 'Baixo',
+        'observacoes': []
+    }
+    
+    vi = converter_para_float(ativo.get('volatilidade_implicita'))
+    iv_rank = converter_para_float(ativo.get('iv_rank'))
+    iv_percentil = converter_para_float(ativo.get('iv_percentil'))
+    variacao = converter_para_float(ativo.get('variacao'))
+    
+    if vi is not None:
+        if vi > 60:
+            analise['score_volatilidade'] = 90
+            analise['classificacao_volatilidade'] = 'Muito Alta'
+            analise['oportunidade_venda'] = True
+            analise['nivel_interesse'] = 'Muito Alto'
+            analise['observacoes'].append('Volatilidade extremamente elevada - excelente para venda de opções')
+        elif vi > 45:
+            analise['score_volatilidade'] = 70
+            analise['classificacao_volatilidade'] = 'Alta'
+            analise['oportunidade_venda'] = True
+            analise['nivel_interesse'] = 'Alto'
+            analise['observacoes'].append('Volatilidade alta - bom momento para estratégias de venda')
+        elif vi > 30:
+            analise['score_volatilidade'] = 50
+            analise['classificacao_volatilidade'] = 'Média'
+            analise['nivel_interesse'] = 'Médio'
+            analise['observacoes'].append('Volatilidade moderada - mercado equilibrado')
+        elif vi > 20:
+            analise['score_volatilidade'] = 30
+            analise['classificacao_volatilidade'] = 'Baixa'
+            analise['oportunidade_compra'] = True
+            analise['nivel_interesse'] = 'Médio'
+            analise['observacoes'].append('Volatilidade baixa - pode ser oportunidade para compra de opções')
+        else:
+            analise['score_volatilidade'] = 10
+            analise['classificacao_volatilidade'] = 'Muito Baixa'
+            analise['oportunidade_compra'] = True
+            analise['nivel_interesse'] = 'Alto'
+            analise['observacoes'].append('Volatilidade muito baixa - ótimo para compra de opções antes de movimentos')
+    
+    if iv_rank is not None and iv_rank > 70:
+        analise['observacoes'].append(f'IV Rank em {iv_rank:.1f}% - volatilidade no topo histórico')
+        analise['oportunidade_venda'] = True
+    elif iv_rank is not None and iv_rank < 30:
+        analise['observacoes'].append(f'IV Rank em {iv_rank:.1f}% - volatilidade abaixo da média histórica')
+        analise['oportunidade_compra'] = True
+    
+    if iv_percentil is not None and iv_percentil > 80:
+        analise['observacoes'].append('IV Percentil muito alto - possível reversão de volatilidade')
+    elif iv_percentil is not None and iv_percentil < 20:
+        analise['observacoes'].append('IV Percentil muito baixo - possível aumento de volatilidade')
+    
+    if variacao is not None:
+        if abs(variacao) > 5:
+            analise['observacoes'].append(f'Movimento significativo de {variacao:+.2f}% no dia')
+        elif abs(variacao) > 3:
+            analise['observacoes'].append(f'Movimento moderado de {variacao:+.2f}% no dia')
+    
+    return analise
 
-def ordenar_ativos_por_iv(ativos, campo='volatilidade_implicita'):
-    ativos_ordenados = sorted(
-        ativos,
-        key=lambda x: converter_para_float(x.get(campo, 'N/A')),
+def consolidar_dados_compativel(lista_opcoes=None):
+    print("=== CONSOLIDAÇÃO DE DADOS COMPATÍVEL COM ANALISE.PY ===\n")
+    
+    print("1. Extraindo lista de ativos do mercado...")
+    ativos = extrair_lista_ativos_mercado()
+    
+    if not ativos:
+        print("Erro: Não foi possível extrair ativos do mercado")
+        return None
+    
+    print(f"   ✓ {len(ativos)} ativos extraídos\n")
+    
+    dados_por_ticker = {}
+    
+    for ativo in ativos:
+        ticker = ativo.get('ticker')
+        if not ticker or ticker == 'N/A':
+            continue
+        
+        analise = analisar_ativo_tecnico(ativo)
+        
+        dados_por_ticker[ticker] = {
+            'ticker': ticker,
+            'descricao': ativo.get('descricao', 'N/A'),
+            'preco': ativo.get('preco', 'N/A'),
+            'variacao': ativo.get('variacao', 'N/A'),
+            'volatilidade_implicita': ativo.get('volatilidade_implicita', 'N/A'),
+            'iv_rank': ativo.get('iv_rank', 'N/A'),
+            'iv_percentil': ativo.get('iv_percentil', 'N/A'),
+            'link': ativo.get('link', 'N/A'),
+            'analise_tecnica': analise, 
+            'opcoes_detalhadas': []
+        }
+    
+    print(f"   ✓ {len(dados_por_ticker)} ativos processados\n")
+    
+    if lista_opcoes:
+        print(f"2. Extraindo detalhes de {len(lista_opcoes)} opções específicas...")
+        for ticker_base, ticker_opcao in lista_opcoes:
+            print(f"   - Processando {ticker_base}/{ticker_opcao}...")
+            dados_opcao = extrair_dados_opcao(ticker_base, ticker_opcao)
+            
+            if dados_opcao and ticker_base in dados_por_ticker:
+                dados_por_ticker[ticker_base]['opcoes_detalhadas'].append(dados_opcao)
+                print(f"     ✓ Sucesso - opção adicionada a {ticker_base}")
+            elif dados_opcao:
+                dados_por_ticker[ticker_base] = {
+                    'ticker': ticker_base,
+                    'descricao': dados_opcao.get('ativo_nome', 'N/A'),
+                    'preco': dados_opcao.get('ativo_preco', 'N/A'),
+                    'variacao': dados_opcao.get('ativo_variacao', 'N/A'),
+                    'volatilidade_implicita': 'N/A',
+                    'iv_rank': 'N/A',
+                    'iv_percentil': 'N/A',
+                    'link': 'N/A',
+                    'opcoes_detalhadas': [dados_opcao]
+                }
+                print(f"     ✓ Sucesso - novo ticker criado para {ticker_base}")
+            else:
+                print(f"     ✗ Falha ao extrair opção")
+        print()
+    
+    vi_values = []
+    for ticker, dados in dados_por_ticker.items():
+        vi = converter_para_float(dados.get('volatilidade_implicita'))
+        if vi is not None:
+            vi_values.append(vi)
+    
+    total_com_opcoes = len([t for t in dados_por_ticker.values() if t['opcoes_detalhadas']])
+    
+    print("=== ESTATÍSTICAS ===")
+    print(f"Total de tickers: {len(dados_por_ticker)}")
+    print(f"Tickers com opções detalhadas: {total_com_opcoes}")
+    if vi_values:
+        print(f"VI Média: {sum(vi_values)/len(vi_values):.2f}%")
+        print(f"VI Máxima: {max(vi_values):.2f}%")
+        print(f"VI Mínima: {min(vi_values):.2f}%")
+    
+    return dados_por_ticker
+
+def salvar_formato_analise_py(dados_por_ticker, nome_arquivo='dados_mercado_consolidado.json'):
+    """
+    Salva os dados no formato que analise.py espera ler.
+    """
+    with open(nome_arquivo, 'w', encoding='utf-8') as f:
+        json.dump(dados_por_ticker, f, indent=2, ensure_ascii=False)
+    
+    print(f"\n{'='*70}")
+    print(f"✅ DADOS SALVOS COM SUCESSO!")
+    print(f"{'='*70}")
+    print(f"Arquivo: {nome_arquivo}")
+    print(f"Formato: Compatível com analise.py")
+    print(f"Total de tickers: {len(dados_por_ticker)}")
+    
+    tickers_ordenados = sorted(
+        dados_por_ticker.items(),
+        key=lambda x: converter_para_float(x[1].get('volatilidade_implicita')) or 0,
         reverse=True
     )
     
-    ativos_validos = [a for a in ativos_ordenados if converter_para_float(a.get(campo, 'N/A')) > 0]
+    print(f"\n{'='*70}")
+    print("📊 TOP 10 ATIVOS POR VOLATILIDADE IMPLÍCITA")
+    print(f"{'='*70}")
+    print(f"{'Ticker':<8} {'VI%':>8} {'IV Rank%':>10} {'IV Perc%':>10} {'Preço':>10}")
+    print('-' * 70)
     
-    return ativos_validos
-
-def salvar_lista_ativos_json(ativos, campo_ordenacao='volatilidade_implicita', nome_arquivo='ativos_mercado.json'):
-    """Salva a lista de ativos ordenada em JSON."""
-    ativos_ordenados = ordenar_ativos_por_iv(ativos, campo_ordenacao)
+    for ticker, dados in tickers_ordenados[:10]:
+        vi = dados.get('volatilidade_implicita', 'N/A')
+        iv_rank = dados.get('iv_rank', 'N/A')
+        iv_perc = dados.get('iv_percentil', 'N/A')
+        preco = dados.get('preco', 'N/A')
+        
+        print(f"{ticker:<8} {vi:>8} {iv_rank:>10} {iv_perc:>10} {preco:>10}")
     
-    dados = {
-        'data_extracao': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
-        'total_ativos': len(ativos_ordenados),
-        'campo_ordenacao': campo_ordenacao,
-        'ativos': ativos_ordenados
-    }
-    
-    with open(nome_arquivo, 'w', encoding='utf-8') as f:
-        json.dump(dados, f, indent=2, ensure_ascii=False)
-    
-    print(f"Lista de {len(ativos_ordenados)} ativos salva em {nome_arquivo}")
-    print(f"Ordenado por: {campo_ordenacao}")
-    
-    return ativos_ordenados
+    print(f"\n{'='*70}")
+    print("✅ Arquivo pronto para ser usado pelo analise.py!")
+    print(f"{'='*70}\n")
 
 if __name__ == '__main__':
-    print("=== SCRAPER DE OPÇÕES OPLAB ===\n")
-    
-    ticker_base = "UNIP6"
-    ticker_opcao = "UNIPA730"
-    dados = extrair_dados_opcao(ticker_base, ticker_opcao)
-    if dados:
-        print(json.dumps(dados, indent=2, ensure_ascii=False))
-        salvar_em_json(dados)
-    
     lista_opcoes = [
         ('UNIP6', 'UNIPA730'),
         ('PETR4', 'PETRA100'),
         ('VALE3', 'VALEC200'),
     ]
-    processar_multiplos_tickers(lista_opcoes)
     
+    dados = consolidar_dados_compativel(lista_opcoes=lista_opcoes)
     
-    print("\n=== EXTRAINDO LISTA DE ATIVOS DO MERCADO ===\n")
-    
-    html_content = None
-    try:
-        with open('exemplo2.html', 'r', encoding='utf-8') as f:
-            html_content = f.read()
-        print("Arquivo 'exemplo2.html' lido com sucesso para análise.")
-    except FileNotFoundError:
-        print("Arquivo 'exemplo2.html' não encontrado. A função tentará buscar os dados da web.")
-
-    ativos = extrair_lista_ativos_mercado()
-    
-    if ativos:
-        salvar_lista_ativos_json(ativos, campo_ordenacao='volatilidade_implicita', nome_arquivo='ativos_por_vi.json')
+    if dados:
+        salvar_formato_analise_py(dados, 'dados_mercado_consolidado.json')
         
-        salvar_lista_ativos_json(ativos, campo_ordenacao='iv_rank', nome_arquivo='ativos_por_iv_rank.json')
-        
-        salvar_lista_ativos_json(ativos, campo_ordenacao='iv_percentil', nome_arquivo='ativos_por_iv_percentil.json')
-        
-        print("\n=== TOP 10 ATIVOS POR IV PERCENTIL (AMOSTRA) ===")
-        ativos_por_percentil = ordenar_ativos_por_iv(ativos, 'iv_percentil')
-        for i, ativo in enumerate(ativos_por_percentil[:10], 1):
-            print(f"{i}. {ativo['ticker']:<7} - VI: {ativo.get('volatilidade_implicita', 'N/A'):>7} | "
-                  f"IV Rank: {ativo.get('iv_rank', 'N/A'):>7} | IV Percentil: {ativo.get('iv_percentil', 'N/A'):>7}")
+        print("=" * 70)
+    else:
+        print("Erro na consolidação dos dados")

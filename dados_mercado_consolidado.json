@@ -1,0 +1,5006 @@
+{
+  "VALE3": {
+    "ticker": "VALE3",
+    "descricao": "VALE ON",
+    "preco": "R$85,63",
+    "variacao": "-0,949%",
+    "volatilidade_implicita": "31,93",
+    "iv_rank": "58,30",
+    "iv_percentil": "99,21",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/VALE3",
+    "analise_tecnica": {
+      "score_volatilidade": 50,
+      "classificacao_volatilidade": "Média",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade moderada - mercado equilibrado",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "BOVA11": {
+    "ticker": "BOVA11",
+    "descricao": "ISHARES BOVACI",
+    "preco": "R$179,69",
+    "variacao": "+0,582%",
+    "volatilidade_implicita": "21,07",
+    "iv_rank": "43,02",
+    "iv_percentil": "89,68",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/BOVA11",
+    "analise_tecnica": {
+      "score_volatilidade": 30,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade baixa - pode ser oportunidade para compra de opções",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "ITUB4": {
+    "ticker": "ITUB4",
+    "descricao": "ITAUUNIBANCOPN",
+    "preco": "R$46,95",
+    "variacao": "+3,141%",
+    "volatilidade_implicita": "25,36",
+    "iv_rank": "22,35",
+    "iv_percentil": "93,25",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/ITUB4",
+    "analise_tecnica": {
+      "score_volatilidade": 30,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade baixa - pode ser oportunidade para compra de opções",
+        "IV Rank em 22.4% - volatilidade abaixo da média histórica",
+        "IV Percentil muito alto - possível reversão de volatilidade",
+        "Movimento moderado de +3.14% no dia"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "PETR4": {
+    "ticker": "PETR4",
+    "descricao": "PETROBRAS PN",
+    "preco": "R$36,64",
+    "variacao": "-0,973%",
+    "volatilidade_implicita": "30,78",
+    "iv_rank": "50,35",
+    "iv_percentil": "84,13",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/PETR4",
+    "analise_tecnica": {
+      "score_volatilidade": 50,
+      "classificacao_volatilidade": "Média",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade moderada - mercado equilibrado",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "IFCM3": {
+    "ticker": "IFCM3",
+    "descricao": "INFRACOMM ON",
+    "preco": "R$0,57",
+    "variacao": "+0%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "N/A",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/IFCM3",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": []
+    },
+    "opcoes_detalhadas": []
+  },
+  "BBDC4": {
+    "ticker": "BBDC4",
+    "descricao": "BRADESCO PN",
+    "preco": "R$20,61",
+    "variacao": "-2,553%",
+    "volatilidade_implicita": "29,09",
+    "iv_rank": "37,62",
+    "iv_percentil": "98,81",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/BBDC4",
+    "analise_tecnica": {
+      "score_volatilidade": 30,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade baixa - pode ser oportunidade para compra de opções",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "BOVV11": {
+    "ticker": "BOVV11",
+    "descricao": "IT NOW IBOV CI",
+    "preco": "R$188,18",
+    "variacao": "+0,416%",
+    "volatilidade_implicita": "22,12",
+    "iv_rank": "54,08",
+    "iv_percentil": "92,46",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/BOVV11",
+    "analise_tecnica": {
+      "score_volatilidade": 30,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade baixa - pode ser oportunidade para compra de opções",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "BBAS3": {
+    "ticker": "BBAS3",
+    "descricao": "BRASIL ON",
+    "preco": "R$24,26",
+    "variacao": "-0,736%",
+    "volatilidade_implicita": "35,73",
+    "iv_rank": "45,01",
+    "iv_percentil": "92,46",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/BBAS3",
+    "analise_tecnica": {
+      "score_volatilidade": 50,
+      "classificacao_volatilidade": "Média",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade moderada - mercado equilibrado",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "RENT3": {
+    "ticker": "RENT3",
+    "descricao": "LOCALIZA ON",
+    "preco": "R$51,68",
+    "variacao": "+3,215%",
+    "volatilidade_implicita": "42,71",
+    "iv_rank": "60,03",
+    "iv_percentil": "86,51",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/RENT3",
+    "analise_tecnica": {
+      "score_volatilidade": 50,
+      "classificacao_volatilidade": "Média",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade moderada - mercado equilibrado",
+        "IV Percentil muito alto - possível reversão de volatilidade",
+        "Movimento moderado de +3.21% no dia"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "WEGE3": {
+    "ticker": "WEGE3",
+    "descricao": "WEG ON",
+    "preco": "R$51,85",
+    "variacao": "-0,69%",
+    "volatilidade_implicita": "38,22",
+    "iv_rank": "50,52",
+    "iv_percentil": "99,60",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/WEGE3",
+    "analise_tecnica": {
+      "score_volatilidade": 50,
+      "classificacao_volatilidade": "Média",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade moderada - mercado equilibrado",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "PRIO3": {
+    "ticker": "PRIO3",
+    "descricao": "PETRORIO ON",
+    "preco": "R$50,31",
+    "variacao": "+2,36%",
+    "volatilidade_implicita": "35,39",
+    "iv_rank": "49,19",
+    "iv_percentil": "80,56",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/PRIO3",
+    "analise_tecnica": {
+      "score_volatilidade": 50,
+      "classificacao_volatilidade": "Média",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade moderada - mercado equilibrado",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "MBRF3": {
+    "ticker": "MBRF3",
+    "descricao": "MARFRIG ON",
+    "preco": "R$18,82",
+    "variacao": "-0,318%",
+    "volatilidade_implicita": "47,64",
+    "iv_rank": "28,08",
+    "iv_percentil": "20,24",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/MBRF3",
+    "analise_tecnica": {
+      "score_volatilidade": 70,
+      "classificacao_volatilidade": "Alta",
+      "oportunidade_venda": true,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Alto",
+      "observacoes": [
+        "Volatilidade alta - bom momento para estratégias de venda",
+        "IV Rank em 28.1% - volatilidade abaixo da média histórica"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "ITSA4": {
+    "ticker": "ITSA4",
+    "descricao": "ITAUSA PN",
+    "preco": "R$14,17",
+    "variacao": "+2,384%",
+    "volatilidade_implicita": "25,79",
+    "iv_rank": "14,33",
+    "iv_percentil": "94,44",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/ITSA4",
+    "analise_tecnica": {
+      "score_volatilidade": 30,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade baixa - pode ser oportunidade para compra de opções",
+        "IV Rank em 14.3% - volatilidade abaixo da média histórica",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "BRAV3": {
+    "ticker": "BRAV3",
+    "descricao": "BRAVA ON",
+    "preco": "R$17,48",
+    "variacao": "-0,625%",
+    "volatilidade_implicita": "43,21",
+    "iv_rank": "38,62",
+    "iv_percentil": "56,35",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/BRAV3",
+    "analise_tecnica": {
+      "score_volatilidade": 50,
+      "classificacao_volatilidade": "Média",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade moderada - mercado equilibrado"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "B3SA3": {
+    "ticker": "B3SA3",
+    "descricao": "B3 ON",
+    "preco": "R$17,05",
+    "variacao": "+4,859%",
+    "volatilidade_implicita": "43,28",
+    "iv_rank": "100,00",
+    "iv_percentil": "94,44",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/B3SA3",
+    "analise_tecnica": {
+      "score_volatilidade": 50,
+      "classificacao_volatilidade": "Média",
+      "oportunidade_venda": true,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade moderada - mercado equilibrado",
+        "IV Rank em 100.0% - volatilidade no topo histórico",
+        "IV Percentil muito alto - possível reversão de volatilidade",
+        "Movimento moderado de +4.86% no dia"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "BPAC11": {
+    "ticker": "BPAC11",
+    "descricao": "BTGP BANCO UNT",
+    "preco": "R$59,96",
+    "variacao": "+1,662%",
+    "volatilidade_implicita": "33,38",
+    "iv_rank": "70,60",
+    "iv_percentil": "95,63",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/BPAC11",
+    "analise_tecnica": {
+      "score_volatilidade": 50,
+      "classificacao_volatilidade": "Média",
+      "oportunidade_venda": true,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade moderada - mercado equilibrado",
+        "IV Rank em 70.6% - volatilidade no topo histórico",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "RDOR3": {
+    "ticker": "RDOR3",
+    "descricao": "REDE D OR ON",
+    "preco": "R$41,74",
+    "variacao": "+0,312%",
+    "volatilidade_implicita": "36,16",
+    "iv_rank": "70,80",
+    "iv_percentil": "99,21",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/RDOR3",
+    "analise_tecnica": {
+      "score_volatilidade": 50,
+      "classificacao_volatilidade": "Média",
+      "oportunidade_venda": true,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade moderada - mercado equilibrado",
+        "IV Rank em 70.8% - volatilidade no topo histórico",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "ENEV3": {
+    "ticker": "ENEV3",
+    "descricao": "ENEVA ON",
+    "preco": "R$21,89",
+    "variacao": "+1,437%",
+    "volatilidade_implicita": "50,49",
+    "iv_rank": "89,17",
+    "iv_percentil": "98,02",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/ENEV3",
+    "analise_tecnica": {
+      "score_volatilidade": 70,
+      "classificacao_volatilidade": "Alta",
+      "oportunidade_venda": true,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Alto",
+      "observacoes": [
+        "Volatilidade alta - bom momento para estratégias de venda",
+        "IV Rank em 89.2% - volatilidade no topo histórico",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "CSAN3": {
+    "ticker": "CSAN3",
+    "descricao": "COSAN ON",
+    "preco": "R$5,69",
+    "variacao": "+0,887%",
+    "volatilidade_implicita": "39,94",
+    "iv_rank": "9,12",
+    "iv_percentil": "84,92",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/CSAN3",
+    "analise_tecnica": {
+      "score_volatilidade": 50,
+      "classificacao_volatilidade": "Média",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade moderada - mercado equilibrado",
+        "IV Rank em 9.1% - volatilidade abaixo da média histórica",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "MGLU3": {
+    "ticker": "MGLU3",
+    "descricao": "MAGAZ LUIZA ON",
+    "preco": "R$10,19",
+    "variacao": "+5,596%",
+    "volatilidade_implicita": "58,02",
+    "iv_rank": "21,77",
+    "iv_percentil": "26,98",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/MGLU3",
+    "analise_tecnica": {
+      "score_volatilidade": 70,
+      "classificacao_volatilidade": "Alta",
+      "oportunidade_venda": true,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Alto",
+      "observacoes": [
+        "Volatilidade alta - bom momento para estratégias de venda",
+        "IV Rank em 21.8% - volatilidade abaixo da média histórica",
+        "Movimento significativo de +5.60% no dia"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "ABEV3": {
+    "ticker": "ABEV3",
+    "descricao": "AMBEV S/A ON",
+    "preco": "R$15,37",
+    "variacao": "-0,711%",
+    "volatilidade_implicita": "29,29",
+    "iv_rank": "52,96",
+    "iv_percentil": "94,84",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/ABEV3",
+    "analise_tecnica": {
+      "score_volatilidade": 30,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade baixa - pode ser oportunidade para compra de opções",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "CYRE3": {
+    "ticker": "CYRE3",
+    "descricao": "CYRELA REALTON",
+    "preco": "R$31,14",
+    "variacao": "+0,129%",
+    "volatilidade_implicita": "37,13",
+    "iv_rank": "9,82",
+    "iv_percentil": "87,30",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/CYRE3",
+    "analise_tecnica": {
+      "score_volatilidade": 50,
+      "classificacao_volatilidade": "Média",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade moderada - mercado equilibrado",
+        "IV Rank em 9.8% - volatilidade abaixo da média histórica",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "SMAL11": {
+    "ticker": "SMAL11",
+    "descricao": "ISHARES SMALCI",
+    "preco": "R$124,62",
+    "variacao": "+0,907%",
+    "volatilidade_implicita": "26,84",
+    "iv_rank": "54,80",
+    "iv_percentil": "98,02",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/SMAL11",
+    "analise_tecnica": {
+      "score_volatilidade": 30,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade baixa - pode ser oportunidade para compra de opções",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "ALOS3": {
+    "ticker": "ALOS3",
+    "descricao": "ALLOS ON",
+    "preco": "R$31,36",
+    "variacao": "-0,35%",
+    "volatilidade_implicita": "28,36",
+    "iv_rank": "62,45",
+    "iv_percentil": "96,83",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/ALOS3",
+    "analise_tecnica": {
+      "score_volatilidade": 30,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade baixa - pode ser oportunidade para compra de opções",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "MELI34": {
+    "ticker": "MELI34",
+    "descricao": "MERCADOLIBREDRN",
+    "preco": "R$85,02",
+    "variacao": "-4,214%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "92,86",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/MELI34",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": [
+        "IV Percentil muito alto - possível reversão de volatilidade",
+        "Movimento moderado de -4.21% no dia"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "HAPV3": {
+    "ticker": "HAPV3",
+    "descricao": "HAPVIDA ON",
+    "preco": "R$11,76",
+    "variacao": "-2,407%",
+    "volatilidade_implicita": "39,59",
+    "iv_rank": "12,40",
+    "iv_percentil": "31,75",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/HAPV3",
+    "analise_tecnica": {
+      "score_volatilidade": 50,
+      "classificacao_volatilidade": "Média",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade moderada - mercado equilibrado",
+        "IV Rank em 12.4% - volatilidade abaixo da média histórica"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "AZZA3": {
+    "ticker": "AZZA3",
+    "descricao": "AZZAS 2154 ON",
+    "preco": "R$24,98",
+    "variacao": "+1,093%",
+    "volatilidade_implicita": "43,96",
+    "iv_rank": "31,68",
+    "iv_percentil": "62,70",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/AZZA3",
+    "analise_tecnica": {
+      "score_volatilidade": 50,
+      "classificacao_volatilidade": "Média",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade moderada - mercado equilibrado"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "TOTS3": {
+    "ticker": "TOTS3",
+    "descricao": "TOTVS ON",
+    "preco": "R$37,95",
+    "variacao": "+1,281%",
+    "volatilidade_implicita": "41,25",
+    "iv_rank": "84,23",
+    "iv_percentil": "98,81",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/TOTS3",
+    "analise_tecnica": {
+      "score_volatilidade": 50,
+      "classificacao_volatilidade": "Média",
+      "oportunidade_venda": true,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade moderada - mercado equilibrado",
+        "IV Rank em 84.2% - volatilidade no topo histórico",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "SBSP3": {
+    "ticker": "SBSP3",
+    "descricao": "SABESP ON",
+    "preco": "R$144,00",
+    "variacao": "-0,69%",
+    "volatilidade_implicita": "26,61",
+    "iv_rank": "31,57",
+    "iv_percentil": "95,24",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/SBSP3",
+    "analise_tecnica": {
+      "score_volatilidade": 30,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade baixa - pode ser oportunidade para compra de opções",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "SUZB3": {
+    "ticker": "SUZB3",
+    "descricao": "SUZANO S.A. ON",
+    "preco": "R$50,15",
+    "variacao": "-0,555%",
+    "volatilidade_implicita": "28,33",
+    "iv_rank": "41,56",
+    "iv_percentil": "98,02",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/SUZB3",
+    "analise_tecnica": {
+      "score_volatilidade": 30,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade baixa - pode ser oportunidade para compra de opções",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "BBDC3": {
+    "ticker": "BBDC3",
+    "descricao": "BRADESCO ON",
+    "preco": "R$17,81",
+    "variacao": "-1,981%",
+    "volatilidade_implicita": "27,32",
+    "iv_rank": "52,31",
+    "iv_percentil": "99,21",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/BBDC3",
+    "analise_tecnica": {
+      "score_volatilidade": 30,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade baixa - pode ser oportunidade para compra de opções",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "SBFG3": {
+    "ticker": "SBFG3",
+    "descricao": "GRUPO SBF ON",
+    "preco": "R$13,07",
+    "variacao": "-4,249%",
+    "volatilidade_implicita": "40,01",
+    "iv_rank": "14,32",
+    "iv_percentil": "50,79",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/SBFG3",
+    "analise_tecnica": {
+      "score_volatilidade": 50,
+      "classificacao_volatilidade": "Média",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade moderada - mercado equilibrado",
+        "IV Rank em 14.3% - volatilidade abaixo da média histórica",
+        "Movimento moderado de -4.25% no dia"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "LREN3": {
+    "ticker": "LREN3",
+    "descricao": "LOJAS RENNERON",
+    "preco": "R$15,52",
+    "variacao": "+2,105%",
+    "volatilidade_implicita": "40,08",
+    "iv_rank": "39,90",
+    "iv_percentil": "82,54",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/LREN3",
+    "analise_tecnica": {
+      "score_volatilidade": 50,
+      "classificacao_volatilidade": "Média",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade moderada - mercado equilibrado",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "MOTV3": {
+    "ticker": "MOTV3",
+    "descricao": "MOTIVA SA ON",
+    "preco": "R$17,03",
+    "variacao": "+0,591%",
+    "volatilidade_implicita": "29,96",
+    "iv_rank": "56,33",
+    "iv_percentil": "76,19",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/MOTV3",
+    "analise_tecnica": {
+      "score_volatilidade": 30,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade baixa - pode ser oportunidade para compra de opções"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "EMBJ3": {
+    "ticker": "EMBJ3",
+    "descricao": "EMBRAER ON",
+    "preco": "R$91,80",
+    "variacao": "+0%",
+    "volatilidade_implicita": "31,06",
+    "iv_rank": "34,80",
+    "iv_percentil": "26,98",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/EMBJ3",
+    "analise_tecnica": {
+      "score_volatilidade": 50,
+      "classificacao_volatilidade": "Média",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade moderada - mercado equilibrado"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "MULT3": {
+    "ticker": "MULT3",
+    "descricao": "MULTIPLAN ON",
+    "preco": "R$33,54",
+    "variacao": "+1,544%",
+    "volatilidade_implicita": "28,22",
+    "iv_rank": "37,93",
+    "iv_percentil": "95,24",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/MULT3",
+    "analise_tecnica": {
+      "score_volatilidade": 30,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade baixa - pode ser oportunidade para compra de opções",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "SANB11": {
+    "ticker": "SANB11",
+    "descricao": "SANTANDER BRUNT",
+    "preco": "R$33,92",
+    "variacao": "-1,823%",
+    "volatilidade_implicita": "31,72",
+    "iv_rank": "64,57",
+    "iv_percentil": "98,81",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/SANB11",
+    "analise_tecnica": {
+      "score_volatilidade": 50,
+      "classificacao_volatilidade": "Média",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade moderada - mercado equilibrado",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "AXIA3": {
+    "ticker": "AXIA3",
+    "descricao": "AXIA ENERGIAON",
+    "preco": "R$57,97",
+    "variacao": "+1,88%",
+    "volatilidade_implicita": "29,52",
+    "iv_rank": "40,63",
+    "iv_percentil": "25,00",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/AXIA3",
+    "analise_tecnica": {
+      "score_volatilidade": 30,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade baixa - pode ser oportunidade para compra de opções"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "GGBR4": {
+    "ticker": "GGBR4",
+    "descricao": "GERDAU PN",
+    "preco": "R$22,02",
+    "variacao": "+0,045%",
+    "volatilidade_implicita": "32,76",
+    "iv_rank": "44,76",
+    "iv_percentil": "90,08",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/GGBR4",
+    "analise_tecnica": {
+      "score_volatilidade": 50,
+      "classificacao_volatilidade": "Média",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade moderada - mercado equilibrado",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "HYPE3": {
+    "ticker": "HYPE3",
+    "descricao": "HYPERA ON",
+    "preco": "R$23,60",
+    "variacao": "+1,027%",
+    "volatilidade_implicita": "36,09",
+    "iv_rank": "25,59",
+    "iv_percentil": "93,65",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/HYPE3",
+    "analise_tecnica": {
+      "score_volatilidade": 50,
+      "classificacao_volatilidade": "Média",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade moderada - mercado equilibrado",
+        "IV Rank em 25.6% - volatilidade abaixo da média histórica",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "GFSA3": {
+    "ticker": "GFSA3",
+    "descricao": "GAFISA ON",
+    "preco": "R$3,66",
+    "variacao": "+0,826%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "61,51",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/GFSA3",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": []
+    },
+    "opcoes_detalhadas": []
+  },
+  "COGN3": {
+    "ticker": "COGN3",
+    "descricao": "COGNA ON ON",
+    "preco": "R$3,80",
+    "variacao": "-3,553%",
+    "volatilidade_implicita": "46,71",
+    "iv_rank": "14,63",
+    "iv_percentil": "62,70",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/COGN3",
+    "analise_tecnica": {
+      "score_volatilidade": 70,
+      "classificacao_volatilidade": "Alta",
+      "oportunidade_venda": true,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Alto",
+      "observacoes": [
+        "Volatilidade alta - bom momento para estratégias de venda",
+        "IV Rank em 14.6% - volatilidade abaixo da média histórica",
+        "Movimento moderado de -3.55% no dia"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "ITUB3": {
+    "ticker": "ITUB3",
+    "descricao": "ITAUUNIBANCOON",
+    "preco": "R$43,50",
+    "variacao": "+2,329%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "69,05",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/ITUB3",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": []
+    },
+    "opcoes_detalhadas": []
+  },
+  "BBSE3": {
+    "ticker": "BBSE3",
+    "descricao": "BBSEGURIDADEON",
+    "preco": "R$37,22",
+    "variacao": "+0,027%",
+    "volatilidade_implicita": "21,16",
+    "iv_rank": "39,75",
+    "iv_percentil": "96,43",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/BBSE3",
+    "analise_tecnica": {
+      "score_volatilidade": 30,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade baixa - pode ser oportunidade para compra de opções",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "USIM5": {
+    "ticker": "USIM5",
+    "descricao": "USIMINAS PNA",
+    "preco": "R$6,21",
+    "variacao": "-2,512%",
+    "volatilidade_implicita": "48,29",
+    "iv_rank": "71,85",
+    "iv_percentil": "98,02",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/USIM5",
+    "analise_tecnica": {
+      "score_volatilidade": 70,
+      "classificacao_volatilidade": "Alta",
+      "oportunidade_venda": true,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Alto",
+      "observacoes": [
+        "Volatilidade alta - bom momento para estratégias de venda",
+        "IV Rank em 71.8% - volatilidade no topo histórico",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "BEEF3": {
+    "ticker": "BEEF3",
+    "descricao": "MINERVA ON",
+    "preco": "R$6,14",
+    "variacao": "+0,821%",
+    "volatilidade_implicita": "36,55",
+    "iv_rank": "15,79",
+    "iv_percentil": "38,49",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/BEEF3",
+    "analise_tecnica": {
+      "score_volatilidade": 50,
+      "classificacao_volatilidade": "Média",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade moderada - mercado equilibrado",
+        "IV Rank em 15.8% - volatilidade abaixo da média histórica"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "QUAL3": {
+    "ticker": "QUAL3",
+    "descricao": "QUALICORP ON",
+    "preco": "R$2,22",
+    "variacao": "-0,448%",
+    "volatilidade_implicita": "51,45",
+    "iv_rank": "37,60",
+    "iv_percentil": "18,65",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/QUAL3",
+    "analise_tecnica": {
+      "score_volatilidade": 70,
+      "classificacao_volatilidade": "Alta",
+      "oportunidade_venda": true,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Alto",
+      "observacoes": [
+        "Volatilidade alta - bom momento para estratégias de venda",
+        "IV Percentil muito baixo - possível aumento de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "NATU3": {
+    "ticker": "NATU3",
+    "descricao": "NATURA ON",
+    "preco": "R$9,11",
+    "variacao": "+1,902%",
+    "volatilidade_implicita": "49,94",
+    "iv_rank": "56,72",
+    "iv_percentil": "46,03",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/NATU3",
+    "analise_tecnica": {
+      "score_volatilidade": 70,
+      "classificacao_volatilidade": "Alta",
+      "oportunidade_venda": true,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Alto",
+      "observacoes": [
+        "Volatilidade alta - bom momento para estratégias de venda"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "CSMG3": {
+    "ticker": "CSMG3",
+    "descricao": "COPASA ON",
+    "preco": "R$53,90",
+    "variacao": "+0,223%",
+    "volatilidade_implicita": "39,36",
+    "iv_rank": "48,44",
+    "iv_percentil": "98,02",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/CSMG3",
+    "analise_tecnica": {
+      "score_volatilidade": 50,
+      "classificacao_volatilidade": "Média",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade moderada - mercado equilibrado",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "ONCO3": {
+    "ticker": "ONCO3",
+    "descricao": "ONCOCLINICASON",
+    "preco": "R$2,48",
+    "variacao": "-0,80%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "83,33",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/ONCO3",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": [
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "CMIG4": {
+    "ticker": "CMIG4",
+    "descricao": "CEMIG PN",
+    "preco": "R$11,37",
+    "variacao": "-1,388%",
+    "volatilidade_implicita": "22,75",
+    "iv_rank": "8,81",
+    "iv_percentil": "82,14",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/CMIG4",
+    "analise_tecnica": {
+      "score_volatilidade": 30,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade baixa - pode ser oportunidade para compra de opções",
+        "IV Rank em 8.8% - volatilidade abaixo da média histórica",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "MRVE3": {
+    "ticker": "MRVE3",
+    "descricao": "MRV ON",
+    "preco": "R$8,90",
+    "variacao": "+1,831%",
+    "volatilidade_implicita": "44,36",
+    "iv_rank": "23,02",
+    "iv_percentil": "43,65",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/MRVE3",
+    "analise_tecnica": {
+      "score_volatilidade": 50,
+      "classificacao_volatilidade": "Média",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade moderada - mercado equilibrado",
+        "IV Rank em 23.0% - volatilidade abaixo da média histórica"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "INBR32": {
+    "ticker": "INBR32",
+    "descricao": "INTER CO DR2",
+    "preco": "R$45,66",
+    "variacao": "-0,153%",
+    "volatilidade_implicita": "27,58",
+    "iv_rank": "20,42",
+    "iv_percentil": "87,30",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/INBR32",
+    "analise_tecnica": {
+      "score_volatilidade": 30,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade baixa - pode ser oportunidade para compra de opções",
+        "IV Rank em 20.4% - volatilidade abaixo da média histórica",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "VBBR3": {
+    "ticker": "VBBR3",
+    "descricao": "VIBRA ON",
+    "preco": "R$31,76",
+    "variacao": "+2,816%",
+    "volatilidade_implicita": "28,35",
+    "iv_rank": "26,77",
+    "iv_percentil": "14,29",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/VBBR3",
+    "analise_tecnica": {
+      "score_volatilidade": 30,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade baixa - pode ser oportunidade para compra de opções",
+        "IV Rank em 26.8% - volatilidade abaixo da média histórica",
+        "IV Percentil muito baixo - possível aumento de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "CSNA3": {
+    "ticker": "CSNA3",
+    "descricao": "SID NACIONALON",
+    "preco": "R$9,52",
+    "variacao": "-3,838%",
+    "volatilidade_implicita": "54,84",
+    "iv_rank": "81,09",
+    "iv_percentil": "97,22",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/CSNA3",
+    "analise_tecnica": {
+      "score_volatilidade": 70,
+      "classificacao_volatilidade": "Alta",
+      "oportunidade_venda": true,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Alto",
+      "observacoes": [
+        "Volatilidade alta - bom momento para estratégias de venda",
+        "IV Rank em 81.1% - volatilidade no topo histórico",
+        "IV Percentil muito alto - possível reversão de volatilidade",
+        "Movimento moderado de -3.84% no dia"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "BRAP4": {
+    "ticker": "BRAP4",
+    "descricao": "BRADESPAR PN",
+    "preco": "R$24,30",
+    "variacao": "-0,654%",
+    "volatilidade_implicita": "34,48",
+    "iv_rank": "67,35",
+    "iv_percentil": "98,41",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/BRAP4",
+    "analise_tecnica": {
+      "score_volatilidade": 50,
+      "classificacao_volatilidade": "Média",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade moderada - mercado equilibrado",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "RAIZ4": {
+    "ticker": "RAIZ4",
+    "descricao": "RAIZEN PN",
+    "preco": "R$0,85",
+    "variacao": "+0%",
+    "volatilidade_implicita": "61,74",
+    "iv_rank": "38,89",
+    "iv_percentil": "98,81",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/RAIZ4",
+    "analise_tecnica": {
+      "score_volatilidade": 90,
+      "classificacao_volatilidade": "Muito Alta",
+      "oportunidade_venda": true,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Muito Alto",
+      "observacoes": [
+        "Volatilidade extremamente elevada - excelente para venda de opções",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "BRKM5": {
+    "ticker": "BRKM5",
+    "descricao": "BRASKEM PNA",
+    "preco": "R$9,36",
+    "variacao": "+4,00%",
+    "volatilidade_implicita": "55,44",
+    "iv_rank": "31,13",
+    "iv_percentil": "27,78",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/BRKM5",
+    "analise_tecnica": {
+      "score_volatilidade": 70,
+      "classificacao_volatilidade": "Alta",
+      "oportunidade_venda": true,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Alto",
+      "observacoes": [
+        "Volatilidade alta - bom momento para estratégias de venda",
+        "Movimento moderado de +4.00% no dia"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "IRBR3": {
+    "ticker": "IRBR3",
+    "descricao": "IRBBRASIL REON",
+    "preco": "R$56,89",
+    "variacao": "+0,106%",
+    "volatilidade_implicita": "41,27",
+    "iv_rank": "42,31",
+    "iv_percentil": "52,38",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/IRBR3",
+    "analise_tecnica": {
+      "score_volatilidade": 50,
+      "classificacao_volatilidade": "Média",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade moderada - mercado equilibrado"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "MOVI3": {
+    "ticker": "MOVI3",
+    "descricao": "MOVIDA ON",
+    "preco": "R$13,70",
+    "variacao": "+5,628%",
+    "volatilidade_implicita": "58,33",
+    "iv_rank": "27,33",
+    "iv_percentil": "75,00",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/MOVI3",
+    "analise_tecnica": {
+      "score_volatilidade": 70,
+      "classificacao_volatilidade": "Alta",
+      "oportunidade_venda": true,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Alto",
+      "observacoes": [
+        "Volatilidade alta - bom momento para estratégias de venda",
+        "IV Rank em 27.3% - volatilidade abaixo da média histórica",
+        "Movimento significativo de +5.63% no dia"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "JBSS32": {
+    "ticker": "JBSS32",
+    "descricao": "JBS N.V. DR2",
+    "preco": "R$81,92",
+    "variacao": "-1,051%",
+    "volatilidade_implicita": "26,42",
+    "iv_rank": "30,34",
+    "iv_percentil": "31,35",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/JBSS32",
+    "analise_tecnica": {
+      "score_volatilidade": 30,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade baixa - pode ser oportunidade para compra de opções"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "CMIN3": {
+    "ticker": "CMIN3",
+    "descricao": "CSNMINERACAOON",
+    "preco": "R$5,90",
+    "variacao": "-0,84%",
+    "volatilidade_implicita": "40,55",
+    "iv_rank": "43,67",
+    "iv_percentil": "96,03",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/CMIN3",
+    "analise_tecnica": {
+      "score_volatilidade": 50,
+      "classificacao_volatilidade": "Média",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade moderada - mercado equilibrado",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "SMTO3": {
+    "ticker": "SMTO3",
+    "descricao": "SAO MARTINHOON",
+    "preco": "R$15,07",
+    "variacao": "+2,937%",
+    "volatilidade_implicita": "39,19",
+    "iv_rank": "57,02",
+    "iv_percentil": "79,37",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/SMTO3",
+    "analise_tecnica": {
+      "score_volatilidade": 50,
+      "classificacao_volatilidade": "Média",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade moderada - mercado equilibrado"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "EGIE3": {
+    "ticker": "EGIE3",
+    "descricao": "ENGIE BRASILON",
+    "preco": "R$33,35",
+    "variacao": "+0,12%",
+    "volatilidade_implicita": "23,40",
+    "iv_rank": "28,24",
+    "iv_percentil": "85,71",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/EGIE3",
+    "analise_tecnica": {
+      "score_volatilidade": 30,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade baixa - pode ser oportunidade para compra de opções",
+        "IV Rank em 28.2% - volatilidade abaixo da média histórica",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "SAPR11": {
+    "ticker": "SAPR11",
+    "descricao": "SANEPAR UNT",
+    "preco": "R$46,15",
+    "variacao": "-0,987%",
+    "volatilidade_implicita": "25,71",
+    "iv_rank": "67,63",
+    "iv_percentil": "91,27",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/SAPR11",
+    "analise_tecnica": {
+      "score_volatilidade": 30,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade baixa - pode ser oportunidade para compra de opções",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "PETR3": {
+    "ticker": "PETR3",
+    "descricao": "PETROBRAS ON",
+    "preco": "R$38,87",
+    "variacao": "-1,044%",
+    "volatilidade_implicita": "28,59",
+    "iv_rank": "31,42",
+    "iv_percentil": "86,90",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/PETR3",
+    "analise_tecnica": {
+      "score_volatilidade": 30,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade baixa - pode ser oportunidade para compra de opções",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "AXIA6": {
+    "ticker": "AXIA6",
+    "descricao": "AXIA ENERGIAPNB",
+    "preco": "R$61,97",
+    "variacao": "+2,311%",
+    "volatilidade_implicita": "29,02",
+    "iv_rank": "8,19",
+    "iv_percentil": "24,60",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/AXIA6",
+    "analise_tecnica": {
+      "score_volatilidade": 30,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade baixa - pode ser oportunidade para compra de opções",
+        "IV Rank em 8.2% - volatilidade abaixo da média histórica"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "UGPA3": {
+    "ticker": "UGPA3",
+    "descricao": "ULTRAPAR ON",
+    "preco": "R$26,67",
+    "variacao": "+2,106%",
+    "volatilidade_implicita": "30,61",
+    "iv_rank": "15,28",
+    "iv_percentil": "48,41",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/UGPA3",
+    "analise_tecnica": {
+      "score_volatilidade": 50,
+      "classificacao_volatilidade": "Média",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade moderada - mercado equilibrado",
+        "IV Rank em 15.3% - volatilidade abaixo da média histórica"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "CVCB3": {
+    "ticker": "CVCB3",
+    "descricao": "CVC BRASIL ON",
+    "preco": "R$2,49",
+    "variacao": "-2,353%",
+    "volatilidade_implicita": "81,19",
+    "iv_rank": "72,80",
+    "iv_percentil": "96,83",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/CVCB3",
+    "analise_tecnica": {
+      "score_volatilidade": 90,
+      "classificacao_volatilidade": "Muito Alta",
+      "oportunidade_venda": true,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Muito Alto",
+      "observacoes": [
+        "Volatilidade extremamente elevada - excelente para venda de opções",
+        "IV Rank em 72.8% - volatilidade no topo histórico",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "PCAR3": {
+    "ticker": "PCAR3",
+    "descricao": "P.ACUCAR-CBDON",
+    "preco": "R$3,72",
+    "variacao": "+0,813%",
+    "volatilidade_implicita": "54,81",
+    "iv_rank": "21,80",
+    "iv_percentil": "37,30",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/PCAR3",
+    "analise_tecnica": {
+      "score_volatilidade": 70,
+      "classificacao_volatilidade": "Alta",
+      "oportunidade_venda": true,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Alto",
+      "observacoes": [
+        "Volatilidade alta - bom momento para estratégias de venda",
+        "IV Rank em 21.8% - volatilidade abaixo da média histórica"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "SIMH3": {
+    "ticker": "SIMH3",
+    "descricao": "SIMPAR ON",
+    "preco": "R$6,93",
+    "variacao": "+3,433%",
+    "volatilidade_implicita": "53,25",
+    "iv_rank": "23,72",
+    "iv_percentil": "51,59",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/SIMH3",
+    "analise_tecnica": {
+      "score_volatilidade": 70,
+      "classificacao_volatilidade": "Alta",
+      "oportunidade_venda": true,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Alto",
+      "observacoes": [
+        "Volatilidade alta - bom momento para estratégias de venda",
+        "IV Rank em 23.7% - volatilidade abaixo da média histórica",
+        "Movimento moderado de +3.43% no dia"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "KLBN11": {
+    "ticker": "KLBN11",
+    "descricao": "KLABIN S/A UNT",
+    "preco": "R$19,32",
+    "variacao": "-0,566%",
+    "volatilidade_implicita": "24,08",
+    "iv_rank": "53,68",
+    "iv_percentil": "98,02",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/KLBN11",
+    "analise_tecnica": {
+      "score_volatilidade": 30,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade baixa - pode ser oportunidade para compra de opções",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "EQTL3": {
+    "ticker": "EQTL3",
+    "descricao": "EQUATORIAL ON",
+    "preco": "R$40,87",
+    "variacao": "+1,088%",
+    "volatilidade_implicita": "27,71",
+    "iv_rank": "43,96",
+    "iv_percentil": "94,44",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/EQTL3",
+    "analise_tecnica": {
+      "score_volatilidade": 30,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade baixa - pode ser oportunidade para compra de opções",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "CXSE3": {
+    "ticker": "CXSE3",
+    "descricao": "CAIXA SEGURION",
+    "preco": "R$18,26",
+    "variacao": "+1,332%",
+    "volatilidade_implicita": "17,56",
+    "iv_rank": "31,27",
+    "iv_percentil": "89,68",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/CXSE3",
+    "analise_tecnica": {
+      "score_volatilidade": 10,
+      "classificacao_volatilidade": "Muito Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Alto",
+      "observacoes": [
+        "Volatilidade muito baixa - ótimo para compra de opções antes de movimentos",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "VAMO3": {
+    "ticker": "VAMO3",
+    "descricao": "VAMOS ON",
+    "preco": "R$4,45",
+    "variacao": "+1,136%",
+    "volatilidade_implicita": "53,52",
+    "iv_rank": "31,36",
+    "iv_percentil": "79,37",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/VAMO3",
+    "analise_tecnica": {
+      "score_volatilidade": 70,
+      "classificacao_volatilidade": "Alta",
+      "oportunidade_venda": true,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Alto",
+      "observacoes": [
+        "Volatilidade alta - bom momento para estratégias de venda"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "TAEE11": {
+    "ticker": "TAEE11",
+    "descricao": "TAESA UNT",
+    "preco": "R$41,75",
+    "variacao": "+0,12%",
+    "volatilidade_implicita": "23,03",
+    "iv_rank": "55,33",
+    "iv_percentil": "95,24",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/TAEE11",
+    "analise_tecnica": {
+      "score_volatilidade": 30,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade baixa - pode ser oportunidade para compra de opções",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "TIMS3": {
+    "ticker": "TIMS3",
+    "descricao": "TIM ON",
+    "preco": "R$25,59",
+    "variacao": "+0,196%",
+    "volatilidade_implicita": "25,11",
+    "iv_rank": "46,61",
+    "iv_percentil": "61,11",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/TIMS3",
+    "analise_tecnica": {
+      "score_volatilidade": 30,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade baixa - pode ser oportunidade para compra de opções"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "GOAU4": {
+    "ticker": "GOAU4",
+    "descricao": "GERDAU MET PN",
+    "preco": "R$9,86",
+    "variacao": "+0,102%",
+    "volatilidade_implicita": "32,22",
+    "iv_rank": "56,48",
+    "iv_percentil": "93,65",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/GOAU4",
+    "analise_tecnica": {
+      "score_volatilidade": 50,
+      "classificacao_volatilidade": "Média",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade moderada - mercado equilibrado",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "ISAE4": {
+    "ticker": "ISAE4",
+    "descricao": "ISA ENERGIA PN",
+    "preco": "R$28,93",
+    "variacao": "-0,618%",
+    "volatilidade_implicita": "19,95",
+    "iv_rank": "61,48",
+    "iv_percentil": "94,44",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/ISAE4",
+    "analise_tecnica": {
+      "score_volatilidade": 10,
+      "classificacao_volatilidade": "Muito Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Alto",
+      "observacoes": [
+        "Volatilidade muito baixa - ótimo para compra de opções antes de movimentos",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "BHIA3": {
+    "ticker": "BHIA3",
+    "descricao": "CASAS BAHIA ON",
+    "preco": "R$2,93",
+    "variacao": "-1,678%",
+    "volatilidade_implicita": "63,18",
+    "iv_rank": "26,94",
+    "iv_percentil": "10,71",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/BHIA3",
+    "analise_tecnica": {
+      "score_volatilidade": 90,
+      "classificacao_volatilidade": "Muito Alta",
+      "oportunidade_venda": true,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Muito Alto",
+      "observacoes": [
+        "Volatilidade extremamente elevada - excelente para venda de opções",
+        "IV Rank em 26.9% - volatilidade abaixo da média histórica",
+        "IV Percentil muito baixo - possível aumento de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "IVVB11": {
+    "ticker": "IVVB11",
+    "descricao": "ISHARE SP500CI",
+    "preco": "R$409,18",
+    "variacao": "+1,554%",
+    "volatilidade_implicita": "20,27",
+    "iv_rank": "43,29",
+    "iv_percentil": "70,24",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/IVVB11",
+    "analise_tecnica": {
+      "score_volatilidade": 30,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade baixa - pode ser oportunidade para compra de opções"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "VIVT3": {
+    "ticker": "VIVT3",
+    "descricao": "TELEF BRASILON",
+    "preco": "R$38,90",
+    "variacao": "+0,232%",
+    "volatilidade_implicita": "24,81",
+    "iv_rank": "52,48",
+    "iv_percentil": "85,32",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/VIVT3",
+    "analise_tecnica": {
+      "score_volatilidade": 30,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade baixa - pode ser oportunidade para compra de opções",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "GGPS3": {
+    "ticker": "GGPS3",
+    "descricao": "GPS ON",
+    "preco": "R$18,64",
+    "variacao": "+1,359%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "99,60",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/GGPS3",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": [
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "PSSA3": {
+    "ticker": "PSSA3",
+    "descricao": "PORTO SEGUROON",
+    "preco": "R$51,89",
+    "variacao": "+2,61%",
+    "volatilidade_implicita": "25,26",
+    "iv_rank": "58,28",
+    "iv_percentil": "96,83",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/PSSA3",
+    "analise_tecnica": {
+      "score_volatilidade": 30,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade baixa - pode ser oportunidade para compra de opções",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "RAPT4": {
+    "ticker": "RAPT4",
+    "descricao": "RANDON PART PN",
+    "preco": "R$6,27",
+    "variacao": "-0,159%",
+    "volatilidade_implicita": "38,84",
+    "iv_rank": "34,82",
+    "iv_percentil": "73,41",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/RAPT4",
+    "analise_tecnica": {
+      "score_volatilidade": 50,
+      "classificacao_volatilidade": "Média",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade moderada - mercado equilibrado"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "PNVL3": {
+    "ticker": "PNVL3",
+    "descricao": "DIMED ON",
+    "preco": "R$14,53",
+    "variacao": "+2,977%",
+    "volatilidade_implicita": "32,80",
+    "iv_rank": "34,63",
+    "iv_percentil": "76,59",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/PNVL3",
+    "analise_tecnica": {
+      "score_volatilidade": 50,
+      "classificacao_volatilidade": "Média",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade moderada - mercado equilibrado"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "INTB3": {
+    "ticker": "INTB3",
+    "descricao": "INTELBRAS ON",
+    "preco": "R$12,15",
+    "variacao": "+1,166%",
+    "volatilidade_implicita": "32,25",
+    "iv_rank": "42,79",
+    "iv_percentil": "82,94",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/INTB3",
+    "analise_tecnica": {
+      "score_volatilidade": 50,
+      "classificacao_volatilidade": "Média",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade moderada - mercado equilibrado",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "CEAB3": {
+    "ticker": "CEAB3",
+    "descricao": "CEA MODAS ON",
+    "preco": "R$13,00",
+    "variacao": "+2,686%",
+    "volatilidade_implicita": "57,93",
+    "iv_rank": "37,40",
+    "iv_percentil": "92,86",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/CEAB3",
+    "analise_tecnica": {
+      "score_volatilidade": 70,
+      "classificacao_volatilidade": "Alta",
+      "oportunidade_venda": true,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Alto",
+      "observacoes": [
+        "Volatilidade alta - bom momento para estratégias de venda",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "VIVA3": {
+    "ticker": "VIVA3",
+    "descricao": "VIVARA S.A. ON",
+    "preco": "R$29,20",
+    "variacao": "+0,309%",
+    "volatilidade_implicita": "44,86",
+    "iv_rank": "61,21",
+    "iv_percentil": "92,06",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/VIVA3",
+    "analise_tecnica": {
+      "score_volatilidade": 50,
+      "classificacao_volatilidade": "Média",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade moderada - mercado equilibrado",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "CPLE3": {
+    "ticker": "CPLE3",
+    "descricao": "COPEL ON",
+    "preco": "R$13,39",
+    "variacao": "+0,375%",
+    "volatilidade_implicita": "26,50",
+    "iv_rank": "46,33",
+    "iv_percentil": "90,87",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/CPLE3",
+    "analise_tecnica": {
+      "score_volatilidade": 30,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade baixa - pode ser oportunidade para compra de opções",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "ENGI11": {
+    "ticker": "ENGI11",
+    "descricao": "ENERGISA UNT",
+    "preco": "R$50,56",
+    "variacao": "+1,10%",
+    "volatilidade_implicita": "30,87",
+    "iv_rank": "15,08",
+    "iv_percentil": "95,63",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/ENGI11",
+    "analise_tecnica": {
+      "score_volatilidade": 50,
+      "classificacao_volatilidade": "Média",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade moderada - mercado equilibrado",
+        "IV Rank em 15.1% - volatilidade abaixo da média histórica",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "RADL3": {
+    "ticker": "RADL3",
+    "descricao": "RAIADROGASILON",
+    "preco": "R$26,72",
+    "variacao": "+1,713%",
+    "volatilidade_implicita": "41,54",
+    "iv_rank": "55,15",
+    "iv_percentil": "71,43",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/RADL3",
+    "analise_tecnica": {
+      "score_volatilidade": 50,
+      "classificacao_volatilidade": "Média",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade moderada - mercado equilibrado"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "ASAI3": {
+    "ticker": "ASAI3",
+    "descricao": "ASSAI ON",
+    "preco": "R$8,70",
+    "variacao": "+0%",
+    "volatilidade_implicita": "43,85",
+    "iv_rank": "23,45",
+    "iv_percentil": "48,02",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/ASAI3",
+    "analise_tecnica": {
+      "score_volatilidade": 50,
+      "classificacao_volatilidade": "Média",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade moderada - mercado equilibrado",
+        "IV Rank em 23.4% - volatilidade abaixo da média histórica"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "DIRR3": {
+    "ticker": "DIRR3",
+    "descricao": "DIRECIONAL ON",
+    "preco": "R$15,86",
+    "variacao": "+7,235%",
+    "volatilidade_implicita": "40,14",
+    "iv_rank": "54,67",
+    "iv_percentil": "96,43",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/DIRR3",
+    "analise_tecnica": {
+      "score_volatilidade": 50,
+      "classificacao_volatilidade": "Média",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade moderada - mercado equilibrado",
+        "IV Percentil muito alto - possível reversão de volatilidade",
+        "Movimento significativo de +7.24% no dia"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "LWSA3": {
+    "ticker": "LWSA3",
+    "descricao": "LWSA ON",
+    "preco": "R$4,41",
+    "variacao": "+0,915%",
+    "volatilidade_implicita": "46,88",
+    "iv_rank": "31,39",
+    "iv_percentil": "52,38",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/LWSA3",
+    "analise_tecnica": {
+      "score_volatilidade": 70,
+      "classificacao_volatilidade": "Alta",
+      "oportunidade_venda": true,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Alto",
+      "observacoes": [
+        "Volatilidade alta - bom momento para estratégias de venda"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "JHSF3": {
+    "ticker": "JHSF3",
+    "descricao": "JHSF PART ON",
+    "preco": "R$9,75",
+    "variacao": "+0,103%",
+    "volatilidade_implicita": "31,29",
+    "iv_rank": "46,51",
+    "iv_percentil": "86,11",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/JHSF3",
+    "analise_tecnica": {
+      "score_volatilidade": 50,
+      "classificacao_volatilidade": "Média",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade moderada - mercado equilibrado",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "YDUQ3": {
+    "ticker": "YDUQ3",
+    "descricao": "YDUQS PART ON",
+    "preco": "R$13,50",
+    "variacao": "-0,222%",
+    "volatilidade_implicita": "51,63",
+    "iv_rank": "51,33",
+    "iv_percentil": "74,21",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/YDUQ3",
+    "analise_tecnica": {
+      "score_volatilidade": 70,
+      "classificacao_volatilidade": "Alta",
+      "oportunidade_venda": true,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Alto",
+      "observacoes": [
+        "Volatilidade alta - bom momento para estratégias de venda"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "BRSR6": {
+    "ticker": "BRSR6",
+    "descricao": "BANRISUL PNB",
+    "preco": "R$18,00",
+    "variacao": "-2,913%",
+    "volatilidade_implicita": "29,64",
+    "iv_rank": "59,49",
+    "iv_percentil": "82,94",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/BRSR6",
+    "analise_tecnica": {
+      "score_volatilidade": 30,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade baixa - pode ser oportunidade para compra de opções",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "IGTI11": {
+    "ticker": "IGTI11",
+    "descricao": "IGUATEMI S.AUNT",
+    "preco": "R$28,64",
+    "variacao": "+0,175%",
+    "volatilidade_implicita": "28,01",
+    "iv_rank": "22,26",
+    "iv_percentil": "84,52",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/IGTI11",
+    "analise_tecnica": {
+      "score_volatilidade": 30,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade baixa - pode ser oportunidade para compra de opções",
+        "IV Rank em 22.3% - volatilidade abaixo da média histórica",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "ROXO34": {
+    "ticker": "ROXO34",
+    "descricao": "NU HOLDINGS DRN",
+    "preco": "R$15,06",
+    "variacao": "+2,171%",
+    "volatilidade_implicita": "38,38",
+    "iv_rank": "38,02",
+    "iv_percentil": "88,89",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/ROXO34",
+    "analise_tecnica": {
+      "score_volatilidade": 50,
+      "classificacao_volatilidade": "Média",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade moderada - mercado equilibrado",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "CPFE3": {
+    "ticker": "CPFE3",
+    "descricao": "CPFL ENERGIAON",
+    "preco": "R$49,31",
+    "variacao": "-1,812%",
+    "volatilidade_implicita": "19,63",
+    "iv_rank": "40,15",
+    "iv_percentil": "40,48",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/CPFE3",
+    "analise_tecnica": {
+      "score_volatilidade": 10,
+      "classificacao_volatilidade": "Muito Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Alto",
+      "observacoes": [
+        "Volatilidade muito baixa - ótimo para compra de opções antes de movimentos"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "ARML3": {
+    "ticker": "ARML3",
+    "descricao": "ARMAC ON",
+    "preco": "R$4,76",
+    "variacao": "+4,846%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "87,30",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/ARML3",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": [
+        "IV Percentil muito alto - possível reversão de volatilidade",
+        "Movimento moderado de +4.85% no dia"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "MDIA3": {
+    "ticker": "MDIA3",
+    "descricao": "M.DIASBRANCOON",
+    "preco": "R$24,60",
+    "variacao": "-1,006%",
+    "volatilidade_implicita": "33,18",
+    "iv_rank": "49,38",
+    "iv_percentil": "61,11",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/MDIA3",
+    "analise_tecnica": {
+      "score_volatilidade": 50,
+      "classificacao_volatilidade": "Média",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade moderada - mercado equilibrado"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "EZTC3": {
+    "ticker": "EZTC3",
+    "descricao": "EZTEC ON",
+    "preco": "R$15,98",
+    "variacao": "+1,139%",
+    "volatilidade_implicita": "39,72",
+    "iv_rank": "12,55",
+    "iv_percentil": "95,63",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/EZTC3",
+    "analise_tecnica": {
+      "score_volatilidade": 50,
+      "classificacao_volatilidade": "Média",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade moderada - mercado equilibrado",
+        "IV Rank em 12.6% - volatilidade abaixo da média histórica",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "CBAV3": {
+    "ticker": "CBAV3",
+    "descricao": "CBA ON",
+    "preco": "R$10,21",
+    "variacao": "-0,293%",
+    "volatilidade_implicita": "29,28",
+    "iv_rank": "10,07",
+    "iv_percentil": "9,92",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/CBAV3",
+    "analise_tecnica": {
+      "score_volatilidade": 30,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade baixa - pode ser oportunidade para compra de opções",
+        "IV Rank em 10.1% - volatilidade abaixo da média histórica",
+        "IV Percentil muito baixo - possível aumento de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "RAIL3": {
+    "ticker": "RAIL3",
+    "descricao": "RUMO S.A. ON",
+    "preco": "R$15,25",
+    "variacao": "+0,395%",
+    "volatilidade_implicita": "34,35",
+    "iv_rank": "50,14",
+    "iv_percentil": "75,40",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/RAIL3",
+    "analise_tecnica": {
+      "score_volatilidade": 50,
+      "classificacao_volatilidade": "Média",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade moderada - mercado equilibrado"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "CURY3": {
+    "ticker": "CURY3",
+    "descricao": "CURY S/A ON",
+    "preco": "R$38,56",
+    "variacao": "+4,811%",
+    "volatilidade_implicita": "34,74",
+    "iv_rank": "31,83",
+    "iv_percentil": "70,24",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/CURY3",
+    "analise_tecnica": {
+      "score_volatilidade": 50,
+      "classificacao_volatilidade": "Média",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade moderada - mercado equilibrado",
+        "Movimento moderado de +4.81% no dia"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "MSFT34": {
+    "ticker": "MSFT34",
+    "descricao": "MICROSOFT DRN",
+    "preco": "R$87,00",
+    "variacao": "+0,706%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "N/A",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/MSFT34",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": []
+    },
+    "opcoes_detalhadas": []
+  },
+  "POMO4": {
+    "ticker": "POMO4",
+    "descricao": "MARCOPOLO PN",
+    "preco": "R$6,36",
+    "variacao": "+1,923%",
+    "volatilidade_implicita": "32,99",
+    "iv_rank": "13,26",
+    "iv_percentil": "33,33",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/POMO4",
+    "analise_tecnica": {
+      "score_volatilidade": 50,
+      "classificacao_volatilidade": "Média",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade moderada - mercado equilibrado",
+        "IV Rank em 13.3% - volatilidade abaixo da média histórica"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "TTEN3": {
+    "ticker": "TTEN3",
+    "descricao": "3TENTOS ON",
+    "preco": "R$15,60",
+    "variacao": "-2,682%",
+    "volatilidade_implicita": "27,80",
+    "iv_rank": "43,41",
+    "iv_percentil": "73,81",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/TTEN3",
+    "analise_tecnica": {
+      "score_volatilidade": 30,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade baixa - pode ser oportunidade para compra de opções"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "TUPY3": {
+    "ticker": "TUPY3",
+    "descricao": "TUPY ON",
+    "preco": "R$11,79",
+    "variacao": "-0,422%",
+    "volatilidade_implicita": "34,33",
+    "iv_rank": "49,87",
+    "iv_percentil": "86,90",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/TUPY3",
+    "analise_tecnica": {
+      "score_volatilidade": 50,
+      "classificacao_volatilidade": "Média",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade moderada - mercado equilibrado",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "XPBR31": {
+    "ticker": "XPBR31",
+    "descricao": "XP INC DR1",
+    "preco": "R$101,34",
+    "variacao": "+3,853%",
+    "volatilidade_implicita": "51,21",
+    "iv_rank": "80,14",
+    "iv_percentil": "95,63",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/XPBR31",
+    "analise_tecnica": {
+      "score_volatilidade": 70,
+      "classificacao_volatilidade": "Alta",
+      "oportunidade_venda": true,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Alto",
+      "observacoes": [
+        "Volatilidade alta - bom momento para estratégias de venda",
+        "IV Rank em 80.1% - volatilidade no topo histórico",
+        "IV Percentil muito alto - possível reversão de volatilidade",
+        "Movimento moderado de +3.85% no dia"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "GMAT3": {
+    "ticker": "GMAT3",
+    "descricao": "GRUPO MATEUSON",
+    "preco": "R$5,00",
+    "variacao": "+1,01%",
+    "volatilidade_implicita": "35,72",
+    "iv_rank": "23,62",
+    "iv_percentil": "86,90",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/GMAT3",
+    "analise_tecnica": {
+      "score_volatilidade": 50,
+      "classificacao_volatilidade": "Média",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade moderada - mercado equilibrado",
+        "IV Rank em 23.6% - volatilidade abaixo da média histórica",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "AMZO34": {
+    "ticker": "AMZO34",
+    "descricao": "AMAZON DRN",
+    "preco": "R$54,74",
+    "variacao": "-0,473%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "93,25",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/AMZO34",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": [
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "RECV3": {
+    "ticker": "RECV3",
+    "descricao": "PETRORECSA ON",
+    "preco": "R$10,80",
+    "variacao": "+1,124%",
+    "volatilidade_implicita": "18,03",
+    "iv_rank": "16,45",
+    "iv_percentil": "30,56",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/RECV3",
+    "analise_tecnica": {
+      "score_volatilidade": 10,
+      "classificacao_volatilidade": "Muito Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Alto",
+      "observacoes": [
+        "Volatilidade muito baixa - ótimo para compra de opções antes de movimentos",
+        "IV Rank em 16.4% - volatilidade abaixo da média histórica"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "ECOR3": {
+    "ticker": "ECOR3",
+    "descricao": "ECORODOVIAS ON",
+    "preco": "R$10,89",
+    "variacao": "-0,183%",
+    "volatilidade_implicita": "44,63",
+    "iv_rank": "41,51",
+    "iv_percentil": "65,48",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/ECOR3",
+    "analise_tecnica": {
+      "score_volatilidade": 50,
+      "classificacao_volatilidade": "Média",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade moderada - mercado equilibrado"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "SMFT3": {
+    "ticker": "SMFT3",
+    "descricao": "SMART FIT ON",
+    "preco": "R$21,81",
+    "variacao": "-0,728%",
+    "volatilidade_implicita": "37,19",
+    "iv_rank": "55,96",
+    "iv_percentil": "81,35",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/SMFT3",
+    "analise_tecnica": {
+      "score_volatilidade": 50,
+      "classificacao_volatilidade": "Média",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade moderada - mercado equilibrado",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "AURE3": {
+    "ticker": "AURE3",
+    "descricao": "AUREN ON",
+    "preco": "R$11,37",
+    "variacao": "+3,836%",
+    "volatilidade_implicita": "27,13",
+    "iv_rank": "38,71",
+    "iv_percentil": "30,56",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/AURE3",
+    "analise_tecnica": {
+      "score_volatilidade": 30,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade baixa - pode ser oportunidade para compra de opções",
+        "Movimento moderado de +3.84% no dia"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "ALPA4": {
+    "ticker": "ALPA4",
+    "descricao": "ALPARGATAS PN",
+    "preco": "R$15,47",
+    "variacao": "+1,509%",
+    "volatilidade_implicita": "37,07",
+    "iv_rank": "29,44",
+    "iv_percentil": "60,71",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/ALPA4",
+    "analise_tecnica": {
+      "score_volatilidade": 50,
+      "classificacao_volatilidade": "Média",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade moderada - mercado equilibrado",
+        "IV Rank em 29.4% - volatilidade abaixo da média histórica"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "MYPK3": {
+    "ticker": "MYPK3",
+    "descricao": "IOCHP-MAXIONON",
+    "preco": "R$10,51",
+    "variacao": "+0,191%",
+    "volatilidade_implicita": "29,28",
+    "iv_rank": "36,70",
+    "iv_percentil": "68,25",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/MYPK3",
+    "analise_tecnica": {
+      "score_volatilidade": 30,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade baixa - pode ser oportunidade para compra de opções"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "CASH3": {
+    "ticker": "CASH3",
+    "descricao": "MELIUZ ON",
+    "preco": "R$3,53",
+    "variacao": "+4,748%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "34,13",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/CASH3",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": [
+        "Movimento moderado de +4.75% no dia"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "FLRY3": {
+    "ticker": "FLRY3",
+    "descricao": "FLEURY ON",
+    "preco": "R$16,93",
+    "variacao": "+0,534%",
+    "volatilidade_implicita": "27,32",
+    "iv_rank": "30,28",
+    "iv_percentil": "38,49",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/FLRY3",
+    "analise_tecnica": {
+      "score_volatilidade": 30,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade baixa - pode ser oportunidade para compra de opções"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "LJQQ3": {
+    "ticker": "LJQQ3",
+    "descricao": "QUERO-QUERO ON",
+    "preco": "R$2,47",
+    "variacao": "+3,782%",
+    "volatilidade_implicita": "49,68",
+    "iv_rank": "28,30",
+    "iv_percentil": "60,71",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/LJQQ3",
+    "analise_tecnica": {
+      "score_volatilidade": 70,
+      "classificacao_volatilidade": "Alta",
+      "oportunidade_venda": true,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Alto",
+      "observacoes": [
+        "Volatilidade alta - bom momento para estratégias de venda",
+        "IV Rank em 28.3% - volatilidade abaixo da média histórica",
+        "Movimento moderado de +3.78% no dia"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "BMOB3": {
+    "ticker": "BMOB3",
+    "descricao": "BEMOBI TECH ON",
+    "preco": "R$23,19",
+    "variacao": "+1,845%",
+    "volatilidade_implicita": "36,39",
+    "iv_rank": "16,80",
+    "iv_percentil": "96,43",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/BMOB3",
+    "analise_tecnica": {
+      "score_volatilidade": 50,
+      "classificacao_volatilidade": "Média",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade moderada - mercado equilibrado",
+        "IV Rank em 16.8% - volatilidade abaixo da média histórica",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "POSI3": {
+    "ticker": "POSI3",
+    "descricao": "POSITIVO TECON",
+    "preco": "R$4,32",
+    "variacao": "-0,461%",
+    "volatilidade_implicita": "24,98",
+    "iv_rank": "N/A",
+    "iv_percentil": "70,63",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/POSI3",
+    "analise_tecnica": {
+      "score_volatilidade": 30,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade baixa - pode ser oportunidade para compra de opções"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "NVDC34": {
+    "ticker": "NVDC34",
+    "descricao": "NVIDIA CORP DRN",
+    "preco": "R$20,26",
+    "variacao": "+7,594%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "82,54",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/NVDC34",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": [
+        "IV Percentil muito alto - possível reversão de volatilidade",
+        "Movimento significativo de +7.59% no dia"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "DXCO3": {
+    "ticker": "DXCO3",
+    "descricao": "DEXCO ON",
+    "preco": "R$5,59",
+    "variacao": "-0,887%",
+    "volatilidade_implicita": "35,74",
+    "iv_rank": "46,63",
+    "iv_percentil": "73,02",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/DXCO3",
+    "analise_tecnica": {
+      "score_volatilidade": 50,
+      "classificacao_volatilidade": "Média",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade moderada - mercado equilibrado"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "KEPL3": {
+    "ticker": "KEPL3",
+    "descricao": "KEPLER WEBERON",
+    "preco": "R$10,17",
+    "variacao": "+0,593%",
+    "volatilidade_implicita": "26,28",
+    "iv_rank": "25,18",
+    "iv_percentil": "72,22",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/KEPL3",
+    "analise_tecnica": {
+      "score_volatilidade": 30,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade baixa - pode ser oportunidade para compra de opções",
+        "IV Rank em 25.2% - volatilidade abaixo da média histórica"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "UNIP6": {
+    "ticker": "UNIP6",
+    "descricao": "UNIPAR PNB",
+    "preco": "R$64,74",
+    "variacao": "+1,489%",
+    "volatilidade_implicita": "32,13",
+    "iv_rank": "63,26",
+    "iv_percentil": "93,25",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/UNIP6",
+    "analise_tecnica": {
+      "score_volatilidade": 50,
+      "classificacao_volatilidade": "Média",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade moderada - mercado equilibrado",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "GRND3": {
+    "ticker": "GRND3",
+    "descricao": "GRENDENE ON",
+    "preco": "R$4,89",
+    "variacao": "-1,212%",
+    "volatilidade_implicita": "41,65",
+    "iv_rank": "81,35",
+    "iv_percentil": "55,95",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/GRND3",
+    "analise_tecnica": {
+      "score_volatilidade": 50,
+      "classificacao_volatilidade": "Média",
+      "oportunidade_venda": true,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade moderada - mercado equilibrado",
+        "IV Rank em 81.3% - volatilidade no topo histórico"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "ANIM3": {
+    "ticker": "ANIM3",
+    "descricao": "ANIMA ON",
+    "preco": "R$4,89",
+    "variacao": "+2,301%",
+    "volatilidade_implicita": "67,10",
+    "iv_rank": "29,57",
+    "iv_percentil": "86,11",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/ANIM3",
+    "analise_tecnica": {
+      "score_volatilidade": 90,
+      "classificacao_volatilidade": "Muito Alta",
+      "oportunidade_venda": true,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Muito Alto",
+      "observacoes": [
+        "Volatilidade extremamente elevada - excelente para venda de opções",
+        "IV Rank em 29.6% - volatilidade abaixo da média histórica",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "SLCE3": {
+    "ticker": "SLCE3",
+    "descricao": "SLC AGRICOLAON",
+    "preco": "R$15,53",
+    "variacao": "-0,385%",
+    "volatilidade_implicita": "18,74",
+    "iv_rank": "13,87",
+    "iv_percentil": "98,02",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/SLCE3",
+    "analise_tecnica": {
+      "score_volatilidade": 10,
+      "classificacao_volatilidade": "Muito Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Alto",
+      "observacoes": [
+        "Volatilidade muito baixa - ótimo para compra de opções antes de movimentos",
+        "IV Rank em 13.9% - volatilidade abaixo da média histórica",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "TEND3": {
+    "ticker": "TEND3",
+    "descricao": "TENDA ON",
+    "preco": "R$29,70",
+    "variacao": "+2,062%",
+    "volatilidade_implicita": "49,18",
+    "iv_rank": "32,83",
+    "iv_percentil": "46,03",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/TEND3",
+    "analise_tecnica": {
+      "score_volatilidade": 70,
+      "classificacao_volatilidade": "Alta",
+      "oportunidade_venda": true,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Alto",
+      "observacoes": [
+        "Volatilidade alta - bom momento para estratégias de venda"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "LEVE3": {
+    "ticker": "LEVE3",
+    "descricao": "METAL LEVE ON",
+    "preco": "R$34,36",
+    "variacao": "+0,087%",
+    "volatilidade_implicita": "23,21",
+    "iv_rank": "55,01",
+    "iv_percentil": "82,14",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/LEVE3",
+    "analise_tecnica": {
+      "score_volatilidade": 30,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade baixa - pode ser oportunidade para compra de opções",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "WIZC3": {
+    "ticker": "WIZC3",
+    "descricao": "WIZ CO ON",
+    "preco": "R$9,82",
+    "variacao": "-0,406%",
+    "volatilidade_implicita": "30,01",
+    "iv_rank": "50,29",
+    "iv_percentil": "58,73",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/WIZC3",
+    "analise_tecnica": {
+      "score_volatilidade": 50,
+      "classificacao_volatilidade": "Média",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade moderada - mercado equilibrado"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "TASA4": {
+    "ticker": "TASA4",
+    "descricao": "TAURUS ARMASPN",
+    "preco": "R$5,22",
+    "variacao": "-0,191%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "85,32",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/TASA4",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": [
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "GOGL34": {
+    "ticker": "GOGL34",
+    "descricao": "ALPHABET DRN",
+    "preco": "R$139,71",
+    "variacao": "-4,019%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "93,25",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/GOGL34",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": [
+        "IV Percentil muito alto - possível reversão de volatilidade",
+        "Movimento moderado de -4.02% no dia"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "AMBP3": {
+    "ticker": "AMBP3",
+    "descricao": "AMBIPAR ON",
+    "preco": "R$0,28",
+    "variacao": "+0%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "95,24",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/AMBP3",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": [
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "VLID3": {
+    "ticker": "VLID3",
+    "descricao": "VALID ON",
+    "preco": "R$21,79",
+    "variacao": "+2,013%",
+    "volatilidade_implicita": "29,92",
+    "iv_rank": "28,16",
+    "iv_percentil": "29,37",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/VLID3",
+    "analise_tecnica": {
+      "score_volatilidade": 30,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade baixa - pode ser oportunidade para compra de opções",
+        "IV Rank em 28.2% - volatilidade abaixo da média histórica"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "BMGB4": {
+    "ticker": "BMGB4",
+    "descricao": "BANCO BMG PN",
+    "preco": "R$4,89",
+    "variacao": "+0,205%",
+    "volatilidade_implicita": "32,67",
+    "iv_rank": "60,35",
+    "iv_percentil": "93,25",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/BMGB4",
+    "analise_tecnica": {
+      "score_volatilidade": 50,
+      "classificacao_volatilidade": "Média",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade moderada - mercado equilibrado",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "SOJA3": {
+    "ticker": "SOJA3",
+    "descricao": "BOA SAFRA ON",
+    "preco": "R$8,20",
+    "variacao": "-3,529%",
+    "volatilidade_implicita": "38,67",
+    "iv_rank": "53,85",
+    "iv_percentil": "69,44",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/SOJA3",
+    "analise_tecnica": {
+      "score_volatilidade": 50,
+      "classificacao_volatilidade": "Média",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade moderada - mercado equilibrado",
+        "Movimento moderado de -3.53% no dia"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "VULC3": {
+    "ticker": "VULC3",
+    "descricao": "VULCABRAS ON",
+    "preco": "R$17,39",
+    "variacao": "-1,305%",
+    "volatilidade_implicita": "23,88",
+    "iv_rank": "38,15",
+    "iv_percentil": "91,67",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/VULC3",
+    "analise_tecnica": {
+      "score_volatilidade": 30,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade baixa - pode ser oportunidade para compra de opções",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "AERI3": {
+    "ticker": "AERI3",
+    "descricao": "AERIS ON",
+    "preco": "R$3,07",
+    "variacao": "+0%",
+    "volatilidade_implicita": "32,93",
+    "iv_rank": "32,12",
+    "iv_percentil": "97,62",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/AERI3",
+    "analise_tecnica": {
+      "score_volatilidade": 50,
+      "classificacao_volatilidade": "Média",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade moderada - mercado equilibrado",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "MDNE3": {
+    "ticker": "MDNE3",
+    "descricao": "MOURA DUBEUXON",
+    "preco": "R$31,19",
+    "variacao": "+5,514%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "74,21",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/MDNE3",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": [
+        "Movimento significativo de +5.51% no dia"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "MILS3": {
+    "ticker": "MILS3",
+    "descricao": "MILLS ON",
+    "preco": "R$14,98",
+    "variacao": "-0,333%",
+    "volatilidade_implicita": "32,10",
+    "iv_rank": "65,06",
+    "iv_percentil": "71,03",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/MILS3",
+    "analise_tecnica": {
+      "score_volatilidade": 50,
+      "classificacao_volatilidade": "Média",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade moderada - mercado equilibrado"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "NEOE3": {
+    "ticker": "NEOE3",
+    "descricao": "NEOENERGIA ON",
+    "preco": "R$32,51",
+    "variacao": "+0,092%",
+    "volatilidade_implicita": "8,57",
+    "iv_rank": "6,97",
+    "iv_percentil": "5,95",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/NEOE3",
+    "analise_tecnica": {
+      "score_volatilidade": 10,
+      "classificacao_volatilidade": "Muito Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Alto",
+      "observacoes": [
+        "Volatilidade muito baixa - ótimo para compra de opções antes de movimentos",
+        "IV Rank em 7.0% - volatilidade abaixo da média histórica",
+        "IV Percentil muito baixo - possível aumento de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "ABCB4": {
+    "ticker": "ABCB4",
+    "descricao": "ABC BRASIL PN",
+    "preco": "R$26,96",
+    "variacao": "+1,851%",
+    "volatilidade_implicita": "20,51",
+    "iv_rank": "34,91",
+    "iv_percentil": "97,22",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/ABCB4",
+    "analise_tecnica": {
+      "score_volatilidade": 30,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade baixa - pode ser oportunidade para compra de opções",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "TSLA34": {
+    "ticker": "TSLA34",
+    "descricao": "TESLA INC DRN",
+    "preco": "R$67,17",
+    "variacao": "+2,801%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "94,44",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/TSLA34",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": [
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "JALL3": {
+    "ticker": "JALL3",
+    "descricao": "JALLESMACHADON",
+    "preco": "R$2,99",
+    "variacao": "+2,397%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "95,63",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/JALL3",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": [
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "RANI3": {
+    "ticker": "RANI3",
+    "descricao": "IRANI ON",
+    "preco": "R$9,01",
+    "variacao": "-0,989%",
+    "volatilidade_implicita": "23,06",
+    "iv_rank": "40,69",
+    "iv_percentil": "45,24",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/RANI3",
+    "analise_tecnica": {
+      "score_volatilidade": 30,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade baixa - pode ser oportunidade para compra de opções"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "EVEN3": {
+    "ticker": "EVEN3",
+    "descricao": "EVEN ON",
+    "preco": "R$7,79",
+    "variacao": "+0%",
+    "volatilidade_implicita": "39,07",
+    "iv_rank": "49,76",
+    "iv_percentil": "71,83",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/EVEN3",
+    "analise_tecnica": {
+      "score_volatilidade": 50,
+      "classificacao_volatilidade": "Média",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade moderada - mercado equilibrado"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "ODPV3": {
+    "ticker": "ODPV3",
+    "descricao": "ODONTOPREV ON",
+    "preco": "R$11,87",
+    "variacao": "-0,503%",
+    "volatilidade_implicita": "33,76",
+    "iv_rank": "63,91",
+    "iv_percentil": "96,43",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/ODPV3",
+    "analise_tecnica": {
+      "score_volatilidade": 50,
+      "classificacao_volatilidade": "Média",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade moderada - mercado equilibrado",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "ALUP11": {
+    "ticker": "ALUP11",
+    "descricao": "ALUPAR UNT",
+    "preco": "R$34,25",
+    "variacao": "-0,349%",
+    "volatilidade_implicita": "20,32",
+    "iv_rank": "51,70",
+    "iv_percentil": "88,10",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/ALUP11",
+    "analise_tecnica": {
+      "score_volatilidade": 30,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade baixa - pode ser oportunidade para compra de opções",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "SEER3": {
+    "ticker": "SEER3",
+    "descricao": "SER EDUCA ON",
+    "preco": "R$12,48",
+    "variacao": "+2,211%",
+    "volatilidade_implicita": "54,55",
+    "iv_rank": "32,92",
+    "iv_percentil": "50,40",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/SEER3",
+    "analise_tecnica": {
+      "score_volatilidade": 70,
+      "classificacao_volatilidade": "Alta",
+      "oportunidade_venda": true,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Alto",
+      "observacoes": [
+        "Volatilidade alta - bom momento para estratégias de venda"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "HBOR3": {
+    "ticker": "HBOR3",
+    "descricao": "HELBOR ON",
+    "preco": "R$2,75",
+    "variacao": "+1,852%",
+    "volatilidade_implicita": "51,24",
+    "iv_rank": "26,81",
+    "iv_percentil": "25,40",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/HBOR3",
+    "analise_tecnica": {
+      "score_volatilidade": 70,
+      "classificacao_volatilidade": "Alta",
+      "oportunidade_venda": true,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Alto",
+      "observacoes": [
+        "Volatilidade alta - bom momento para estratégias de venda",
+        "IV Rank em 26.8% - volatilidade abaixo da média histórica"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "BLAU3": {
+    "ticker": "BLAU3",
+    "descricao": "BLAU ON",
+    "preco": "R$9,83",
+    "variacao": "-4,563%",
+    "volatilidade_implicita": "42,83",
+    "iv_rank": "60,23",
+    "iv_percentil": "98,81",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/BLAU3",
+    "analise_tecnica": {
+      "score_volatilidade": 50,
+      "classificacao_volatilidade": "Média",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade moderada - mercado equilibrado",
+        "IV Percentil muito alto - possível reversão de volatilidade",
+        "Movimento moderado de -4.56% no dia"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "FESA4": {
+    "ticker": "FESA4",
+    "descricao": "FERBASA PN",
+    "preco": "R$8,11",
+    "variacao": "-1,218%",
+    "volatilidade_implicita": "29,00",
+    "iv_rank": "38,70",
+    "iv_percentil": "60,71",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/FESA4",
+    "analise_tecnica": {
+      "score_volatilidade": 30,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade baixa - pode ser oportunidade para compra de opções"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "BERK34": {
+    "ticker": "BERK34",
+    "descricao": "BERKSHIRE DRN",
+    "preco": "R$132,21",
+    "variacao": "-0,144%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "96,83",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/BERK34",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": [
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "VVEO3": {
+    "ticker": "VVEO3",
+    "descricao": "VIVEO ON",
+    "preco": "R$1,41",
+    "variacao": "+2,92%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "91,67",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/VVEO3",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": [
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "MLAS3": {
+    "ticker": "MLAS3",
+    "descricao": "MULTILASER ON",
+    "preco": "R$1,37",
+    "variacao": "+1,481%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "95,63",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/MLAS3",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": [
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "GOLD11": {
+    "ticker": "GOLD11",
+    "descricao": "TREND OURO CI",
+    "preco": "R$26,94",
+    "variacao": "+2,007%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "90,48",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/GOLD11",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": [
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "CMIG3": {
+    "ticker": "CMIG3",
+    "descricao": "CEMIG ON",
+    "preco": "R$14,90",
+    "variacao": "-2,487%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "94,44",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/CMIG3",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": [
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "TRIS3": {
+    "ticker": "TRIS3",
+    "descricao": "TRISUL ON",
+    "preco": "R$7,06",
+    "variacao": "-0,563%",
+    "volatilidade_implicita": "35,64",
+    "iv_rank": "25,61",
+    "iv_percentil": "96,43",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/TRIS3",
+    "analise_tecnica": {
+      "score_volatilidade": 50,
+      "classificacao_volatilidade": "Média",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade moderada - mercado equilibrado",
+        "IV Rank em 25.6% - volatilidade abaixo da média histórica",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "M1TA34": {
+    "ticker": "M1TA34",
+    "descricao": "META PLAT DRN",
+    "preco": "R$121,91",
+    "variacao": "-2,261%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "98,81",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/M1TA34",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": [
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "ORVR3": {
+    "ticker": "ORVR3",
+    "descricao": "ORIZON ON",
+    "preco": "R$71,55",
+    "variacao": "-1,106%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "92,46",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/ORVR3",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": [
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "CAML3": {
+    "ticker": "CAML3",
+    "descricao": "CAMIL ON",
+    "preco": "R$6,77",
+    "variacao": "+0,148%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "67,86",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/CAML3",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": []
+    },
+    "opcoes_detalhadas": []
+  },
+  "ROMI3": {
+    "ticker": "ROMI3",
+    "descricao": "ROMI ON",
+    "preco": "R$8,21",
+    "variacao": "+0,367%",
+    "volatilidade_implicita": "27,54",
+    "iv_rank": "71,80",
+    "iv_percentil": "74,60",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/ROMI3",
+    "analise_tecnica": {
+      "score_volatilidade": 30,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": true,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade baixa - pode ser oportunidade para compra de opções",
+        "IV Rank em 71.8% - volatilidade no topo histórico"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "VAMO99": {
+    "ticker": "VAMO99",
+    "descricao": "VAMOS UNT",
+    "preco": "R$4,70",
+    "variacao": "+0%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "N/A",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/VAMO99",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": []
+    },
+    "opcoes_detalhadas": []
+  },
+  "AGRO3": {
+    "ticker": "AGRO3",
+    "descricao": "BRASILAGRO ON",
+    "preco": "R$20,18",
+    "variacao": "+0,598%",
+    "volatilidade_implicita": "26,96",
+    "iv_rank": "59,35",
+    "iv_percentil": "91,67",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/AGRO3",
+    "analise_tecnica": {
+      "score_volatilidade": 30,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade baixa - pode ser oportunidade para compra de opções",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "COCA34": {
+    "ticker": "COCA34",
+    "descricao": "COCA COLA DRN",
+    "preco": "R$68,24",
+    "variacao": "-0,176%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "99,60",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/COCA34",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": [
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "PLPL3": {
+    "ticker": "PLPL3",
+    "descricao": "PLANOEPLANO ON",
+    "preco": "R$14,58",
+    "variacao": "-4,268%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "92,46",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/PLPL3",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": [
+        "IV Percentil muito alto - possível reversão de volatilidade",
+        "Movimento moderado de -4.27% no dia"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "AMAR3": {
+    "ticker": "AMAR3",
+    "descricao": "LOJAS MARISAON",
+    "preco": "R$0,96",
+    "variacao": "+0%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "93,65",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/AMAR3",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": [
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "ESPA3": {
+    "ticker": "ESPA3",
+    "descricao": "ESPACOLASER ON",
+    "preco": "R$0,88",
+    "variacao": "+1,149%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "N/A",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/ESPA3",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": []
+    },
+    "opcoes_detalhadas": []
+  },
+  "MCDC34": {
+    "ticker": "MCDC34",
+    "descricao": "MCDONALDS DRN",
+    "preco": "R$84,42",
+    "variacao": "-0,095%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "6,35",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/MCDC34",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": [
+        "IV Percentil muito baixo - possível aumento de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "AURA33": {
+    "ticker": "AURA33",
+    "descricao": "AURA 360 DR3",
+    "preco": "R$114,52",
+    "variacao": "+4,489%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "N/A",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/AURA33",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": [
+        "Movimento moderado de +4.49% no dia"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "MTRE3": {
+    "ticker": "MTRE3",
+    "descricao": "MITRE REALTYON",
+    "preco": "R$3,92",
+    "variacao": "+0,771%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "69,84",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/MTRE3",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": []
+    },
+    "opcoes_detalhadas": []
+  },
+  "PGMN3": {
+    "ticker": "PGMN3",
+    "descricao": "PAGUE MENOS ON",
+    "preco": "R$6,37",
+    "variacao": "+0,315%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "11,11",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/PGMN3",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": [
+        "IV Percentil muito baixo - possível aumento de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "LOGN3": {
+    "ticker": "LOGN3",
+    "descricao": "LOG-IN ON",
+    "preco": "R$32,00",
+    "variacao": "-0,621%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "N/A",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/LOGN3",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": []
+    },
+    "opcoes_detalhadas": []
+  },
+  "ENJU3": {
+    "ticker": "ENJU3",
+    "descricao": "ENJOEI ON",
+    "preco": "R$1,04",
+    "variacao": "-3,704%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "92,86",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/ENJU3",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": [
+        "IV Percentil muito alto - possível reversão de volatilidade",
+        "Movimento moderado de -3.70% no dia"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "LOGG3": {
+    "ticker": "LOGG3",
+    "descricao": "LOG COM PROPON",
+    "preco": "R$27,59",
+    "variacao": "-0,898%",
+    "volatilidade_implicita": "25,35",
+    "iv_rank": "73,49",
+    "iv_percentil": "94,05",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/LOGG3",
+    "analise_tecnica": {
+      "score_volatilidade": 30,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": true,
+      "oportunidade_compra": true,
+      "nivel_interesse": "Médio",
+      "observacoes": [
+        "Volatilidade baixa - pode ser oportunidade para compra de opções",
+        "IV Rank em 73.5% - volatilidade no topo histórico",
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "CHVX34": {
+    "ticker": "CHVX34",
+    "descricao": "CHEVRON DRN",
+    "preco": "R$93,38",
+    "variacao": "-0,765%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "N/A",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/CHVX34",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": []
+    },
+    "opcoes_detalhadas": []
+  },
+  "DASA3": {
+    "ticker": "DASA3",
+    "descricao": "DASA ON",
+    "preco": "R$4,22",
+    "variacao": "+1,687%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "85,71",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/DASA3",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": [
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "MEAL3": {
+    "ticker": "MEAL3",
+    "descricao": "IMC S/A ON",
+    "preco": "R$1,13",
+    "variacao": "-0,877%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "N/A",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/MEAL3",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": []
+    },
+    "opcoes_detalhadas": []
+  },
+  "AAPL34": {
+    "ticker": "AAPL34",
+    "descricao": "APPLE DRN",
+    "preco": "R$71,98",
+    "variacao": "-0,654%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "N/A",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/AAPL34",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": []
+    },
+    "opcoes_detalhadas": []
+  },
+  "PTBL3": {
+    "ticker": "PTBL3",
+    "descricao": "PORTOBELLO ON",
+    "preco": "R$3,32",
+    "variacao": "+2,469%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "95,24",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/PTBL3",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": [
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "TCSA3": {
+    "ticker": "TCSA3",
+    "descricao": "TECNISA ON",
+    "preco": "R$1,64",
+    "variacao": "+3,145%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "N/A",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/TCSA3",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": [
+        "Movimento moderado de +3.15% no dia"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "AZUL53": {
+    "ticker": "AZUL53",
+    "descricao": "AZUL ON",
+    "preco": "R$7,00",
+    "variacao": "-40,678%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "N/A",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/AZUL53",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": [
+        "Movimento significativo de -40.68% no dia"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "NFLX34": {
+    "ticker": "NFLX34",
+    "descricao": "NETFLIX DRN",
+    "preco": "R$8,48",
+    "variacao": "-0,586%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "N/A",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/NFLX34",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": []
+    },
+    "opcoes_detalhadas": []
+  },
+  "AUAU3": {
+    "ticker": "AUAU3",
+    "descricao": "PETZCOBASI ON",
+    "preco": "R$3,30",
+    "variacao": "+3,125%",
+    "volatilidade_implicita": "46,13",
+    "iv_rank": "32,71",
+    "iv_percentil": "3,57",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/AUAU3",
+    "analise_tecnica": {
+      "score_volatilidade": 70,
+      "classificacao_volatilidade": "Alta",
+      "oportunidade_venda": true,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Alto",
+      "observacoes": [
+        "Volatilidade alta - bom momento para estratégias de venda",
+        "IV Percentil muito baixo - possível aumento de volatilidade",
+        "Movimento moderado de +3.12% no dia"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "AXIA7": {
+    "ticker": "AXIA7",
+    "descricao": "AXIA ENERGIAPNC",
+    "preco": "R$55,64",
+    "variacao": "+1,348%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "N/A",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/AXIA7",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": []
+    },
+    "opcoes_detalhadas": []
+  },
+  "RIAA3": {
+    "ticker": "RIAA3",
+    "descricao": "RIACHUELO ON",
+    "preco": "R$9,69",
+    "variacao": "+1,893%",
+    "volatilidade_implicita": "45,32",
+    "iv_rank": "N/A",
+    "iv_percentil": "N/A",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/RIAA3",
+    "analise_tecnica": {
+      "score_volatilidade": 70,
+      "classificacao_volatilidade": "Alta",
+      "oportunidade_venda": true,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Alto",
+      "observacoes": [
+        "Volatilidade alta - bom momento para estratégias de venda"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "HBSA3": {
+    "ticker": "HBSA3",
+    "descricao": "HIDROVIAS ON",
+    "preco": "R$3,93",
+    "variacao": "-0,758%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "97,62",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/HBSA3",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": [
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "NASD11": {
+    "ticker": "NASD11",
+    "descricao": "TREND NASDAQCI",
+    "preco": "R$18,20",
+    "variacao": "+1,111%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "N/A",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/NASD11",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": []
+    },
+    "opcoes_detalhadas": []
+  },
+  "LAVV3": {
+    "ticker": "LAVV3",
+    "descricao": "LAVVI ON",
+    "preco": "R$17,33",
+    "variacao": "+0,173%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "93,25",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/LAVV3",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": [
+        "IV Percentil muito alto - possível reversão de volatilidade"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "BOVX11": {
+    "ticker": "BOVX11",
+    "descricao": "TREND IBOVX CI",
+    "preco": "R$18,72",
+    "variacao": "+0,268%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "N/A",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/BOVX11",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": []
+    },
+    "opcoes_detalhadas": []
+  },
+  "TOKY3": {
+    "ticker": "TOKY3",
+    "descricao": "GRUPO TOKY ON",
+    "preco": "R$0,61",
+    "variacao": "-1,613%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "N/A",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/TOKY3",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": []
+    },
+    "opcoes_detalhadas": []
+  },
+  "SEQL3": {
+    "ticker": "SEQL3",
+    "descricao": "SEQUOIA LOG ON",
+    "preco": "R$1,15",
+    "variacao": "-1,709%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "N/A",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/SEQL3",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": []
+    },
+    "opcoes_detalhadas": []
+  },
+  "BABA34": {
+    "ticker": "BABA34",
+    "descricao": "ALIBABAGR DRN",
+    "preco": "R$30,25",
+    "variacao": "+2,682%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "N/A",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/BABA34",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": []
+    },
+    "opcoes_detalhadas": []
+  },
+  "A1MD34": {
+    "ticker": "A1MD34",
+    "descricao": "ADVANCED MICDRN",
+    "preco": "R$134,98",
+    "variacao": "+6,292%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "N/A",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/A1MD34",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": [
+        "Movimento significativo de +6.29% no dia"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "ITLC34": {
+    "ticker": "ITLC34",
+    "descricao": "INTEL DRN",
+    "preco": "R$43,50",
+    "variacao": "+3,571%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "N/A",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/ITLC34",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": [
+        "Movimento moderado de +3.57% no dia"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "RENT4": {
+    "ticker": "RENT4",
+    "descricao": "LOCALIZA PN",
+    "preco": "R$49,77",
+    "variacao": "+1,779%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "N/A",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/RENT4",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": []
+    },
+    "opcoes_detalhadas": []
+  },
+  "PAGS34": {
+    "ticker": "PAGS34",
+    "descricao": "PAGSEGURO DRN",
+    "preco": "R$11,33",
+    "variacao": "+2,534%",
+    "volatilidade_implicita": "99,50",
+    "iv_rank": "N/A",
+    "iv_percentil": "N/A",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/PAGS34",
+    "analise_tecnica": {
+      "score_volatilidade": 90,
+      "classificacao_volatilidade": "Muito Alta",
+      "oportunidade_venda": true,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Muito Alto",
+      "observacoes": [
+        "Volatilidade extremamente elevada - excelente para venda de opções"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "TSMC34": {
+    "ticker": "TSMC34",
+    "descricao": "TAIWANSMFAC DRN",
+    "preco": "R$227,99",
+    "variacao": "+5,40%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "98,81",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/TSMC34",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": [
+        "IV Percentil muito alto - possível reversão de volatilidade",
+        "Movimento significativo de +5.40% no dia"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "MATD3": {
+    "ticker": "MATD3",
+    "descricao": "MATER DEI ON",
+    "preco": "R$5,73",
+    "variacao": "-0,174%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "N/A",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/MATD3",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": []
+    },
+    "opcoes_detalhadas": []
+  },
+  "N1VO34": {
+    "ticker": "N1VO34",
+    "descricao": "NOVO NORDISKDRN",
+    "preco": "R$31,68",
+    "variacao": "+11,236%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "N/A",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/N1VO34",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": [
+        "Movimento significativo de +11.24% no dia"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "JPMC34": {
+    "ticker": "JPMC34",
+    "descricao": "JPMORGAN DRN",
+    "preco": "R$168,93",
+    "variacao": "+3,702%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "N/A",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/JPMC34",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": [
+        "Movimento moderado de +3.70% no dia"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "PYPL34": {
+    "ticker": "PYPL34",
+    "descricao": "PAYPAL HOLD DRN",
+    "preco": "R$10,44",
+    "variacao": "+0%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "N/A",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/PYPL34",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": []
+    },
+    "opcoes_detalhadas": []
+  },
+  "SPXI11": {
+    "ticker": "SPXI11",
+    "descricao": "IT NOW SPXI CI",
+    "preco": "R$49,50",
+    "variacao": "+1,02%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "N/A",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/SPXI11",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": []
+    },
+    "opcoes_detalhadas": []
+  },
+  "SANB3": {
+    "ticker": "SANB3",
+    "descricao": "SANTANDER BRON",
+    "preco": "R$16,62",
+    "variacao": "-2,178%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "N/A",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/SANB3",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": []
+    },
+    "opcoes_detalhadas": []
+  },
+  "LILY34": {
+    "ticker": "LILY34",
+    "descricao": "LILLY DRN",
+    "preco": "R$183,99",
+    "variacao": "+2,222%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "N/A",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/LILY34",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": []
+    },
+    "opcoes_detalhadas": []
+  },
+  "VISA34": {
+    "ticker": "VISA34",
+    "descricao": "VISA INC DRN",
+    "preco": "R$85,84",
+    "variacao": "-1,447%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "N/A",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/VISA34",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": []
+    },
+    "opcoes_detalhadas": []
+  },
+  "GSGI34": {
+    "ticker": "GSGI34",
+    "descricao": "GOLDMANSACHSDRN",
+    "preco": "R$160,96",
+    "variacao": "+1,88%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "N/A",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/GSGI34",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": []
+    },
+    "opcoes_detalhadas": []
+  },
+  "TRAD3": {
+    "ticker": "TRAD3",
+    "descricao": "TC ON",
+    "preco": "R$3,01",
+    "variacao": "-1,311%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "N/A",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/TRAD3",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": []
+    },
+    "opcoes_detalhadas": []
+  },
+  "WALM34": {
+    "ticker": "WALM34",
+    "descricao": "WAL MART DRN",
+    "preco": "R$42,32",
+    "variacao": "+1,292%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "N/A",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/WALM34",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": []
+    },
+    "opcoes_detalhadas": []
+  },
+  "BOVB11": {
+    "ticker": "BOVB11",
+    "descricao": "ETF BRA IBOVCI",
+    "preco": "R$187,14",
+    "variacao": "+0,451%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "N/A",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/BOVB11",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": []
+    },
+    "opcoes_detalhadas": []
+  },
+  "EXXO34": {
+    "ticker": "EXXO34",
+    "descricao": "EXXON MOBIL DRN",
+    "preco": "R$96,75",
+    "variacao": "+0,939%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "N/A",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/EXXO34",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": []
+    },
+    "opcoes_detalhadas": []
+  },
+  "RIOT34": {
+    "ticker": "RIOT34",
+    "descricao": "RIO TINTO DRN",
+    "preco": "R$485,00",
+    "variacao": "-2,95%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "N/A",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/RIOT34",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": []
+    },
+    "opcoes_detalhadas": []
+  },
+  "ASML34": {
+    "ticker": "ASML34",
+    "descricao": "ASML HOLD DRN",
+    "preco": "R$134,40",
+    "variacao": "+3,385%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "N/A",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/ASML34",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": [
+        "Movimento moderado de +3.38% no dia"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "TMOS34": {
+    "ticker": "TMOS34",
+    "descricao": "THERMFISCHERDRN",
+    "preco": "R$58,36",
+    "variacao": "-2,457%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "N/A",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/TMOS34",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": []
+    },
+    "opcoes_detalhadas": []
+  },
+  "BRAX11": {
+    "ticker": "BRAX11",
+    "descricao": "ISHARES BRAXCI",
+    "preco": "R$153,06",
+    "variacao": "+0,44%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "N/A",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/BRAX11",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": []
+    },
+    "opcoes_detalhadas": []
+  },
+  "JNJB34": {
+    "ticker": "JNJB34",
+    "descricao": "JOHNSON DRN",
+    "preco": "R$84,40",
+    "variacao": "+1,369%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "N/A",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/JNJB34",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": []
+    },
+    "opcoes_detalhadas": []
+  },
+  "PIBB11": {
+    "ticker": "PIBB11",
+    "descricao": "IT NOW PIBB CI",
+    "preco": "R$324,80",
+    "variacao": "+0,427%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "N/A",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/PIBB11",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": []
+    },
+    "opcoes_detalhadas": []
+  },
+  "VERZ34": {
+    "ticker": "VERZ34",
+    "descricao": "VERIZON DRN",
+    "preco": "R$39,83",
+    "variacao": "-3,255%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "N/A",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/VERZ34",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": [
+        "Movimento moderado de -3.25% no dia"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "GMCO34": {
+    "ticker": "GMCO34",
+    "descricao": "GENERAL MOT DRN",
+    "preco": "R$108,68",
+    "variacao": "+0,816%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "N/A",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/GMCO34",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": []
+    },
+    "opcoes_detalhadas": []
+  },
+  "OXYP34": {
+    "ticker": "OXYP34",
+    "descricao": "OCCIDENT PTRDRN",
+    "preco": "R$40,18",
+    "variacao": "+1,286%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "N/A",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/OXYP34",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": []
+    },
+    "opcoes_detalhadas": []
+  },
+  "XBOV11": {
+    "ticker": "XBOV11",
+    "descricao": "CAIXAETFXBOVCI",
+    "preco": "R$178,37",
+    "variacao": "+0,462%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "N/A",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/XBOV11",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": []
+    },
+    "opcoes_detalhadas": []
+  },
+  "P1GR34": {
+    "ticker": "P1GR34",
+    "descricao": "THE PROGRESSDRN",
+    "preco": "R$527,45",
+    "variacao": "-3,578%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "N/A",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/P1GR34",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": [
+        "Movimento moderado de -3.58% no dia"
+      ]
+    },
+    "opcoes_detalhadas": []
+  },
+  "SIMN34": {
+    "ticker": "SIMN34",
+    "descricao": "SIMON PROP DRN",
+    "preco": "R$257,53",
+    "variacao": "-1,439%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "N/A",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/SIMN34",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": []
+    },
+    "opcoes_detalhadas": []
+  },
+  "AUAU99": {
+    "ticker": "AUAU99",
+    "descricao": "PETZCOBASI UNT",
+    "preco": "R$3,96",
+    "variacao": "+0%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "N/A",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/AUAU99",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": []
+    },
+    "opcoes_detalhadas": []
+  },
+  "CYRE99": {
+    "ticker": "CYRE99",
+    "descricao": "CYRELA REALTUNT",
+    "preco": "R$36,00",
+    "variacao": "+0%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "N/A",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/CYRE99",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": []
+    },
+    "opcoes_detalhadas": []
+  },
+  "RENT99": {
+    "ticker": "RENT99",
+    "descricao": "LOCALIZA UNT",
+    "preco": "R$51,95",
+    "variacao": "+0%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "N/A",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/RENT99",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": []
+    },
+    "opcoes_detalhadas": []
+  },
+  "CPLE99": {
+    "ticker": "CPLE99",
+    "descricao": "COPEL UNT",
+    "preco": "R$14,11",
+    "variacao": "+0%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "N/A",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/CPLE99",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": []
+    },
+    "opcoes_detalhadas": []
+  },
+  "AXIA98": {
+    "ticker": "AXIA98",
+    "descricao": "AXIA ENERGIAUNT",
+    "preco": "R$71,33",
+    "variacao": "+0%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "N/A",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/AXIA98",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": []
+    },
+    "opcoes_detalhadas": []
+  },
+  "AXIA99": {
+    "ticker": "AXIA99",
+    "descricao": "AXIA ENERGIAUNT",
+    "preco": "R$73,76",
+    "variacao": "+0%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "N/A",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/AXIA99",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": []
+    },
+    "opcoes_detalhadas": []
+  },
+  "E1MR34": {
+    "ticker": "E1MR34",
+    "descricao": "EMERSON ELECDRN",
+    "preco": "R$835,00",
+    "variacao": "+0%",
+    "volatilidade_implicita": "N/A",
+    "iv_rank": "N/A",
+    "iv_percentil": "N/A",
+    "link": "https://opcoes.oplab.com.br/mercado/acoes/opcoes/E1MR34",
+    "analise_tecnica": {
+      "score_volatilidade": 0,
+      "classificacao_volatilidade": "Baixa",
+      "oportunidade_venda": false,
+      "oportunidade_compra": false,
+      "nivel_interesse": "Baixo",
+      "observacoes": []
+    },
+    "opcoes_detalhadas": []
+  }
+}
